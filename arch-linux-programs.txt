@@ -1,3 +1,6 @@
+nvidia
+nvidia-settings
+lib32-nvidia-utils
 steam 
 steamcmd 
 discord 
