@@ -4,7 +4,8 @@ lib32-nvidia-utils
 steam 
 steamcmd 
 discord 
-telegram-desktop 
+telegram-desktop
+powerdevil
 ark 
 p7zip 
 unrar 
