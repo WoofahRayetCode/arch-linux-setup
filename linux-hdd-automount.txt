@@ -1,11 +1,11 @@
 Fstab code for adding extra harddrives for automount
 I'm sure I'll be updating this a lot when I have to do reformats or get new hard drives 
 
-# /dev/sdb1
-UUID=b60f2c55-769e-47e0-bf38-277d7148062d       /home/ericparsley/Storage1TB       ext4       defaults,noatime       0       2
+# dev/sdb1
+UUID=5ba9c1b1-ae5e-4e99-a07c-3829a443f33e       /home/ericparsley/Storage1TB       ext4       defaults,noatime       0       2
 
-# /dev/sdc1
-UUID=8901eac9-ae13-4ca3-9f47-d8e06f11788b       /home/ericparsley/Storage2TB       ext4       defaults,noatime       0       2
+# dev/sdc1
+UUID=22a359a9-b710-4fb3-a075-d3174f511b6f       /home/ericparsley/Storage2TB       ext4       defaults,noatime       0       2
 
-# /dev/sdd1
-UUID=2C2D1BDB2ACB6AA3       /home/ericparsley/Storage4TB       ntfs       defaults,noatime       0       2
+# dev/sdd1
+UUID=2861cc49-920a-4e8d-b3c7-32ec34879cb7       /home/ericparsley/Storage4TB       ext4       defaults,noatime       0       2
