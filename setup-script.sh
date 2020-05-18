@@ -8,7 +8,13 @@ yay -S telegram-desktop
 yay -S cups
 yay -S cups-pdf
 yay -S system-config-printer 
-yay -S vlc 
+yay -S vlc
+yay -S kdenlive
+yay -S cdrtools
+yay -S dvdauthor
+yay -S dvgrab
+yay -S ffmpeg
+yay -S opencv 
 yay -S qbittorrent 
 yay -S libreoffice-fresh 
 yay -S bleachbit 
@@ -34,7 +40,9 @@ yay -S teamviewer
 yay -S timeshift 
 yay -S gamemode 
 yay -S woeusb 
-yay -S gitkraken 
+yay -S gitkraken
+
+sudo pacman -Rns gnome-terminal 
 
 sudo pacman -Rns $(pacman -Qtdq)
 
