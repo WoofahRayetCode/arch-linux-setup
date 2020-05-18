@@ -4,7 +4,10 @@ set -e
 yay -S alacritty 
 yay -S steam 
 yay -S discord 
-yay -S telegram-desktop 
+yay -S telegram-desktop
+yay -S cups
+yay -S cups-pdf
+yay -S system-config-printer 
 yay -S vlc 
 yay -S qbittorrent 
 yay -S libreoffice-fresh 
