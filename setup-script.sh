@@ -1,51 +1,18 @@
 #!/bin/bash
 set -e
 
-yay -S alacritty 
-yay -S steam 
-yay -S discord 
-yay -S telegram-desktop
-yay -S cups
-yay -S cups-pdf
-yay -S system-config-printer 
-yay -S vlc
-yay -S kdenlive
-yay -S cdrtools
-yay -S dvdauthor
-yay -S dvgrab
-yay -S ffmpeg
-yay -S opencv 
-yay -S qbittorrent 
-yay -S libreoffice-fresh 
-yay -S bleachbit 
-yay -S thunderbird 
-yay -S wine-staging 
-yay -S neofetch 
-yay -S winetricks 
-yay -S obs-studio-git 
-yay -S steamcmd 
-yay -Slib32-mesa-aco-git 
-yay -S mesa-aco-git 
-yay -S foxitreader 
-yay -S retroarch-git 
-yay -S libretro-shaders-all-git 
-yay -S libretro-overlays-git 
-yay -S retroarch-assets-xmb-git 
-yay -S pcsx2-git 
-yay -S simplenote-electron-bin 
-yay -S atom-editor-bin 
-yay -S dropbox pithos-git 
-yay -S minecraft-launcher 
-yay -S teamviewer 
-yay -S timeshift 
-yay -S gamemode 
-yay -S woeusb 
-yay -S gitkraken
+#Commands for main programs I use
+sudo pacman -S nvidia nvidia-settings lib32-nvidia-utils wine-staging firefox qbittorrent thunderbird cups cups-pdf print-manager bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc powerdevil unrar p7zip ark gparted 
 
-sudo pacman -Rns gnome-terminal 
+#Commands for starting printer service and letting it auto start at bootup
+sudo systemctl disable org.cups.cupsd.service
+sudo systemctl enable org.cups.cupsd.service
+sudo systemctl restart org.cups.cupsd.service
 
+#Command for program I use from the AUR
+yay S retroarch-git retroarch-assets-xmb-git pcsx2-git minecraft-launcher teamviewer xdman dropbox pithos-git timeshift gamemode lib32-gamemode winetricks protontricks foxitreader davinci-resolve osu-lazer dotnet-sdk-bin dotnet-runtime-bin dotnet-host-bin aspnet-runtime-bin visual-studio-code-bin simplenote-electron-bin gitkraken
+
+#Commands for cleaning left over files from main program install command and AUR install command.
 sudo pacman -Rns $(pacman -Qtdq)
-
 sudo pacman -Scc
-
 yay -Scc
