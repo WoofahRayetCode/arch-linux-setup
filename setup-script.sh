@@ -2,12 +2,7 @@
 set -e
 
 #Command for main programs I use
-sudo pacman -S nvidia nvidia-settings lib32-nvidia-utils wine-staging firefox thunderbird qbittorrent krita cups cups-pdf print-manager bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc powerdevil unrar p7zip ark gparted 
-
-#Commands for starting printer service and letting it auto start at bootup
-sudo systemctl disable org.cups.cupsd.service
-sudo systemctl enable org.cups.cupsd.service
-sudo systemctl restart org.cups.cupsd.service
+sudo pacman -S nvidia nvidia-settings lib32-nvidia-utils wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc unrar p7zip ark gparted 
 
 #Command for downloading and setting up Proton Updater
 cd Desktop
