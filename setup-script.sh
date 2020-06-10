@@ -2,7 +2,7 @@
 set -e
 
 #Commands for main programs I use
-sudo pacman -S nvidia nvidia-settings lib32-nvidia-utils wine-staging firefox qbittorrent thunderbird cups cups-pdf print-manager bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc powerdevil unrar p7zip ark gparted 
+sudo pacman -S nvidia nvidia-settings lib32-nvidia-utils wine-staging firefox thunderbird qbittorrent krita cups cups-pdf print-manager bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc powerdevil unrar p7zip ark gparted 
 
 #Commands for starting printer service and letting it auto start at bootup
 sudo systemctl disable org.cups.cupsd.service
