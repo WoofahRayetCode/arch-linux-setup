@@ -1,3 +1,3 @@
-# general-linux-stuff
+# General Linux Setup Stuff
 
-Stuff I use for arch.
+Stuff I use for setting up Arch KDE.
