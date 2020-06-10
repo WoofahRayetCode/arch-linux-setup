@@ -15,7 +15,10 @@ wget https://raw.githubusercontent.com/flubberding/ProtonUpdater/master/cproton.
 chmod +x cproton.sh
 
 #Command for programs I use from the AUR
-yay -S retroarch-git retroarch-assets-xmb-git pcsx2-git minecraft-launcher teamviewer expressvpn xdman dropbox pithos-git timeshift gamemode lib32-gamemode winetricks protontricks foxitreader davinci-resolve osu-lazer dotnet-sdk-bin dotnet-runtime-bin dotnet-host-bin aspnet-runtime-bin visual-studio-code-bin simplenote-electron-bin gitkraken
+yay -S retroarch-git retroarch-assets-xmb-git pcsx2-git minecraft-launcher teamviewer expressvpn expressvpn-gui xdman dropbox pithos-git timeshift gamemode lib32-gamemode winetricks protontricks foxitreader davinci-resolve osu-lazer dotnet-sdk-bin dotnet-runtime-bin dotnet-host-bin aspnet-runtime-bin visual-studio-code-bin simplenote-electron-bin gitkraken
+
+#Command to start ExpressVPN Service
+sudo systemctl start expressvpn.service 
 
 #Commands for cleaning left over files from main program install command and AUR install command.
 sudo pacman -Rns $(pacman -Qtdq)
