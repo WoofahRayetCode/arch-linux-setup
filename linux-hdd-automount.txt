@@ -15,6 +15,11 @@ cd /etc/
 sudo rm fstab
 sudo cp /etc/backup/fstab /etc/
 
+#Commands to allow full access to drives
+sudo chown -v ericparsley:ericparsley /media/sdb1
+sudo chown -v ericparsley:ericparsley /media/sdc1
+sudo chown -v ericparsley:ericparsley /media/sdd1
+
 #dev/sdb1
 UUID=4db7c1d9-a623-4ad6-8b2d-6a1d8c1612b9       /home/ericparsley/Storage1TB       ext4       defaults,noatime       0       2
 
