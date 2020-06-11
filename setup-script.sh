@@ -2,7 +2,7 @@
 set -e
 
 #Command for main programs I use
-sudo pacman -S nvidia nvidia-settings nvidia-utils lib32-nvidia-utils wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc unrar p7zip gparted 
+sudo pacman -S nano nvidia nvidia-settings nvidia-utils lib32-nvidia-utils wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc unrar p7zip gparted 
 
 #Command for downloading and setting up Proton Updater
 cd Desktop
