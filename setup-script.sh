@@ -1,11 +1,17 @@
 #!/bin/bash
 set -e
 
+#Enables all cores for compiling
+wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/all-cpu-cores-compiling.sh
+cd Desktop
+chmod +x all-cpu-cores-compiling.sh
+./all-cpu-cores-compiling.sh
+
+
 #Command for main programs I use
 sudo pacman -S nano wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc unrar p7zip gparted 
 
 #Command for downloading and setting up Proton Updater
-cd Desktop
 wget https://raw.githubusercontent.com/flubberding/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
 
