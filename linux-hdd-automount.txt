@@ -21,10 +21,10 @@ sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage2TB
 sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage4TB
 
 #dev/sdb1
-UUID=4db7c1d9-a623-4ad6-8b2d-6a1d8c1612b9       /home/ericparsley/Storage1TB       ext4       defaults,noatime       0       2
+UUID=1150fd6c-7a29-4b8d-b4af-68365f16dbff       /home/ericparsley/Storage1TB       ext4       defaults,noatime       0       2
 
 #dev/sdc1
-UUID=7f1e3cc2-cced-4ecf-bafa-3f233ed45427       /home/ericparsley/Storage2TB       ext4       defaults,noatime       0       2
+UUID=26820c03-2ad9-4088-98c3-19b0f49e752d       /home/ericparsley/Storage2TB       ext4       defaults,noatime       0       2
 
 #dev/sdd1
-UUID=fe57390c-3fcd-48ee-90af-c93423b061df       /home/ericparsley/Storage4TB       ext4       defaults,noatime       0       2
+UUID=b1681a5f-72d1-46db-83c6-134355a39cd8       /home/ericparsley/Storage4TB       ext4       defaults,noatime       0       2
