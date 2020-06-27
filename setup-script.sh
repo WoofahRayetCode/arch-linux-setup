@@ -6,6 +6,8 @@ wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master
 chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
+#Remove vim
+sudo pacman -Rns vim
 
 #Command for main programs I use
 sudo pacman -S nano wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop obs-studio vlc unrar p7zip gparted 
