@@ -12,7 +12,7 @@ sudo pacman -Rns konsole
 sudo pacman -S alacritty
 
 #Command for main programs I use
-sudo pacman -S nano powerdevil wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop vlc unrar p7zip ark gparted 
+sudo pacman -S nano nvidia nvidia-settings nvidia-utils lib32-nvidia-utils powerdevil wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop vlc unrar p7zip ark gparted 
 
 #Command for downloading and setting up Proton Updater
 wget https://raw.githubusercontent.com/flubberding/ProtonUpdater/master/cproton.sh
@@ -26,7 +26,7 @@ cd yay
 makepkg -si
 
 #Command for programs I use from the AUR
-yay -S retroarch-git retroarch-assets-xmb-git pcsx2-git minecraft-launcher teamviewer xdman pithos-git gamemode lib32-gamemode winetricks protontricks foxitreader davinci-resolve osu-lazer obs-studio-git dotnet-sdk-bin dotnet-runtime-bin dotnet-host-bin aspnet-runtime-bin visual-studio-code-bin simplenote-electron-bin
+yay -S mullvad-vpn retroarch-git retroarch-assets-xmb-git pcsx2-git minecraft-launcher teamviewer xdman pithos-git gamemode lib32-gamemode winetricks protontricks foxitreader davinci-resolve osu-lazer obs-studio-git dotnet-sdk-bin dotnet-runtime-bin dotnet-host-bin aspnet-runtime-bin visual-studio-code-bin simplenote-electron-bin
 
 #Commands for cleaning left over files from main program install command and AUR install command.
 sudo pacman -Rns $(pacman -Qtdq)
