@@ -6,10 +6,11 @@ wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master
 chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
-#Remove vim and konsole, install Alacritty
+#Remove vim and terminal, install Alacritty
+sudo pacman -S alacritty
 sudo pacman -Rns vim
 sudo pacman -Rns terminal
-sudo pacman -S alacritty
+
 
 #Command for main programs I use
 sudo pacman -S nano wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop vlc unrar p7zip ark gparted 
