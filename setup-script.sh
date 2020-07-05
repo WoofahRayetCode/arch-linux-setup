@@ -8,12 +8,13 @@ chmod +x all-cpu-cores-compiling.sh
 
 #Remove vim and terminal, install Alacritty
 sudo pacman -S alacritty
+sudo pacman -Rns firefox
 sudo pacman -Rns vim
 sudo pacman -Rns terminal
 
 
 #Command for main programs I use
-sudo pacman -S nano wine-staging firefox thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop vlc unrar p7zip ark gparted 
+sudo pacman -S nano wine-staging chromium thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop vlc unrar p7zip ark gparted 
 
 #Command for downloading and setting up Proton Updater
 wget https://raw.githubusercontent.com/flubberding/ProtonUpdater/master/cproton.sh
