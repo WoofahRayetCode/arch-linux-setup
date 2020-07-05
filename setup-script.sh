@@ -7,8 +7,6 @@ chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
 #Remove vim and terminal, install Alacritty
-sudo pacman -S alacritty
-sudo pacman -Rns firefox
 sudo pacman -Rns vim
 sudo pacman -Rns terminal
 
