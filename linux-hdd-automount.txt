@@ -1,13 +1,10 @@
-#FSTAB code for adding extra harddrives for automount
+#fstab code for adding extra harddrives for automount
 #I'm sure I'll be updating this a lot when I have to do reformats or get new hard drives
 
 #Commands to run first
 sudo blkid #Copy UUIDs
-mkdir ~/Storage1
-mkdir ~/Storage2
-mkdir ~/Storage3
-sudo mkdir /etc/backup
-sudo cp /etc/fstab /etc/backup/fstab
+mkdir ~/Storage1 && mkdir ~/Storage2 && mkdir ~/Storage3
+sudo mkdir /etc/backup && sudo cp /etc/fstab /etc/backup/fstab
 sudo nano /etc/fstab
 
 #Add to fstab file
@@ -24,6 +21,4 @@ UUID=3001a4f4-8a5c-4f88-b980-bf130c2dd42f       /home/ericparsley/Storage3      
 sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage1 && sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage2 && sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage3
 
 #Restore fstab if needed
-cd /etc/
-sudo rm fstab
-sudo cp /etc/backup/fstab /etc/
+cd /etc/ && sudo rm fstab && sudo cp /etc/backup/fstab /etc/
