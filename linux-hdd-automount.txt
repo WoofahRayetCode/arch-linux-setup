@@ -3,28 +3,29 @@
 
 #Commands to run first
 sudo blkid #Copy UUIDs
-mkdir ~/Games1TB
-mkdir ~/Storage2TB
-mkdir ~/Storage4TB
+mkdir ~/Storage1
+mkdir ~/Storage2
+mkdir ~/Storage3
 sudo mkdir /etc/backup
 sudo cp /etc/fstab /etc/backup/fstab
 sudo nano /etc/fstab
 
-#Restore FSTAB
+#Add to fstab file
+#dev/sdb1
+UUID=b544c215-80a9-489d-a917-45d20f1b334b       /home/ericparsley/Storage1      ext4       defaults,noatime       0       2
+
+#dev/sdc1
+UUID=8c2b5414-175e-4a7e-9208-a1366f057328       /home/ericparsley/Storage2      ext4       defaults,noatime       0       2
+
+#dev/sdd1
+UUID=3001a4f4-8a5c-4f88-b980-bf130c2dd42f       /home/ericparsley/Storage3      ext4       defaults,noatime       0       2
+
+#Commands to allow full access to drives
+sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage1
+sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage2
+sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage3
+
+#Restore fstab if needed
 cd /etc/
 sudo rm fstab
 sudo cp /etc/backup/fstab /etc/
-
-#Commands to allow full access to drives
-sudo chown -v ericparsley:ericparsley /home/ericparsley/Games1TB
-sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage2TB
-sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage4TB
-
-#dev/sdb1
-UUID=9aa3a335-9d30-46b2-8996-6eccd35ca9a9       /home/ericparsley/Games1TB       ext4       defaults,noatime       0       2
-
-#dev/sdc1
-UUID=0827a303-b4da-48d2-af71-473e300002eb       /home/ericparsley/Storage2TB       ext4       defaults,noatime       0       2
-
-#dev/sdd1
-UUID=55c2db22-5fcf-4c71-bfaf-15ce0de38f67       /home/ericparsley/Storage4TB       ext4       defaults,noatime       0       2
