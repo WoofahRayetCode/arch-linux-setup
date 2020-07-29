@@ -13,6 +13,11 @@ sudo pacman -S nano wine-staging giflib lib32-giflib libpng lib32-libpng libldap
 wget https://raw.githubusercontent.com/flubberding/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
 
+#Clone yay and install
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
 #Command for programs I use from the AUR
 yay -S retroarch-git retroarch-assets-xmb-git pcsx2-git minecraft-launcher teamviewer xdman pithos-git gamemode lib32-gamemode mesa-aco-git lib32-mesa-aco-git winetricks protontricks foxitreader osu-lazer-git obs-studio-git atom-editor-bin simplenote-electron-bin mullvad-vpn-bin
 
