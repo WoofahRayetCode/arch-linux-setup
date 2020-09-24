@@ -21,7 +21,7 @@ cd yay
 makepkg -si
 
 #Command for programs I use from the AUR
-yay -S lib32-mesa-git mesa-git retroarch-git retroarch-assets-xmb-git pcsx2-git duckstation-git obs-studio-git kdenlive-git minecraft-launcher teamviewer gamemode lib32-gamemode winetricks protontricks mullvad-vpn foxitreader youtube-dl-git freetube-bin authy timeshift etcher-bin bitwarden webcamoid visual-studio-code-bin github-desktop-bin simplenote-electron-bin
+yay -S lib32-mesa-git mesa-git retroarch-git retroarch-assets-xmb-git pcsx2-git duckstation-git obs-studio-git kdenlive-git minecraft-launcher teamviewer gamemode lib32-gamemode winetricks protontricks foxitreader youtube-dl-git freetube-bin authy timeshift etcher-bin bitwarden webcamoid visual-studio-code-bin github-desktop-bin simplenote-electron-bin
 
 #Commands for cleaning left over files from main program install command and AUR install command.
 sudo pacman -Rns $(pacman -Qtdq)
