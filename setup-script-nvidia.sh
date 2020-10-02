@@ -7,7 +7,7 @@ chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
 #Command for main programs I use
-sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader nano wine-staging thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop vlc shotcut unrar p7zip ark gparted --skipinteg
+sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader nano wine-staging thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord telegram-desktop vlc shotcut unrar p7zip ark gparted
 
 #Command for downloading and setting up Proton Updater
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
