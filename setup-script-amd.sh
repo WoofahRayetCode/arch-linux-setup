@@ -7,7 +7,7 @@ chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
 #Command for main programs I use
-sudo pacman -S nano wine-staging thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord unrar p7zip gparted 
+sudo pacman -S nano wine-staging thunderbird qbittorrent krita bleachbit libreoffice-fresh git steam discord unrar p7zip gparted --skipinteg
 
 #Command for downloading and setting up Proton Updater
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
@@ -21,7 +21,7 @@ cd yay
 makepkg -si
 
 #Command for programs I use from the AUR
-yay -S lib32-mesa-git mesa-git retroarch-git retroarch-assets-xmb-git pcsx2-git duckstation-git obs-studio-git kdenlive-git minecraft-launcher teamviewer gamemode lib32-gamemode winetricks protontricks foxitreader youtube-dl-git freetube-bin authy timeshift etcher-bin bitwarden-bin webcamoid visual-studio-code-bin github-desktop-bin simplenote-electron-bin
+yay -S lib32-mesa-git mesa-git retroarch-git retroarch-assets-xmb-git pcsx2-git duckstation-git obs-studio-git kdenlive-git minecraft-launcher teamviewer gamemode lib32-gamemode winetricks protontricks foxitreader youtube-dl-git freetube-bin authy timeshift etcher-bin bitwarden-bin webcamoid visual-studio-code-bin github-desktop-bin simplenote-electron-bin --skipinteg
 
 #Commands for cleaning left over files from main program install command and AUR install command.
 sudo pacman -Rns $(pacman -Qtdq)
