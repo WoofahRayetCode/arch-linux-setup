@@ -19,6 +19,7 @@ cd Git
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+cd
 
 #Command for programs I use from the AUR
 yay -S mesa-git lib32-mesa-git gamemode lib32-gamemode retroarch-git retroarch-assets-xmb-git pcsx2-git duckstation-git obs-studio-git kdenlive-git minecraft-launcher teamviewer winetricks protontricks foxitreader freetube-bin authy timeshift etcher-bin bitwarden-bin visual-studio-code-bin github-desktop-bin simplenote-electron-bin
