@@ -13,13 +13,6 @@ sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings yay nano g
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
 
-#Clone yay and install
-mkdir Git
-cd Git
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
 #Command for programs I use from the AUR
 yay -S retroarch-git retroarch-assets-xmb-git pcsx2-git duckstation-git insync kdenlive-git minecraft-launcher teamviewer foxitreader timeshift etcher-bin bitwarden-bin github-desktop-bin code-git standardnotes-desktop
 
