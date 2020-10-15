@@ -7,7 +7,7 @@ chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
 #Command for main programs I use
-sudo pacman -S yay nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio bleachbit libreoffice-fresh git steam lutris discord telegram-desktop unrar p7zip
+sudo pacman -S base-devel yay nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio bleachbit libreoffice-fresh git steam lutris discord telegram-desktop unrar p7zip
 
 #Command for downloading and setting up Proton Updater
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
