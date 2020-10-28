@@ -18,7 +18,7 @@ UUID=2fde8a59-59db-499c-98c8-fe9fa304c778       /home/ericparsley/GameStorage   
 UUID=8a37cf92-d996-472d-9f69-2924ac9b8fc9       /home/ericparsley/MassStorage     ext4       defaults,noatime       0       2
 
 #Commands to allow full access to drives
-sudo chown -v ericparsley:ericparsley /home/ericparsley/CloudStorage && sudo chown -v ericparsley:ericparsley /home/ericparsley/GameStorage && sudo chown -v ericparsley:ericparsley /home/ericparsley/OtherStorage
+sudo chown -v ericparsley:ericparsley /home/ericparsley/CloudStorage && sudo chown -v ericparsley:ericparsley /home/ericparsley/GameStorage && sudo chown -v ericparsley:ericparsley /home/ericparsley/MassStorage
 
 #Restore fstab if needed
 cd /etc/ && sudo rm fstab && sudo cp /etc/backup/fstab /etc/
