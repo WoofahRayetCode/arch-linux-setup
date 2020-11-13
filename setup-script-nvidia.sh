@@ -9,6 +9,10 @@ chmod +x all-cpu-cores-compiling.sh
 #Command for main programs I use
 sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils base-devel qt timeshift nano gamemode lib32-gamemode wine-staging flatpak snapd qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam pcsx2 retroarch retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb lutris discord telegram-desktop unrar p7zip
 
+#Enabled AppArmor
+systemctl enable --now apparmor.service
+systemctl enable --now snapd.apparmor.service
+
 #Commands for setting up YAY
 #git clone https://aur.archlinux.org/yay.git
 #cd yay
