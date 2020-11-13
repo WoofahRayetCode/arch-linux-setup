@@ -7,7 +7,7 @@ chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
 #Command for main programs I use
-sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings base-devel nano gamemode lib32-gamemode wine-staging flatpak qbittorrent krita obs-studio bleachbit libreoffice-fresh git steam lutris discord telegram-desktop unrar p7zip
+sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils base-devel nano gamemode lib32-gamemode wine-staging flatpak qbittorrent krita obs-studio bleachbit libreoffice-fresh git steam lutris discord telegram-desktop unrar p7zip
 
 #Commands for setting up YAY
 #git clone https://aur.archlinux.org/yay.git
