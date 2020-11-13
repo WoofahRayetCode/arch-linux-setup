@@ -7,11 +7,19 @@ chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
 #Command for main programs I use
-sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils base-devel qt timeshift nano gamemode lib32-gamemode wine-staging flatpak snapd qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam pcsx2 retroarch retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb lutris discord telegram-desktop unrar p7zip
+sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils base-devel qt timeshift nano gamemode lib32-gamemode wine-staging gparted flatpak snapd thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam pcsx2 mgba ppsspp retroarch retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb lutris discord telegram-desktop unrar p7zip
 
-#Enabled AppArmor
-systemctl enable --now apparmor.service
-systemctl enable --now snapd.apparmor.service
+#Fully enabling spand
+sudo systemctl enable --now apparmor.service
+sudo systemctl enable --now snapd.apparmor.service
+sudo systemctl unmask snapd.service
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo sudo systemctl unmask snapd.service
+sudo systemctl start snapd.service
+echo "export PATH=\$PATH:\/snap/bin/" | sudo tee -a /etc/profile
+
+#Commands for install snapd and flatpak apps
 
 #Commands for setting up YAY
 #git clone https://aur.archlinux.org/yay.git
@@ -24,7 +32,7 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Command for programs I use from the AUR
-yay -S duckstation-git minecraft-launcher teamviewer foxitreader bitwarden-bin github-desktop-bin atom-editor-bin
+yay -S standardnotes-desktop birdtray-git duckstation-git citra-git minecraft-launcher widevine mellowplayer teamviewer foxitreader bitwarden-bin github-desktop-bin atom-editor-bin
 
 #Commands for cleaning left over files from main program install command and AUR install command.
 sudo pacman -Rns $(pacman -Qtdq)
