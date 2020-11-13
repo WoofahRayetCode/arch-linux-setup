@@ -10,10 +10,10 @@ chmod +x all-cpu-cores-compiling.sh
 sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings base-devel nano gamemode lib32-gamemode wine-staging flatpak qbittorrent krita obs-studio bleachbit libreoffice-fresh git steam lutris discord telegram-desktop unrar p7zip
 
 #Commands for setting up YAY
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd
+#git clone https://aur.archlinux.org/yay.git
+#cd yay
+#makepkg -si
+#cd
 
 #Command for downloading and setting up Proton Updater
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
