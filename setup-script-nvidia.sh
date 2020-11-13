@@ -27,5 +27,8 @@ sudo pacman -Rns $(pacman -Qtdq)
 sudo pacman -Scc
 yay -Scc
 
+#Nvidia CUDA Detection
+nvidia-modprobe
+
 #Simply reboot computer
 sudo reboot
