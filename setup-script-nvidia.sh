@@ -19,14 +19,6 @@ sudo sudo systemctl unmask snapd.service
 sudo systemctl start snapd.service
 echo "export PATH=\$PATH:\/snap/bin/" | sudo tee -a /etc/profile
 
-#Commands for install snapd and flatpak apps
-
-#Commands for setting up YAY
-#git clone https://aur.archlinux.org/yay.git
-#cd yay
-#makepkg -si
-#cd
-
 #Command for downloading and setting up Proton Updater
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
