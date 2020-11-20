@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Command for programs I use from the AUR
-yay -S standardnotes-desktop birdtray-git duckstation-git pcsx2-bit ppsspp-git mgba-git citra-git retroarch-git retroarch-assets-git retroarch-assets-xmb-git minecraft-launcher protontricks winetricks widevine mellowplayer teamviewer foxitreader bitwarden-bin github-desktop-bin atom-editor-bin
+yay -S standardnotes-desktop birdtray-git duckstation-git pcsx2-git ppsspp-git mgba-git citra-git retroarch-git retroarch-assets-git retroarch-assets-xmb-git minecraft-launcher protontricks winetricks widevine mellowplayer teamviewer foxitreader bitwarden-bin github-desktop-bin atom-editor-bin
 
 #Commands for cleaning left over files from main program install command and AUR install command.
 sudo pacman -Rns $(pacman -Qtdq)
