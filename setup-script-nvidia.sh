@@ -7,7 +7,7 @@ chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
 #Command for main programs I use
-sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils base-devel qt timeshift nano gamemode lib32-gamemode wine-staging gparted flatpak snapd thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam pcsx2 mgba ppsspp retroarch retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb lutris discord telegram-desktop unrar p7zip
+sudo pacman -S qt nvidia lib32-nvidia-utils nvidia-utils base-devel timeshift nano gamemode lib32-gamemode wine-staging gparted flatpak snapd thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam pcsx2 mgba ppsspp retroarch retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb lutris discord telegram-desktop unrar p7zip
 
 #Fully enabling spand
 sudo systemctl enable --now apparmor.service
