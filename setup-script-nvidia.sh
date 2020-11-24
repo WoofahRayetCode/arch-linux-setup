@@ -7,7 +7,7 @@ chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
 #Command for main programs I use
-sudo pacman -S qt nvidia nvidia-settings lib32-nvidia-utils nvidia-utils nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
+sudo pacman -S iwd qt nvidia nvidia-settings lib32-nvidia-utils nvidia-utils nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
 
 #Yay setup
 cd
