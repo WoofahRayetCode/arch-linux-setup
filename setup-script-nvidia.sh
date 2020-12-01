@@ -49,7 +49,7 @@ chmod +x cproton.sh
 yay -S birdtray-git duckstation pcsx2-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git teamviewer foxitreader bitwarden-bin github-desktop-bin visual-studio-code-bin
 
 #Fully enable Teamviewer
-systemctl start teamviewerd.service
+teamviewer --daemon start
 
 #Widevine for MellowPlayer
 curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
