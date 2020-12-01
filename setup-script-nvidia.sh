@@ -30,6 +30,8 @@ sudo mv /usr/share/applications/lstopo.desktop /home/ericparsley/UnwantedIcons
 sudo mv /usr/share/applications/bssh.desktop /home/ericparsley/UnwantedIcons
 sudo mv /usr/share/applications/bvnc.desktop /home/ericparsley/UnwantedIcons
 sudo mv /usr/share/applications/avahi-discover.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/electron.desktop /home/ericparsley/UnwantedIcons
+sudo mv /home/ericparsley/.local/share/applications/assistant.desktop /home/ericparsley/UnwantedIconsd
 
 
 #Yay setup
