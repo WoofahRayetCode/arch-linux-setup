@@ -48,6 +48,9 @@ chmod +x cproton.sh
 #Command for programs I use from the AUR
 yay -S birdtray-git duckstation pcsx2-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git teamviewer foxitreader bitwarden-bin github-desktop-bin visual-studio-code-bin
 
+#Fully enable Teamviewer
+systemctl start teamviewerd.service
+
 #Widevine for MellowPlayer
 curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
 
