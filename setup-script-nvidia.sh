@@ -10,8 +10,27 @@ chmod +x all-cpu-cores-compiling.sh
 wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/wifi_backend.conf
 mv wifi_backend.conf /etc/NetworkManager/conf.d/
 
+#Remove unwanted programs
+sudo pacman -Rns vim
+
 #Command for main programs I use
 sudo pacman -S iwd qt nvidia nvidia-settings lib32-nvidia-utils nvidia-utils bumblebee powerdevil nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
+
+#Remove some unwanted icons from program menu. THANKS OCD :D
+mkdir UnwantedIcons
+sudo mv /usr/share/applications/assistant.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/designer.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/linguist.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/qdbusviewer.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/UserFeedbackConsole.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/uxterm.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/xterm.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/teamviewerapi.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/lstopo.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/bssh.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/bvnc.desktop /home/ericparsley/UnwantedIcons
+sudo mv /usr/share/applications/avahi-discover.desktop /home/ericparsley/UnwantedIcons
+
 
 #Yay setup
 cd
