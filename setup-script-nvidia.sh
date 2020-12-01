@@ -46,7 +46,7 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Command for programs I use from the AUR
-yay -S birdtray-git duckstation pcsx2-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git teamviewer foxitreader bitwarden-bin github-desktop-bin visual-studio-code-bin
+yay -S birdtray-git duckstation pcsx2-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git standardnotes-desktop teamviewer foxitreader bitwarden-bin github-desktop-bin visual-studio-code-bin
 
 #Fully enable Teamviewer
 teamviewer --daemon start
