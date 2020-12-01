@@ -14,7 +14,7 @@ mv wifi_backend.conf /etc/NetworkManager/conf.d/
 sudo pacman -Rns vim
 
 #Command for main programs I use
-sudo pacman -S iwd qt nvidia nvidia-settings lib32-nvidia-utils nvidia-utils bumblebee powerdevil nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
+sudo pacman -S iwd qt nvidia nvidia-settings lib32-nvidia-utils nvidia-utils bumblebee primus lib32-primus powerdevil nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
 
 #Remove some unwanted icons from program menu. THANKS OCD :D
 mkdir UnwantedIcons
@@ -48,7 +48,7 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Command for programs I use from the AUR
-yay -S birdtray-git duckstation pcsx2-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git standardnotes-desktop teamviewer foxitreader bitwarden-bin github-desktop-bin visual-studio-code-bin
+yay -S optimus-manager-git optimus-manager-qt-git birdtray-git duckstation pcsx2-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git standardnotes-desktop teamviewer foxitreader bitwarden-bin github-desktop-bin visual-studio-code-bin
 
 #Fully enable Teamviewer
 teamviewer --daemon start
