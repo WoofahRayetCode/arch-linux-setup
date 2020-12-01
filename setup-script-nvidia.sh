@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master
 mv wifi_backend.conf /etc/NetworkManager/conf.d/
 
 #Command for main programs I use
-sudo pacman -S iwd qt nvidia nvidia-settings lib32-nvidia-utils nvidia-utils bumblebee nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
+sudo pacman -S iwd qt nvidia nvidia-settings lib32-nvidia-utils nvidia-utils bumblebee powerdevil nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio kdenlive vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
 
 #Yay setup
 cd
