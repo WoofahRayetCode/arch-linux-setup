@@ -3,16 +3,22 @@
 
 #Commands to run first
 sudo blkid #Copy UUIDs
-mkdir ~/Storage
+mkdir ~/HDD1 && mkdir ~/HDD2 %% mkdir ~/HDD3
 sudo mkdir /etc/backup && sudo cp /etc/fstab /etc/backup/fstab
 sudo nano /etc/fstab
 
 #Add to fstab file
-#dev/sdb1
-UUID=5f6cd42d-389e-4d58-bc68-eab434408c91       /home/ericparsley/Storage      ext4       defaults,noatime       0       2
+#HDD1
+UUID=d31dcf49-1ba9-47f0-9d56-d48190f9d1ea  /home/ericparsley/HDD1  ext4  defaults,noatime  0  2
+#HDD2
+UUID=4d6269a0-35fe-4c90-82d5-8bf4ace778a9  /home/ericparsley/HDD2  ext4  defaults,noatime  0  2
+#HDD3
+UUID=7f68fd97-7ef1-42f0-b2e5-24d7f109da93  /home/ericparsley/HDD3  ext4  defaults,noatime  0  2
 
 #Commands to allow full access to drives
-sudo chown -v ericparsley:ericparsley /home/ericparsley/Storage
+sudo chown -v ericparsley:ericparsley /home/ericparsley/HDD1
+sudo chown -v ericparsley:ericparsley /home/ericparsley/HDD2
+sudo chown -v ericparsley:ericparsley /home/ericparsley/HDD3
 
 #Restore fstab if needed
 cd /etc/ && sudo rm fstab && sudo cp /etc/backup/fstab /etc/
