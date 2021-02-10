@@ -6,11 +6,12 @@ wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master
 chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
-#Remove unwanted programs
-sudo pacman -Rns vim
+#Set iwd as wifi backend
+wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/wifi_backend.conf
+mv wifi_backend.conf /etc/NetworkManager/conf.d/
 
 #Command for main programs I use
-sudo pacman -S qt nvidia nvidia-settings lib32-nvidia-utils nvidia-utils nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop unrar p7zip
+sudo pacman -S qt iwd nvidia nvidia-settings lib32-nvidia-utils nvidia-utils nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
 
 #Remove some unwanted icons from program menu. THANKS OCD :D
 mkdir UnwantedIcons
