@@ -14,17 +14,15 @@ chmod +x cproton.sh
 sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nano ark unrar p7zip gamemode lib32-gamemode steam wine-staging lutris iwd thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit bluez bluez-utils blueman iwd
 
 #Set iwd as wifi backend
+cd /
+cd /etc/
+sudo mkdir NetworkManager
+cd NetworkManager
+sudo mkdir conf.d
+cd conf.d
+cd
 wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/wifi_backend.conf
-mv wifi_backend.conf /etc/NetworkManager/conf.d/
-
-#Yay setup
-cd
-mkdir Git
-cd Git
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd
+sudo mv wifi_backend.conf /etc/NetworkManager/conf.d/
 
 yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git asus-nb-ctrl-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin
 
