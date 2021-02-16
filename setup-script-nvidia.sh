@@ -26,7 +26,7 @@ cd yay
 makepkg -si
 cd
 
-yay -S birdtray-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git teamviewer foxitreader davinci-resolve etcher-bin
+yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git asus-nb-ctrl-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin
 
 #Fully enable Teamviewer
 sudo teamviewer daemon restart
