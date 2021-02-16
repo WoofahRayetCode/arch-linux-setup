@@ -13,6 +13,10 @@ chmod +x cproton.sh
 #Main programs I use
 sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nano ark unrar p7zip gamemode lib32-gamemode mgba-qt ppsspp steam wine-staging lutris iwd thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit bluez bluez-utils blueman iwd networkmanager nm-connection-ecitor plasma-nm
 
+#Enable bluetooth
+systemctl start bluetooth.service
+systemctl enable bluetooth.service
+
 #Set iwd as wifi backend
 cd /
 cd /etc/
