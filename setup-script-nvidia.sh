@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 
-#Never use this
-sudo pacman -Rns vim
-
 #Fully use CPU for compiling and compressing
 wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/all-cpu-cores-compiling.sh
 chmod +x all-cpu-cores-compiling.sh
