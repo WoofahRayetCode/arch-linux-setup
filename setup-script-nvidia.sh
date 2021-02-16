@@ -1,35 +1,24 @@
 #!/bin/bash
 set -e
 
+#Never use this
+sudo pacman -Rns vim
+
 #Fully use CPU for compiling and compressing
 wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/all-cpu-cores-compiling.sh
 chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
+#Command for downloading and setting up Proton Updater
+wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
+chmod +x cproton.sh
+
 #Set iwd as wifi backend
 wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/wifi_backend.conf
 mv wifi_backend.conf /etc/NetworkManager/conf.d/
 
-#Command for main programs I use
-sudo pacman -S qt iwd nvidia nvidia-settings lib32-nvidia-utils nvidia-utils nano gamemode lib32-gamemode wine-staging thunderbird qbittorrent krita obs-studio vlc bleachbit libreoffice-fresh git steam lutris discord telegram-desktop ark unrar p7zip
-
-#Remove some unwanted icons from program menu. THANKS OCD :D
-mkdir UnwantedIcons
-sudo mv /usr/share/applications/assistant.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/designer.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/linguist.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/qdbusviewer.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/UserFeedbackConsole.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/uxterm.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/xterm.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/teamviewerapi.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/lstopo.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/bssh.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/bvnc.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/avahi-discover.desktop/home/ericparsley/UnwantedIcons
-sudo mv /usr/share/applications/electron.desktop/home/ericparsley/UnwantedIcons
-sudo mv /home/ericparsley/.local/share/applications/assistant.desktop/home/ericparsley/UnwantedIcons
-
+#Main programs I use
+sudo pacman -S nvidia nvidia-settings nvidia-utils lib32-nvidia-utils nano ark unrar p7zip gamemode lib32-gamemode steam wine-staging lutris iwd thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit
 
 #Yay setup
 cd
@@ -40,17 +29,13 @@ cd yay
 makepkg -si
 cd
 
-#Command for downloading and setting up Proton Updater
-wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
-chmod +x cproton.sh
-
-#Command for programs I use from the AUR
-yay -S linux-mainline birdtray-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git standardnotes-desktop teamviewer foxitreader bitwarden-bin github-desktop-bin visual-studio-code-bin
+yay -S birdtray-git retroarch-git retroarch-assets-git minecraft-launcher protontricks-git winetricks-git mellowplayer-git standardnotes-desktop teamviewer foxitreader github-desktop-bin visual-studio-code-bin
 
 #Fully enable Teamviewer
 sudo teamviewer daemon restart
 sudo teamviewer daemon disable
 sudo teamviewer daemon enable
+
 
 #Widevine for MellowPlayer
 curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
