@@ -24,7 +24,7 @@ cd
 wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/wifi_backend.conf
 sudo mv wifi_backend.conf /etc/NetworkManager/conf.d/
 
-yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git asus-nb-ctrl-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin
+yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin
 
 #Fully enable Teamviewer
 teamviewer daemon start
