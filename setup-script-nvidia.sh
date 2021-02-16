@@ -27,16 +27,14 @@ sudo mv wifi_backend.conf /etc/NetworkManager/conf.d/
 yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git asus-nb-ctrl-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin
 
 #Fully enable Teamviewer
-sudo teamviewer daemon restart
-sudo teamviewer daemon disable
-sudo teamviewer daemon enable
+teamviewer daemon start
 
 
 #Widevine for MellowPlayer
 curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
 
 #Commands for cleaning left over files from main program install command and AUR install command.
-sudo pacman -Rns $(pacman -Qtdq)
+sudo pacman -Qtdq | pacman -Rns -
 sudo pacman -Scc
 yay -Scc
 
