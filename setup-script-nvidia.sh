@@ -10,12 +10,12 @@ chmod +x all-cpu-cores-compiling.sh
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
 
+#Main programs I use
+sudo pacman -S nvidia nvidia-settings nvidia-utils lib32-nvidia-utils nano ark unrar p7zip gamemode lib32-gamemode steam wine-staging lutris iwd thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit bluez bluez-utils blueman iwd
+
 #Set iwd as wifi backend
 wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/wifi_backend.conf
 mv wifi_backend.conf /etc/NetworkManager/conf.d/
-
-#Main programs I use
-sudo pacman -S nvidia nvidia-settings nvidia-utils lib32-nvidia-utils nano ark unrar p7zip gamemode lib32-gamemode steam wine-staging lutris iwd thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit bluez bluez-utils blueman
 
 #Yay setup
 cd
