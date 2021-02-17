@@ -29,7 +29,7 @@ wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master
 sudo mv wifi_backend.conf /etc/NetworkManager/conf.d/
 
 #AUR Programs I use
-yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git duckstation-git pcsx2-64bit-git citra-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin dxvk-bin
+yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git duckstation-git pcsx2-64bit-git citra-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin dxvk-bin minetime-bin
 
 #Install DXVK
 setup_dxvk install
