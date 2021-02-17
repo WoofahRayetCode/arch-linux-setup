@@ -28,11 +28,14 @@ cd
 wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/wifi_backend.conf
 sudo mv wifi_backend.conf /etc/NetworkManager/conf.d/
 
-yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git duckstation-git pcsx2-64bit-git citra-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin
+#AUR Programs I use
+yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git duckstation-git pcsx2-64bit-git citra-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin dxvk-bin
+
+#Install DXVK
+setup_dxvk install
 
 #Fully enable Teamviewer
 teamviewer daemon start
-
 
 #Widevine for MellowPlayer
 curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
