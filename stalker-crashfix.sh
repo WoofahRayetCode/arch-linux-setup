@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd /home/eric/ 
+cd /home/ericparsley/ 
 cd .steam
 cd steam
 cd steamapps
@@ -19,7 +19,7 @@ cd STALKER\ Clear\ Sky
 cd gamedata
 find -type f -name "Thumbs.db" -exec rm -i {} \;
 cd
-cd /home/eric/ 
+cd home/ericparsley/
 cd .steam
 cd steam
 cd steamapps
