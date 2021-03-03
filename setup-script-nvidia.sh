@@ -11,25 +11,10 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Main programs I use
-sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils kscreen powerdevil nano ark unrar p7zip gamemode lib32-gamemode mgba-qt ppsspp steam wine-staging lutris iwd thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit bluez bluez-utils blueman iwd networkmanager nm-connection-ecitor plasma-nm flatpak
-
-#Enable bluetooth
-sudo systemctl start bluetooth.service
-sudo systemctl enable bluetooth.service
-
-#Set iwd as wifi backend
-cd /
-cd /etc/
-sudo mkdir NetworkManager
-cd NetworkManager
-sudo mkdir conf.d
-cd conf.d
-cd
-wget https://raw.githubusercontent.com/WoofahRayetDev/general-linux-stuff/master/wifi_backend.conf
-sudo mv wifi_backend.conf /etc/NetworkManager/conf.d/
+sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils unrar p7zip gamemode lib32-gamemode steam wine-staging lutris thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit
 
 #AUR Programs I use
-yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git duckstation-git pcsx2-64bit-git citra-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin dxvk-bin minetime-bin
+yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git duckstation-git pcsx2-64bit-git minecraft-launcher teamviewer foxitreader davinci-resolve etcher-bin dxvk-bin minetime-bin
 
 #Install DXVK
 setup_dxvk install
