@@ -13,6 +13,13 @@ chmod +x cproton.sh
 #Main programs I use
 sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils unrar p7zip gamemode lib32-gamemode steam wine-staging lutris thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit
 
+cd
+mkdir Git
+cd Git
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+makepkg -si
+
 #AUR Programs I use
 yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git mellowplayer-git duckstation-git pcsx2-64bit-git rpcs3-git ppsspp-git vbam-git desmume-git citra-git minecraft-launcher teamviewer foxitreader shotcut-git etcher-bin dxvk-bin minetime-bin standardnotes-bin visual-studio-code-bin github-desktop-bin
 
