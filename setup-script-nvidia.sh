@@ -33,8 +33,9 @@ teamviewer daemon start
 curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
 
 #Commands for cleaning left over files from main program install command and AUR install command.
-sudo pacman -Qtdq | pacman -Rns -
-sudo pacman -Scc
+su
+pacman -Qtdq | pacman -Rns -
+pacman -Scc
 yay -Scc
 
 #Nvidia CUDA Detection
