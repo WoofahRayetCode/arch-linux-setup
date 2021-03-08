@@ -26,17 +26,8 @@ yay -S birdtray-git retroarch-git retroarch-assets-git protontricks-git winetric
 #Install DXVK
 setup_dxvk install
 
-#Fully enable Teamviewer
-teamviewer daemon start
-
 #Widevine for MellowPlayer
 curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
-
-#Commands for cleaning left over files from main program install command and AUR install command.
-su
-pacman -Qtdq | pacman -Rns -
-pacman -Scc
-yay -Scc
 
 #Nvidia CUDA Detection
 nvidia-modprobe
