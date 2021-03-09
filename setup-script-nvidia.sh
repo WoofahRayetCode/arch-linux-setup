@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Main programs I use
-sudo pacman -S base-devel nvidia nvidia-utils lib32-nvidia-utils unrar p7zip gamemode lib32-gamemode steam wine-staging lutris thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit
+sudo pacman -S base-devel git nvidia nvidia-utils lib32-nvidia-utils unrar p7zip gamemode lib32-gamemode steam wine-staging lutris thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh obs-studio vlc bleachbit
 
 cd
 mkdir Git
