@@ -21,7 +21,7 @@ cd yay-git
 makepkg -si
 
 #AUR Programs I use
-yay -S pamac-aur optimus-manager-qt noisetorch-git birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git duckstation-git pcsx2-64bit-git rpcs3-git ppsspp-git vbam-git desmume-git citra-git minecraft-launcher foxitreader shotcut-git zoom etcher-bin dxvk minetime-bin standardnotes-bin visual-studio-code-bin github-desktop-bin
+yay -S pamac-aur optimus-manager-qt noisetorch-git birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git duckstation-git pcsx2-64bit-git rpcs3-git ppsspp-git vita3k-git vbam-git desmume-git citra-git minecraft-launcher foxitreader shotcut-git zoom etcher-bin dxvk minetime-bin standardnotes-bin visual-studio-code-bin github-desktop-bin
 
 #Nvidia CUDA Detection
 nvidia-modprobe
