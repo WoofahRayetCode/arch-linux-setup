@@ -11,7 +11,10 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Main programs I use
-sudo pacman -S base-devel git nvidia nvidia-utils lib32-nvidia-utils unrar p7zip spectacle gamemode lib32-gamemode steam wine-staging lutris thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh vlc bleachbit gnome-system-monitor
+sudo pacman -S base-devel git mellowplayer nvidia nvidia-utils lib32-nvidia-utils unrar p7zip spectacle gamemode lib32-gamemode steam wine-staging lutris thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh vlc bleachbit gnome-system-monitor
+
+#For Spotify in MellowPlayer
+curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
 
 cd
 mkdir Git
