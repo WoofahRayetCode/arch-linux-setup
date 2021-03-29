@@ -14,10 +14,8 @@ chmod +x cproton.sh
 sudo pacman -S yay gamemode lib32-gamemode steam wine-staging lutris thunderbird qbittorrent discord telegram-desktop krita libreoffice-fresh vlc bleachbit
 
 #AUR Programs I use
-yay -S freedownloadmanager obs-studio-git mellowplayer-git noisetorch-git birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git duckstation-git pcsx2-64bit-git rpcs3-git ppsspp-git vita3k-git vbam-git desmume-git dolphin-emu-git citra-qt-git minecraft-launcher foxitreader shotcut-git zoom etcher-bin dxvk minetime-bin standardnotes-bin visual-studio-code-bin github-desktop-bin
+yay -S freedownloadmanager obs-studio-git birdtray-git retroarch-git retroarch-assets-git protontricks-git winetricks-git duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git vbam-git desmume-git citra-qt-git dolphin-emu-git minecraft-launcher foxitreader etcher-bin dxvk minetime-bin standardnotes-bin
 
-#For Spotify in MellowPlayer
-curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
 #Nvidia CUDA Detection
 nvidia-modprobe
 
