@@ -16,9 +16,9 @@ LABEL="Totally not porn" BLOCK_SIZE="512" UUID="29E9FDFF37EF58DF"
 sudo gedit /etc/fstab
 
 #Mount hdds and ssd
-UUID=0034516f-284d-41d2-b9d3-a7d185d0ae7e /home/ericparsley/VM   ext4 defaults  0    0
-UUID=8fa918ce-a8b0-480d-a43f-d7e1b26bd2a9 /home/ericparsley/NOTPORN   ext4 defaults  0    0
-UUID=e8ca532b-5897-42b1-8fcf-d1cfaa408d08 /home/ericparsley/TOTALLYNOTPORN   ext4 defaults  0    0
+UUID=45559D7970205125 /home/ericparsley/VM   ntfs-3g	 defaults  0    0
+UUID=605C49871957EEEF /home/ericparsley/NOTPORN   ntfs-3g	 defaults  0    0
+UUID=29E9FDFF37EF58DF /home/ericparsley/TOTALLYNOTPORN   ntfs-3g	 defaults  0    0
 
 #Gain ownership of hdds and ssd
 sudo chown -R -v ericparsley:ericparsley *
