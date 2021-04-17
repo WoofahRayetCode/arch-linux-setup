@@ -22,7 +22,7 @@ cd yay
 makepkg -si
 
 #AUR Programs I use
-yay -Sretroarch-git retroarch-assets-git obs-studio-git protontricks unityhub minecraft-launcher steamcmd dxvk foxitreader mullvad-vpn github-desktop-bin etcher-bin minetime-bin standardnotes-bin davinci-resolve
+yay -S retroarch-git retroarch-assets-git obs-studio-git protontricks unityhub minecraft-launcher steamcmd dxvk foxitreader mullvad-vpn github-desktop-bin etcher-bin minetime-bin standardnotes-bin davinci-resolve
 
 #Simply reboot computer
 sudo reboot
