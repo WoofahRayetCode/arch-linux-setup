@@ -1,0 +1,24 @@
+#Get disk names
+sudo blkid
+sudo blkid | grep UUID=
+
+#Make dirs to mount drives to
+mkdir VMSSD
+mkdir NOTPORN
+mkdir TOTALLYNOTPORN
+
+#SSD/HDD UUIDs
+LABEL="Windows VM SSD" UUID="0034516f-284d-41d2-b9d3-a7d185d0ae7e"
+LABEL="Not Porn" UUID="8fa918ce-a8b0-480d-a43f-d7e1b26bd2a9"
+LABEL="Totally not porn" UUID="e8ca532b-5897-42b1-8fcf-d1cfaa408d08"
+
+#Open fstab file
+sudo nano /etc/fstab
+
+#Mount hdds and ssd
+UUID=0034516f-284d-41d2-b9d3-a7d185d0ae7e /home/ericparsley/VMSSD   ext4 defaults  0    0
+UUID=8fa918ce-a8b0-480d-a43f-d7e1b26bd2a9 /home/ericparsley/NOTPORN   ext4 defaults  0    0
+UUID=e8ca532b-5897-42b1-8fcf-d1cfaa408d08 /home/ericparsley/TOTALLYNOTPORN   ext4 defaults  0    0
+
+#Gain ownership of hdds and ssd
+sudo chown -R -v ericparsley:ericparsley *
