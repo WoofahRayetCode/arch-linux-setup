@@ -11,10 +11,18 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Main programs I use
-sudo pacman -S base-devel yay virtualbox nvidia nvidia-settings gamemode lib32-gamemode steam wine-staging lutris qbittorrent discord telegram-desktop krita libreoffice-fresh vlc bleachbit
+sudo pacman -S base-devel git virtualbox nvidia nvidia-settings gamemode lib32-gamemode steam wine-staging lutris qbittorrent discord telegram-desktop krita libreoffice-fresh vlc bleachbit
+
+#YAY Setup
+cd
+mkdir Git
+cd Git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 #AUR Programs I use
-yay -S protontricks-git winetricks-git retroarch-git retroarch-assets-git obs-studio-git unityhub minecraft-launcher steamcmd dxvk mangohud-common lib32-mangohud mangohud freedownloadmanager foxitreader mullvad-vpn github-desktop-bin etcher-bin minetime-bin standardnotes-bin davinci-resolve
+yay -S protontricks-git winetricks-git retroarch-git retroarch-assets-git obs-studio-git unityhub minecraft-launcher steamcmd dxvk mangohud freedownloadmanager foxitreader mullvad-vpn github-desktop-bin etcher-bin minetime-bin standardnotes-bin davinci-resolve
 
 #Simply reboot computer
 sudo reboot
