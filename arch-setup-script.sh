@@ -22,7 +22,7 @@ cd yay
 makepkg -si
 
 #AUR Programs I use
-yay -S nvidia-beta duckstation-git pcsx2-64bit-git rpcs3-git ppsspp-qt-git mgba-qt-git desmume-git citra-git obs-studio-git protontricks minecraft-launcher steamcmd foxitreader mullvad-vpn zenmonitor unityhub bitwarden-bin davinci-resolve vscodium-bin-marketplace dotnet-sdk-bin vscodium-bin github-desktop-bin etcher-bin minetime-bin standardnotes-bin 
+yay -S nvidia-beta duckstation-git pcsx2-64bit-git rpcs3-git ppsspp-sdl-git mgba-sdl-git desmume-git citra-git obs-studio-git protontricks minecraft-launcher steamcmd foxitreader mullvad-vpn zenmonitor unityhub bitwarden-bin davinci-resolve vscodium-bin-marketplace dotnet-sdk-bin vscodium-bin github-desktop-bin etcher-bin minetime-bin standardnotes-bin 
 
 #Simply reboot computer
 sudo reboot
