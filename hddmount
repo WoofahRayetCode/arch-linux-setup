@@ -14,7 +14,7 @@ LABEL="VM" UUID="62880213-345b-4722-89cf-46f157d0b44e"
 sudo gedit /etc/fstab
 
 #Mount hdds and ssd
-62880213-345b-4722-89cf-46f157d0b44e /home/ericparsley/VM   ext4	 defaults  0    0
+UUID=62880213-345b-4722-89cf-46f157d0b44e /home/ericparsley/VM    ext4    defaults    0    0
 
 
 #Gain ownership of hdds and ssd
