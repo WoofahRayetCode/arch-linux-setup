@@ -14,9 +14,8 @@ LABEL="VM" UUID="62880213-345b-4722-89cf-46f157d0b44e"
 sudo gedit /etc/fstab
 
 #Mount hdds and ssd
-UUID=45559D7970205125 /home/ericparsley/VM   ntfs-3g	 defaults  0    0
-UUID=605C49871957EEEF /home/ericparsley/NOTPORN   ntfs-3g	 defaults  0    0
-UUID=29E9FDFF37EF58DF /home/ericparsley/TOTALLYNOTPORN   ntfs-3g	 defaults  0    0
+62880213-345b-4722-89cf-46f157d0b44e /home/ericparsley/VM   ext4	 defaults  0    0
+
 
 #Gain ownership of hdds and ssd
 sudo chown -R -v ericparsley:ericparsley *
