@@ -8,14 +8,14 @@ mkdir NOTPORN
 mkdir TOTALLYNOTPORN
 
 #SSD/HDD UUIDs
-LABEL="VM" UUID="62880213-345b-4722-89cf-46f157d0b44e"
+LABEL="VM" UUID="5683e810-fd70-492f-b207-511ea5c2093d"
 
 #Open fstab file
-sudo gedit /etc/fstab
+sudo nano /etc/fstab
 
 #Mount hdds and ssd
-UUID=62880213-345b-4722-89cf-46f157d0b44e /home/ericparsley/VM    ext4    defaults    0    0
+UUID=5683e810-fd70-492f-b207-511ea5c2093d /home/ericparsley/VM    ext4    defaults    0    0
 
 
 #Gain ownership of hdds and ssd
-sudo chown -R -v ericparsley:ericparsley *
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/VM
