@@ -14,7 +14,7 @@ chmod +x cproton.sh
 sudo pacman -S gamemode lib32-gamemode steam wine-staging winetricks lutris qbittorrent discord krita libreoffice-fresh vlc bleachbit
 
 #AUR Programs I use
-yay -S nvidia-beta duckstation-git pcsx2-64bit-git rpcs3-git ppsspp-sdl-git mgba-sdl-git desmume-git citra-git obs-studio-git protontricks minecraft-launcher steamcmd foxitreader mullvad-vpn bitwarden-bin davinci-resolve vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin 
+yay -S obs-studio-git protontricks minecraft-launcher steamcmd foxitreader mullvad-vpn bitwarden-bin davinci-resolve vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin 
 
 #Simply reboot computer
 sudo reboot
