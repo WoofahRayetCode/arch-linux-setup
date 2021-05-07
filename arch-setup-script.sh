@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+#Completely shit on the cpu
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/all-cpu-cores-compiling.sh
+chmod +x all-cpu-cores-compiling.sh
+./all-cpu-cores-compiling.sh
+
 #Command for downloading and setting up Proton Updater
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
