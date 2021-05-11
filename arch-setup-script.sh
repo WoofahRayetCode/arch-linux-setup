@@ -22,3 +22,14 @@ makepkg -si
 
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-git desmume-git citra-git protontricks minecraft-launcher steamcmd foxitreader bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin 
+
+#Remove icons cuz OCD :s
+cd /usr/share/applications
+sudo rm -f assistant.desktop 
+sudo rm -f designer.desktop
+sudo rm -f linguist.desktop
+sudo rm -f qdbusviewer.desktop
+sudo rm -f uxterm.desktop
+sudo rm -f xterm.desktop
+sudo rm -f UserFeedbackConsole.desktop
+cd
