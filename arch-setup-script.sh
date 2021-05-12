@@ -21,7 +21,7 @@ cd yay
 makepkg -si
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-git desmume-git citra-git mullvad-vpn protontricks minecraft-launcher steamcmd foxitreader bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin 
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-git desmume-git citra-git mullvad-vpn protontricks minecraft-launcher steamcmd foxitreader signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin 
 
 #Remove icons cuz OCD :s
 cd /usr/share/applications
