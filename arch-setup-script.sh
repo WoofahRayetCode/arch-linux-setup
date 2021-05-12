@@ -14,7 +14,7 @@ chmod +x cproton.sh
 sudo pacman -S nvidia qt gamemode lib32-gamemode steam wine-staging winetricks lutris qbittorrent discord krita libreoffice-fresh vlc kdenlive bleachbit spectacle
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-git protontricks minecraft-launcher steamcmd foxitreader mellowplayer signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-git obs-studio-git protontricks minecraft-launcher steamcmd foxitreader mellowplayer signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin
 
 #Remove icons cuz OCD :s
 cd /usr/share/applications
