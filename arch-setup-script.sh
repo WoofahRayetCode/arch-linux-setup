@@ -34,5 +34,8 @@ sudo rm -f xterm.desktop
 sudo rm -f UserFeedbackConsole.desktop
 cd
 
+#To make sure program can use the Nvidia GPU
+nvidia-modprobe
+
 #Restart
 sudo restart
