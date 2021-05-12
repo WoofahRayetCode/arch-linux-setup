@@ -28,6 +28,7 @@ sudo rm -f qdbusviewer.desktop
 sudo rm -f uxterm.desktop
 sudo rm -f xterm.desktop
 sudo rm -f UserFeedbackConsole.desktop
+sudo rm -f lstopo.desktop
 cd
 
 #To make sure program can use the Nvidia GPU
