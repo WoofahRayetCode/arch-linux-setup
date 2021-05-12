@@ -33,3 +33,6 @@ sudo rm -f uxterm.desktop
 sudo rm -f xterm.desktop
 sudo rm -f UserFeedbackConsole.desktop
 cd
+
+#Restart
+sudo restart
