@@ -11,10 +11,10 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Main programs I use
-sudo pacman -S nvidia powerdevil qt gamemode lib32-gamemode steam wine-staging winetricks lutris qbittorrent discord krita libreoffice-fresh vlc kdenlive bleachbit spectacle
+sudo pacman -S base-devel nvidia nvidia-dkms nvidia-utils lib32-nvidia-utils powerdevil qt gamemode lib32-gamemode steam wine-staging winetricks lutris qbittorrent discord krita libreoffice-fresh vlc kdenlive bleachbit spectacle
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-git obs-studio-git protontricks minecraft-launcher steamcmd foxitreader mellowplayer signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git obs-studio-git protontricks minecraft-launcher steamcmd signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin etcher-bin minetime-bin standardnotes-bin
 
 
 #To make Spotify work in Mellowplayer
