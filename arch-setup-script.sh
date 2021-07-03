@@ -14,14 +14,10 @@ sudo pacman -Rns ksysguard
 sudo pacman -Rns konsole
 
 #Main programs I use
-sudo pacman -S base-devel alacritty qt gamemode lib32-gamemode steam wine-staging winetricks lutris qbittorrent discord krita libreoffice-fresh vlc bleachbit
+sudo pacman -S base-devel alacritty qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord krita libreoffice-fresh vlc bleachbit
 
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git protontricks minecraft-launcher steamcmd signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
-
-
-#To make Spotify work in Mellowplayer
-curl -s "https://gitlab.com/ColinDuquesnoy/MellowPlayer/-/raw/master/scripts/install-widevine.sh" | bash
 
 #Remove icons cuz OCD :s
 cd /usr/share/applications
