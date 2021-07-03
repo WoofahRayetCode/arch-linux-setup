@@ -10,8 +10,8 @@ chmod +x all-cpu-cores-compiling.sh
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
 
+#Remove shit
 sudo pacman -Rns ksysguard
-sudo pacman -Rns konsole
 
 #Main programs I use
 sudo pacman -S base-devel alacritty qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord krita libreoffice-fresh vlc bleachbit
