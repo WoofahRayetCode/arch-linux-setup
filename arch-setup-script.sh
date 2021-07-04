@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cprot
 chmod +x cproton.sh
 
 #Main programs I use
-sudo pacman -S base-devel alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
+sudo pacman -S base-devel electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
 
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git protontricks minecraft-launcher steamcmd signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
@@ -32,6 +32,7 @@ sudo rm -f qv4l2.desktop
 sudo rm -f qvidcap.desktop
 sudo rm -f bssh.desktop
 sudo rm -f bvnc.desktop
+sudo rm -f electron.desktop
 cd
 
 #To make sure program can use the Nvidia GPU
