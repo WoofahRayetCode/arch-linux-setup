@@ -10,6 +10,10 @@ chmod +x all-cpu-cores-compiling.sh
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
 
+#File to regularly run to clean left over files
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
+chmod +x clean-files.sh
+
 #Main programs I use
 sudo pacman -S base-devel electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
 
