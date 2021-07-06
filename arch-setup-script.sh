@@ -22,6 +22,9 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git ci
 
 #Remove icons cuz OCD :s
 cd /usr/share/applications
+sudo rm -f avahi-discover.desktop
+sudo rm -f bssh.desktop
+sudo rm -f bvnc.desktop
 sudo rm -f assistant.desktop 
 sudo rm -f designer.desktop
 sudo rm -f linguist.desktop
@@ -30,12 +33,9 @@ sudo rm -f uxterm.desktop
 sudo rm -f xterm.desktop
 sudo rm -f UserFeedbackConsole.desktop
 sudo rm -f org.kde.plasma.emojier.desktop
-sudo rm -f avahi-discover.desktop
 sudo rm -f lstopo.desktop
 sudo rm -f qv4l2.desktop
 sudo rm -f qvidcap.desktop
-sudo rm -f bssh.desktop
-sudo rm -f bvnc.desktop
 sudo rm -f electron.desktop
 cd
 
