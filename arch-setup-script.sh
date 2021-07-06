@@ -25,7 +25,7 @@ sudo systemctl start NetworkManager.service
 echo "keyserver keyserver.ubuntu.com" > /home/$USER/.gnupg/gpg.conf
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git ryujinx-git expressvpn protontricks minecraft-launcher steamcmd obs-studio-bit davinci-resolve signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git ryujinx-ldn-bin expressvpn protontricks minecraft-launcher steamcmd obs-studio-bit davinci-resolve signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
 
 #Start ExpressVPN
 systemctl start expressvpn.service
