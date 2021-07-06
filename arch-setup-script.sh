@@ -15,7 +15,11 @@ wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/c
 chmod +x clean-files.sh
 
 #Main programs I use
-sudo pacman -S base-devel electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
+sudo pacman -S base-devel networkmanager nm-connection-editor network-manager-applet electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
+
+#Enable networking service
+sudo systemctl enable NetworkManager.service
+sudo systemctl start NetworkManager.service
 
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git ryujinx-git protontricks minecraft-launcher steamcmd signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
