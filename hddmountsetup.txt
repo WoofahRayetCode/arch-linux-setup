@@ -10,7 +10,7 @@ LABEL="Games" UUID="121d4dac-f65d-45e4-8d3c-d03a36279ca7"
 sudo nano /etc/fstab
 sudo gedit /etc/fstab
 
-#Mount hdds and ssd
+#Mount SSD
 UUID=121d4dac-f65d-45e4-8d3c-d03a36279ca7 /home/ericparsley/GAMES   btrfs defaults  0    0
 #Gain ownership of hdds and ssd
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
