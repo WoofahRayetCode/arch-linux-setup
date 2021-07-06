@@ -14,29 +14,25 @@ chmod +x cproton.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
 chmod +x clean-files.sh
 
-#Change to unstable branch
+#Set branch to Unstable
 sudo pacman-mirrors --api --set-branch unstable
+sudo pacman-mirrors --fasttrack 5 && sudo pacman -Syyu
+sudo pacman -Sy
+sudo pacman -Syu
 
 #Programs to remove
-sudo pacman -Rns gwenview htop kcalc kdeconnect konversation okular stoken yakuake
+sudo pacman -Rns gwenview htop kcalc kdeconnect konversation okular yakuake
 
 #Main programs I use
-sudo pacman -S base-devel plasma-nm networkmanager-openvpn networkmanager nm-connection-editor network-manager-applet qbittorrent plasma-systemmonitor kio-gdrive electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
-
-#Enable networking service
-sudo systemctl enable NetworkManager.service
-sudo systemctl start NetworkManager.service
-
-#So gpg key stuff works
-echo "keyserver keyserver.ubuntu.com" > /home/$USER/.gnupg/gpg.conf
+sudo pacman -S base-devel qbittorrent electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git ryujinx-ldn-bin expressvpn protontricks minecraft-launcher steamcmd obs-studio-bit davinci-resolve signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git expressvpn protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
 
 #Start ExpressVPN
 systemctl start expressvpn.service
 
-#Remove icons cuz OCD :s
+#Remove icons cuz OCD :(
 cd /usr/share/applications
 sudo rm -f avahi-discover.desktop
 sudo rm -f bssh.desktop
@@ -53,6 +49,8 @@ sudo rm -f lstopo.desktop
 sudo rm -f qv4l2.desktop
 sudo rm -f qvidcap.desktop
 sudo rm -f electron.desktop
+sudo rm -f stoken-gui-small.desktop
+sudo rm -f stoken-gui.desktop
 cd
 
 #To make sure program can use the Nvidia GPU
