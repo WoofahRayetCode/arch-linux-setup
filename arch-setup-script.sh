@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/c
 chmod +x clean-files.sh
 
 #Main programs I use
-sudo pacman -S base-devel plasma-nm networkmanager-openvpn networkmanager nm-connection-editor network-manager-applet qbittorrent plasma-systemmonitor electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
+sudo pacman -S base-devel plasma-nm networkmanager-openvpn networkmanager nm-connection-editor network-manager-applet qbittorrent plasma-systemmonitor kio-gdrive electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
 
 #Enable networking service
 sudo systemctl enable NetworkManager.service
