@@ -21,6 +21,9 @@ sudo pacman -S base-devel plasma-nm networkmanager-openvpn networkmanager nm-con
 sudo systemctl enable NetworkManager.service
 sudo systemctl start NetworkManager.service
 
+#So gpg key stuff works
+echo "keyserver keyserver.ubuntu.com" > /home/$USER/.gnupg/gpg.conf
+
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git ryujinx-git protontricks minecraft-launcher steamcmd signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
 
