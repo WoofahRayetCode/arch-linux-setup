@@ -14,6 +14,9 @@ chmod +x cproton.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
 chmod +x clean-files.sh
 
+#Change to unstable branch
+sudo pacman-mirrors --api --set-branch unstable
+
 #Programs to remove
 sudo pacman -Rns gwenview htop kclac kdeconnect konversation okular stoken yakuake
 
