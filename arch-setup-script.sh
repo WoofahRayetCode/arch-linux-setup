@@ -18,7 +18,7 @@ chmod +x clean-files.sh
 sudo pacman-mirrors --api --set-branch unstable
 
 #Programs to remove
-sudo pacman -Rns gwenview htop kclac kdeconnect konversation okular stoken yakuake
+sudo pacman -Rns gwenview htop kcalc kdeconnect konversation okular stoken yakuake
 
 #Main programs I use
 sudo pacman -S base-devel plasma-nm networkmanager-openvpn networkmanager nm-connection-editor network-manager-applet qbittorrent plasma-systemmonitor kio-gdrive electron alacritty yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
