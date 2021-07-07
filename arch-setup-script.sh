@@ -21,10 +21,19 @@ sudo pacman -Sy
 sudo pacman -Syu
 
 #Programs to remove
-sudo pacman -Rns gwenview htop kcalc kdeconnect konversation okular yakuake
+sudo pacman -Rns vim kcalc kwalletmanager okular korganizer clementine k3b kdenlive falkon kdeconnect transmission-qt gwenview kolourpaint
 
 #Main programs I use
-sudo pacman -S base-devel qbittorrent electron yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
+sudo pacman -S base-devel git qbittorrent electron yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
+
+#Install yay
+cd
+mkdir Git
+cd Git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd
 
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git rclone-bin expressvpn protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve signal-desktop-beta-bin bitwarden-bin visual-studio-code-bin github-desktop-bin standardnotes-bin
@@ -51,6 +60,13 @@ sudo rm -f qvidcap.desktop
 sudo rm -f electron.desktop
 sudo rm -f stoken-gui-small.desktop
 sudo rm -f stoken-gui.desktop
+sudo rm -f org.kde.cuttlefish.desktop
+sudo rm -f org.kde.plasmaengineexplorer-desktop
+sudo rm -f org.kde.plasma.lookandfeelexplorer.desktop
+sudo rm -f org.kde.plasma.themeexplorer.desktop
+
+
+
 cd
 
 #To make sure program can use the Nvidia GPU
