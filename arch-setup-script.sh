@@ -18,7 +18,7 @@ chmod +x clean-files.sh
 sudo pacman -Rns vim kcalc kwalletmanager okular korganizer clementine k3b kdenlive falkon kdeconnect transmission-qt gwenview kolourpaint
 
 #Main programs I use
-sudo pacman -S base-devel git qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
+sudo pacman -S base-devel git psensor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
 
 #Install yay
 cd
