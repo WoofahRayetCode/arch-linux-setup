@@ -64,9 +64,6 @@ sudo rm -f org.kde.cuttlefish.desktop
 sudo rm -f org.kde.plasmaengineexplorer-desktop
 sudo rm -f org.kde.plasma.lookandfeelexplorer.desktop
 sudo rm -f org.kde.plasma.themeexplorer.desktop
-
-
-
 cd
 
 #To make sure program can use the Nvidia GPU
