@@ -29,6 +29,9 @@ cd yay
 makepkg -si
 cd
 
+#Fixes keyserver issue
+echo "keyserver keyserver.ubuntu.com" > /home/$USER/.gnupg/gpg.conf
+
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git rclone-bin expressvpn protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve signal-desktop-beta-bin bitwarden-bin visual-studio-code-bin github-desktop-bin standardnotes-bin
 
