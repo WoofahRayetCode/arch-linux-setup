@@ -27,7 +27,7 @@ sudo pacman -Rns gwenview htop kcalc kdeconnect konversation okular yakuake
 sudo pacman -S base-devel qbittorrent electron yay qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git expressvpn protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git rclone-bin expressvpn protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve signal-desktop-beta-bin bitwarden-bin vscodium-bin vscodium-bin-marketplace github-desktop-bin standardnotes-bin
 
 #Start ExpressVPN
 systemctl start expressvpn.service
