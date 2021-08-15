@@ -14,11 +14,8 @@ chmod +x cproton.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
 chmod +x clean-files.sh
 
-#Programs to remove
-sudo pacman -Rns gwenview okular konversation kdeconnect plasma-systemmonitor kwalletmanager
-
 #Main programs I use
-sudo pacman -S base-devel git plasma-systemmonitor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord caprine krita libreoffice-fresh vlc bleachbit
+sudo pacman -S base-devel git alacritta qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop caprine krita libreoffice-fresh vlc bleachbit
 
 #Install yay
 cd
@@ -33,32 +30,8 @@ cd
 echo "keyserver keyserver.ubuntu.com" > /home/$USER/.gnupg/gpg.conf
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve signal-desktop-beta-bin bitwarden-bin visual-studio-code-bin github-desktop-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve bitwarden-bin visual-studio-code-bin github-desktop-bin standardnotes-bin
 
-#Remove icons cuz OCD :(
-cd /usr/share/applications
-sudo rm -f avahi-discover.desktop
-sudo rm -f bssh.desktop
-sudo rm -f bvnc.desktop
-sudo rm -f assistant.desktop
-sudo rm -f designer.desktop
-sudo rm -f linguist.desktop
-sudo rm -f qdbusviewer.desktop
-sudo rm -f uxterm.desktop
-sudo rm -f xterm.desktop
-sudo rm -f UserFeedbackConsole.desktop
-sudo rm -f org.kde.plasma.emojier.desktop
-sudo rm -f lstopo.desktop
-sudo rm -f qv4l2.desktop
-sudo rm -f qvidcap.desktop
-sudo rm -f electron.desktop
-sudo rm -f stoken-gui-small.desktop
-sudo rm -f stoken-gui.desktop
-sudo rm -f org.kde.cuttlefish.desktop
-sudo rm -f org.kde.plasmaengineexplorer-desktop
-sudo rm -f org.kde.plasma.lookandfeelexplorer.desktop
-sudo rm -f org.kde.plasma.themeexplorer.desktop
-cd
 
 #To make sure program can use the Nvidia GPU
 nvidia-modprobe
