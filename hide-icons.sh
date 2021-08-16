@@ -20,3 +20,6 @@ cd
 cd /home/ericparsley/.local/share/applications
 sudo rm -f jconsole-java-openjdk.desktop
 cd
+cd /usr/share/applications
+sudo rm -f jconsole-java-openjdk.desktop
+cd
