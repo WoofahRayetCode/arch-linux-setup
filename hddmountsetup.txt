@@ -11,6 +11,6 @@ sudo nano /etc/fstab
 sudo gedit /etc/fstab
 
 #Mount SSD
-UUID=65723bc1-5b7e-4592-a138-91986e2a8c1d /home/ericparsley/GAMES   ext4 defaults  0    0
+UUID=8f062953-f1c8-47b8-8828-7e7972639f5c /home/ericparsley/GAMES   ext4 defaults  0    0
 #Gain ownership of hdds and ssd
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
