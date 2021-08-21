@@ -14,6 +14,10 @@ chmod +x cproton.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
 chmod +x clean-files.sh
 
+#Remove icons I don't want on the programs menu
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
+chmod +x hide-icons.sh
+
 #Update mirrors and checks for updates every time I log in
 alias update="sudo pacman-mirrors -f 5 && sudo pacman -Syyu"
 
@@ -32,12 +36,11 @@ cd
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git desmume-git citra-qt-git protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve bitwarden-bin unity-hub visual-studio-code-bin github-desktop-bin standardnotes-bin noisetorch
 
-
 #To make sure program can use the Nvidia GPU
 nvidia-modprobe
 
 #Clean shit
-sudo pacman -Rns $(pacman -Qtdq)
-sudo pacman -Scc
-yay -Scc
-rm -rf ~/.cache/*
+./clean-files.sh
+
+#Hide icons
+./hide-icons.sh
