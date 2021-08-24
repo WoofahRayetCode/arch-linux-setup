@@ -6,7 +6,7 @@ wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/a
 chmod +x all-cpu-cores-compiling.sh
 ./all-cpu-cores-compiling.sh
 
-#Command for downloading and setting up Proton Updater for steam
+#For downloading and setting up Proton Updater for steam
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
 
