@@ -22,7 +22,7 @@ chmod +x hide-icons.sh
 alias update="sudo pacman-mirrors -f 5 && sudo pacman -Syyu"
 
 #Main programs I use
-sudo pacman -S base-devel git alacritty qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
+sudo pacman -S base-devel git alacritty yay qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
 
 #Install yay
 cd
