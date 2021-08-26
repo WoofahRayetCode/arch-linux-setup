@@ -19,7 +19,7 @@ wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/h
 chmod +x hide-icons.sh
 
 #Main programs I use
-sudo pacman -S base-devel git alacritty yay qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
+sudo pacman -S base-devel git yay qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
 
 #Install yay
 cd
