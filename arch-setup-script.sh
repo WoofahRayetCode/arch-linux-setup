@@ -19,8 +19,7 @@ wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/h
 chmod +x hide-icons.sh
 
 #Programs to remove
-sudo pacman -Rns htop kdeconnect ksysguard plasma-systemmonitor okular 
-
+sudo pacman -Rns htop kdeconnect gwenview okular ksysguard plasma-systemmonitor 
 #Main programs I use
 sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
 
