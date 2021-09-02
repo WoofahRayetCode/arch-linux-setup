@@ -24,6 +24,8 @@ sudo rm -f blackmagicraw-speedtest.desktop
 sudo rm -f com.blackmagicdesign.resolve-Panels-Setup.desktop
 sudo rm -f com.blackmagicdesign.resolve-CaptureLogs.desktop
 sudo rm -f com.blackmagicdesign.resolve-Installer.desktop
+sudo rm -f uxterm.desktop
+sudo rm -f xterm.desktop
 cd
 cd /home/ericparsley/.local/share/applications
 sudo rm -f jconsole-java-openjdk.desktop
