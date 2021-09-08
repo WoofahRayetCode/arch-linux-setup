@@ -21,6 +21,7 @@ sudo pacman -Rns htop
 sudo pacman -Rns ksysguard
 sudo pacman -Rns plasma-systemmonitor
 sudo pacman -Rns kclac
+
 #Remove icons I don't want on the programs menu
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
 chmod +x hide-icons.sh
