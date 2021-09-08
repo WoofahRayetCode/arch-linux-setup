@@ -27,7 +27,7 @@ sudo pacman -Rns plasma-systemmonitor
 sudo pacman -Rns kcalc
 
 #Main programs I use
-sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
+sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop telegram-desktop krita libreoffice-fresh vlc bleachbit guvcview
 
 #To install AUR stuff
 cd
