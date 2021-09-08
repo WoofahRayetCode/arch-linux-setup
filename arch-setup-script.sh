@@ -39,7 +39,7 @@ makepkg -si
 cd
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git goverlay protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve etcher bitwarden-bin unityhub visual-studio-code-bin github-desktop-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git goverlay protontricks minecraft-launcher steamcmd obs-studio-git davinci-resolve etcher bitwarden-bin unityhub dotnet-core-bin visual-studio-code-bin github-desktop-bin standardnotes-bin
 
 #To make sure program can use the Nvidia GPU
 nvidia-modprobe
