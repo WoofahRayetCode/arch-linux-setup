@@ -14,6 +14,10 @@ chmod +x cproton.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
 chmod +x clean-files.sh
 
+#Remove icons I don't want on the programs menu
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
+chmod +x hide-icons.sh
+
 #Remove stuff
 sudo pacman -Rns gwenview
 sudo pacman -Rns okular
@@ -21,10 +25,6 @@ sudo pacman -Rns htop
 sudo pacman -Rns ksysguard
 sudo pacman -Rns plasma-systemmonitor
 sudo pacman -Rns kclac
-
-#Remove icons I don't want on the programs menu
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
-chmod +x hide-icons.sh
 
 #Main programs I use
 sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord signal-desktop telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
