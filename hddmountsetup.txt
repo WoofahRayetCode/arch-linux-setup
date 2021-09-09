@@ -17,3 +17,5 @@ sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
 
 #Mount External HDD
 UUID=D6A6B87DA6B86023 /home/ericparsley/EXTERNAL auto defaults
+#Get ownership of External HDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/EXTERNAL
