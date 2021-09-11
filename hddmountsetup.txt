@@ -19,3 +19,6 @@ sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
 UUID=D6A6B87DA6B86023 /home/ericparsley/EXTERNAL auto defaults
 #Get ownership of External HDD
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/EXTERNAL
+
+#Refresh stuff so I don't have to restart anymore :D
+sudo mount -a
