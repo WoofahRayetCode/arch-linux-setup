@@ -19,6 +19,7 @@ wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/h
 chmod +x hide-icons.sh
 
 #Remove stuff
+sudo pacman -Rns firefox
 sudo pacman -Rns gwenview
 sudo pacman -Rns okular
 sudo pacman -Rns htop
