@@ -39,7 +39,7 @@ sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt g
 krita libreoffice-fresh vlc bleachbit guvcview
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git goverlay protontricks davinci-resolve microsoft-edge-dev-bin signal-desktop-beta-bin etcher-bin bitwarden-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git ppsspp-git mgba-git melonds-git goverlay protontricks davinci-resolve microsoft-edge-dev-bin signal-desktop-beta-bin etcher-bin bitwarden-bin standardnotes-bin
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
