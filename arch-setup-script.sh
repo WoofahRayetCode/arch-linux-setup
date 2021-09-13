@@ -35,7 +35,7 @@ sudo pacman -Rns kdeconnect
 sudo pacman -Rns yakuake
 
 #Main programs I use
-sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord telegram-desktop caprineclear
+sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord telegram-desktop caprine
 krita libreoffice-fresh vlc bleachbit guvcview
 
 #AUR Programs I use
