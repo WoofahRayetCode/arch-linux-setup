@@ -14,6 +14,7 @@ sudo rm -f lstopo.desktop
 sudo rm -f qv4l2.desktop
 sudo rm -f qvidcap.desktop
 sudo rm -f electron.desktop
+sudo rm -f electron13.desktop
 sudo rm -f org.kde.plasmaengineexplorer-desktop
 sudo rm -f org.kde.plasma.lookandfeelexplorer.desktop
 sudo rm -f org.kde.plasma.themeexplorer.desktop
@@ -29,6 +30,7 @@ sudo rm -f xterm.desktop
 cd
 cd /home/ericparsley/.local/share/applications
 sudo rm -f jconsole-java-openjdk.desktop
+sudo rm -f electron13-desktop
 cd
 cd /usr/share/applications
 sudo rm -f jconsole-java-openjdk.desktop
