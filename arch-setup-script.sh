@@ -38,7 +38,7 @@ sudo pacman -Rns yakuake
 sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt gamemode lib32-gamemode steam wine-staging winetricks lutris discord telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git libmgba-git melonds-git goverlay protontricks davinci-resolve microsoft-edge-dev-bin signal-desktop-beta-bin etcher-bin bitwarden-bin standardnotes-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git libmgba-git melonds-git goverlay protontricks davinci-resolve microsoft-edge-dev-bin signal-desktop-beta-bin etcher-bin bitwarden-bin standardnotes-bin vscodium-bin vscodium-bin-marketplace vscodium-bin-features
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
