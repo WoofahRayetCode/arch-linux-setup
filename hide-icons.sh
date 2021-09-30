@@ -15,6 +15,7 @@ sudo rm -f qv4l2.desktop
 sudo rm -f qvidcap.desktop
 sudo rm -f electron.desktop
 sudo rm -f electron13.desktop
+sudo rm -f electron11.desktop
 sudo rm -f org.kde.plasmaengineexplorer-desktop
 sudo rm -f org.kde.plasma.lookandfeelexplorer.desktop
 sudo rm -f org.kde.plasma.themeexplorer.desktop
