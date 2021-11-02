@@ -3,6 +3,7 @@ sudo blkid
 sudo blkid | grep UUID=
 #Make dirs to mount drives to
 mkdir GAMES
+mkdir STORAGE
 #SSD UUIDs
 LABEL="Games" UUID="cdcc47eb-f751-419f-9750-cee8191d6b5f"
 
