@@ -10,15 +10,15 @@ LABEL="Games" UUID="cdcc47eb-f751-419f-9750-cee8191d6b5f"
 sudo nano /etc/fstab
 sudo gedit /etc/fstab
 
-#Mount SSD
-UUID=cdcc47eb-f751-419f-9750-cee8191d6b5f /home/ericparsley/GAMES btrfs defaults 0 0
+#Mount GAMES SSD
+UUID=3f268d72-42bc-4329-bb22-08547ec4da80 /home/ericparsley/GAMES btrfs defaults 0 0
 #Gain ownership of hdds and ssd
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
 
-#Mount External HDD
-UUID=D6A6B87DA6B86023 /home/ericparsley/EXTERNAL auto defaults
-#Get ownership of External HDD
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/EXTERNAL
+#Mount INTERNAL STORAGE HDD
+UUID=9a8adc77-648c-4166-9cc8-98a5dca42001 /home/ericparsley/STORAGE btrfs defaults 0 0
+#Get ownership of STORAGE HDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE
 
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
