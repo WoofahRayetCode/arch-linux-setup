@@ -10,12 +10,12 @@ sudo nano /etc/fstab
 sudo gedit /etc/fstab
 
 #Mount GAMES SSD
-UUID=3f268d72-42bc-4329-bb22-08547ec4da80 /home/ericparsley/GAMES btrfs defaults 0 0
+UUID=a3c89c0c-f3f5-4fae-95b2-bdc235277bd4 /home/ericparsley/GAMES btrfs defaults 0 0
 #Gain ownership of hdds and ssd
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
 
 #Mount INTERNAL STORAGE HDD
-UUID=9a8adc77-648c-4166-9cc8-98a5dca42001 /home/ericparsley/STORAGE btrfs defaults 0 0
+UUID=bbafd22a-b2f9-45dc-84ea-ed9b4d0ba5e9 /home/ericparsley/STORAGE btrfs defaults 0 0
 #Get ownership of STORAGE HDD
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE
 
