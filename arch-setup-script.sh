@@ -24,7 +24,6 @@ sudo pacman-mirrors --fasttrack 5
 sudo pacman -Syyu
 
 #Remove stuff
-sudo pacman -Rns firefox
 sudo pacman -Rns gwenview
 sudo pacman -Rns okular
 sudo pacman -Rns htop
