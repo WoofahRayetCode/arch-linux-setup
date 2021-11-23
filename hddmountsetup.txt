@@ -3,21 +3,27 @@ sudo blkid
 sudo blkid | grep UUID=
 #Make dirs to mount drives to
 mkdir GAMES
-mkdir STORAGE
+mkdir STORAGE1
+mkdir STORAGE2
 
 #Open fstab file
 sudo nano /etc/fstab
 sudo gedit /etc/fstab
 
-#Mount GAMES SSD
-UUID=a3c89c0c-f3f5-4fae-95b2-bdc235277bd4 /home/ericparsley/GAMES btrfs defaults 0 0
-#Gain ownership of hdds and ssd
+#Mount INTERNAL GAMES SSD
+UUID=6abf88b8-fe4a-4c54-a65e-85fed4ef5a6e /home/ericparsley/GAMES btrfs defaults 0 0
+#Gain ownership of SSD
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
 
-#Mount INTERNAL STORAGE HDD
-UUID=bbafd22a-b2f9-45dc-84ea-ed9b4d0ba5e9 /home/ericparsley/STORAGE btrfs defaults 0 0
-#Get ownership of STORAGE HDD
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE
+#Mount INTERNAL STORAGE1 HDD
+UUID=154790eb-788b-4579-bfa2-ae1156c4f4f9 /home/ericparsley/STORAGE1 btrfs defaults 0 0
+#Gain ownership of HDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE1
+
+#Mount INTERNAL STORAGE2 HDD
+UUID=c00dd897-01d5-4163-8918-c43435ca0847 /home/ericparsley/STORAGE2 btrfs defaults 0 0
+#Get ownership of STORAGE2 HDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE2
 
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
