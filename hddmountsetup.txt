@@ -1,29 +1,19 @@
 #Get disk names
-sudo blkid
 sudo blkid | grep UUID=
 #Make dirs to mount drives to
-mkdir GAMES
-mkdir STORAGE1
-mkdir STORAGE2
+mkdir STUFF
 
 #Open fstab file
 sudo nano /etc/fstab
 sudo gedit /etc/fstab
 
-#Mount INTERNAL GAMES SSD
-UUID=6abf88b8-fe4a-4c54-a65e-85fed4ef5a6e /home/ericparsley/GAMES btrfs defaults 0 0
-#Gain ownership of SSD
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
-
-#Mount INTERNAL STORAGE1 HDD
-UUID=154790eb-788b-4579-bfa2-ae1156c4f4f9 /home/ericparsley/STORAGE1 btrfs defaults 0 0
+#Mount INTERNAL STORAGE HDD
+UUID=ed5d8ddb-7e56-4063-922f-e7bc49c2f25f /home/ericparsley/STUFF btrfs defaults 0 0
 #Gain ownership of HDD
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE1
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STUFF
 
-#Mount INTERNAL STORAGE2 HDD
-UUID=c00dd897-01d5-4163-8918-c43435ca0847 /home/ericparsley/STORAGE2 btrfs defaults 0 0
-#Get ownership of STORAGE2 HDD
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE2
+#Reload shit to use next command
+systemctl daemon-reload
 
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
