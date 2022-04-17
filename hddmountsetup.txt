@@ -8,7 +8,7 @@ sudo nano /etc/fstab
 sudo gedit /etc/fstab
 
 #Mount INTERNAL STORAGE HDD
-UUID=26c55d4b-6ca1-40de-b65f-7a8f910e7bf2 /home/ericparsley/STUFF ext4 defaults 0 0
+UUID=f95a96cd-c81f-4d15-92a7-02275eeff779 /home/ericparsley/STUFF ext4 defaults 0 0
 #Gain ownership of HDD
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STUFF
 
