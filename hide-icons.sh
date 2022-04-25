@@ -30,10 +30,6 @@ sudo rm -f com.blackmagicdesign.resolve-Installer.desktop
 sudo rm -f uxterm.desktop
 sudo rm -f xterm.desktop
 cd
-cd /home/ericparsley/.local/share/applications
-sudo rm -f jconsole-java-openjdk.desktop
-sudo rm -f electron13.desktop
-cd
 cd /usr/share/applications
 sudo rm -f jconsole-java-openjdk.desktop
 cd
