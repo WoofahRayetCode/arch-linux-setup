@@ -34,10 +34,10 @@ sudo pacman -Rns kdeconnect
 sudo pacman -Rns yakuake
 
 #Main programs I use
-sudo pacman -S base-devel git yay plasma-systemmonitor qbittorrent electron qt shotcut obs-studio signal-desktop gamemode lib32-gamemode steam wine-staging winetricks lutris discord telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
+sudo pacman -S base-devel linux-headers git yay plasma-systemmonitor qbittorrent electron qt shotcut obs-studio signal-desktop gamemode lib32-gamemode steam wine-ge-custom winetricks lutris discord telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git goverlay protontricks github-desktop-bin vscodium-bin-features vscodium-marketplace etcher-bin
+yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git linux-xanmod-edge linux-xanmod-edge-headers xone-dkms-git goverlay protontricks wine-ge-custom github-desktop-bin vscodium-bin-features vscodium-marketplace etcher-bin
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
