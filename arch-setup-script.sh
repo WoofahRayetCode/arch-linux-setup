@@ -18,6 +18,22 @@ chmod +x clean-files.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
 chmod +x hide-icons.sh
 
+#Enable parallel downloading
+sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
+
+#Pacman output colorizating
+sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
+
+#Change progressbar to pacman
+sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
+
+#Add Chaotic Aur
+sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key FBA220DFC880C036
+pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
+sudo pacman -Syy
+
 #Change update branch to Unstable
 sudo pacman-mirrors --api --set-branch unstable
 sudo pacman-mirrors --fasttrack 5
@@ -38,6 +54,9 @@ sudo pacman -S base-devel linux-headers git yay plasma-systemmonitor qbittorrent
 
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git linux-xanmod-edge linux-xanmod-edge-headers xone-dkms-git goverlay protontricks wine-ge-custom github-desktop-bin vscodium-bin-features vscodium-marketplace etcher-bin
+
+#Additional AUR programs
+yay -S --noedit latte-dock-git
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
