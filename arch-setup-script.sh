@@ -9,6 +9,7 @@ chmod +x all-cpu-cores-compiling.sh
 #For downloading and setting up Proton Updater for steam
 wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
 chmod +x cproton.sh
+./cproton.sh
 
 #File to regularly run to clean left over files
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
