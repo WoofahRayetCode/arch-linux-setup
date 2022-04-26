@@ -50,7 +50,7 @@ sudo pacman -Rns kdeconnect
 sudo pacman -Rns yakuake
 
 #Main programs I use
-sudo pacman -S alacritty github-desktop base-devel linux-headers git yay plasma-systemmonitor qbittorrent electron qt noisetorch shotcut obs-studio signal-desktop gamemode lib32-gamemode goverlay steam wine-ge-custom winetricks protontricks lutris discord telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
+sudo pacman -S alacritty github-desktop base-devel linux-headers git yay plasma-systemmonitor qbittorrent electron qt noisetorch shotcut obs-studio signal-desktop gamemode lib32-gamemode goverlay steam godot-git wine-ge-custom winetricks protontricks lutris discord telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
 
 #AUR Programs I use
 yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git dolphin-emu-git libmgba-git xone-dkms-git jdownloader2 latte-dock-git
