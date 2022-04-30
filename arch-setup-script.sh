@@ -44,7 +44,7 @@ sudo pacman -Rns yakuake
 sudo pacman -S alacritty github-desktop base-devel wine-staging linux-headers git yay plasma-systemmonitor qbittorrent bitwarden electron qt noisetorch shotcut obs-studio signal-desktop gamemode lib32-gamemode steam goverlay winetricks protontricks lutris discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms-git jdownloader2 latte-dock-git anaconda audiotube-git authy balena-etcher bluemail dosbox-staging dropbox vscodium-bin vscodium-bin-marketplace vscodium-bin-features microsoft-edge-dev-bin minecraft-launcher protonup-qt zoom
+yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms-git heroic-games-launcher-bin jdownloader2 latte-dock-git anaconda audiotube-git authy balena-etcher bluemail dosbox-staging dropbox vscodium-bin vscodium-bin-marketplace vscodium-bin-features microsoft-edge-dev-bin minecraft-launcher protonup-qt zoom
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
