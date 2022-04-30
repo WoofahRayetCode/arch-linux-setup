@@ -39,6 +39,7 @@ sudo pacman -Rns plasma-systemmonitor
 sudo pacman -Rns kcalc
 sudo pacman -Rns kdeconnect
 sudo pacman -Rns yakuake
+sudo pacman -Rns firefox
 
 #Main programs I use
 sudo pacman -S alacritty github-desktop base-devel wine-staging linux-headers git yay plasma-systemmonitor qbittorrent bitwarden electron qt noisetorch shotcut obs-studio signal-desktop gamemode lib32-gamemode steam goverlay winetricks protontricks lutris discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
