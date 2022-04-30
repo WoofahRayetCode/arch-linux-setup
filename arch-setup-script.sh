@@ -1,16 +1,6 @@
 #!/bin/bash
 set -e
 
-#Fully utilize the cpu
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/all-cpu-cores-compiling.sh
-chmod +x all-cpu-cores-compiling.sh
-./all-cpu-cores-compiling.sh
-
-#For downloading and setting up Proton Updater for steam
-wget https://raw.githubusercontent.com/Termuellinator/ProtonUpdater/master/cproton.sh
-chmod +x cproton.sh
-./cproton.sh
-
 #File to regularly run to clean left over files
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
 chmod +x clean-files.sh
@@ -51,10 +41,10 @@ sudo pacman -Rns kdeconnect
 sudo pacman -Rns yakuake
 
 #Main programs I use
-sudo pacman -S alacritty github-desktop base-devel linux-headers git yay plasma-systemmonitor qbittorrent electron qt noisetorch shotcut obs-studio signal-desktop gamemode lib32-gamemode goverlay steam godot-git wine-ge-custom winetricks protontricks lutris discord telegram-desktop caprine krita libreoffice-fresh vlc bleachbit guvcview
+sudo pacman -S alacritty github-desktop base-devel wine-staging linux-headers git yay plasma-systemmonitor qbittorrent bitwarden electron qt noisetorch shotcut obs-studio signal-desktop gamemode lib32-gamemode steam goverlay winetricks protontricks lutris discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git dolphin-emu-git libmgba-git xone-dkms-git jdownloader2 latte-dock-git
+yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms-git jdownloader2 latte-dock-git anaconda audiotube-git authy balena-etcher bluemail dosbox-staging dropbox vscodium-bin vscodium-bin-marketplace vscodium-bin-features microsoft-edge-dev-bin minecraft-launcher protonup-qt zoom
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
