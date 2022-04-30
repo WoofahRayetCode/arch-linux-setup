@@ -21,15 +21,12 @@ sudo rm -f org.kde.plasmaengineexplorer-desktop
 sudo rm -f org.kde.plasma.lookandfeelexplorer.desktop
 sudo rm -f org.kde.plasma.themeexplorer.desktop
 sudo rm -f jshell-java-openjdk.desktop
+sudo rm -f jconsole-java-openjdk.desktop
 sudo rm -f duckstation-nogui.desktop
-sudo rm -f blackmagicraw-player.desktop
-sudo rm -f blackmagicraw-speedtest.desktop
-sudo rm -f com.blackmagicdesign.resolve-Panels-Setup.desktop
-sudo rm -f com.blackmagicdesign.resolve-CaptureLogs.desktop
-sudo rm -f com.blackmagicdesign.resolve-Installer.desktop
 sudo rm -f uxterm.desktop
 sudo rm -f xterm.desktop
+sudo rm -f electron.desktop
 cd
 cd /usr/share/applications
-sudo rm -f jconsole-java-openjdk.desktop
+
 cd
