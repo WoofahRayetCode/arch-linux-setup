@@ -30,23 +30,18 @@ sudo pacman-mirrors --api --set-branch unstable
 sudo pacman-mirrors --fasttrack 5
 sudo pacman -Syyu
 
-#Remove stuff
-sudo pacman -Rns gwenview
-sudo pacman -Rns okular
-sudo pacman -Rns htop
-sudo pacman -Rns ksysguard
-sudo pacman -Rns plasma-systemmonitor
-sudo pacman -Rns kcalc
-sudo pacman -Rns kdeconnect
-sudo pacman -Rns yakuake
-sudo pacman -Rns firefox
-
 #Main programs I use
-sudo pacman -S alacritty github-desktop base-devel wine-staging linux-headers git yay plasma-systemmonitor qbittorrent bitwarden electron qt noisetorch shotcut obs-studio signal-desktop gamemode lib32-gamemode steam goverlay winetricks protontricks lutris discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
+sudo pacman -S alacritty github-desktop base-devel wine-staging linux-headers git qbittorrent bitwarden electron qt shotcut obs-studio signal-desktop gamemode lib32-gamemode steam goverlay winetricks protontricks lutris discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
+
+#Install yay
+mkdir Git
+cd Git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms-git ckb-next heroic-games-launcher-bin gamehub an-anime-game-launcher-bin jdownloader2 latte-dock-git anaconda audiotube-git authy balena-etcher bluemail dosbox-staging dropbox vscodium-bin vscodium-bin-marketplace vscodium-bin-features microsoft-edge-dev-bin minecraft-launcher protonup-qt zoom
-
+yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms ckb-next an-anime-game-launcher-bin jdownloader2 audiotube-git authy balena-etcher bluemail dosbox-staging dropbox vscodium-bin vscodium-bin-marketplace vscodium-bin-features minecraft-launcher protonup-qt
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
 
