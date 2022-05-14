@@ -29,7 +29,7 @@ sudo pacman -Syy
 sudo nano /etc/pacman.conf
 
 #Main programs I use
-sudo pacman -S ttf-liberation vkd3d lib32-vkd3d wine-staging nvidia github-desktop base-devel linux-headers git qbittorrent bitwarden electron qt shotcut obs-studio signal-desktop steam retroarch retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb gamemode lib32-gamemode discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
+sudo pacman -S ttf-liberation vkd3d lib32-vkd3d wine-staging nvidia github-desktop base-devel linux-headers git qbittorrent bitwarden electron qt shotcut obs-studio signal-desktop steam gamemode lib32-gamemode discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
 
 #Install yay
 mkdir Git
@@ -39,7 +39,7 @@ cd yay
 makepkg -si
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms ckb-next balena-etcher dosbox-staging vscodium-bin vscodium-bin-marketplace vscodium-bin-features minecraft-launcher protonup-qt nordvpn-bin
+yay -S dosbox-staging minecraft-launcher protonup-qt xone-dkms duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git pamac-aur pamac-tray-icon-plasma ckb-next balena-etcher vscodium-bin vscodium-bin-marketplace vscodium-bin-features
 
 #Enable stuff for ckb-next
 sudo systemctl start ckb-next-daemon
