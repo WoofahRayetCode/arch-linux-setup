@@ -39,7 +39,7 @@ cd yay
 makepkg -si
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms ckb-next balena-etcher dosbox-staging vscodium-bin vscodium-bin-marketplace vscodium-bin-features minecraft-launcher protonup-qt
+yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms ckb-next balena-etcher dosbox-staging vscodium-bin vscodium-bin-marketplace vscodium-bin-features minecraft-launcher protonup-qt nordvpn-bin
 
 #Enable stuff for ckb-next
 sudo systemctl start ckb-next-daemon
