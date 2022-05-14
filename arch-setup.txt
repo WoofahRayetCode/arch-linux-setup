@@ -29,7 +29,7 @@ sudo pacman -Syy
 sudo nano /etc/pacman.conf
 
 #Main programs I use
-sudo pacman -S ttf-liberation vkd3d lib32-vkd3d wine-staging nvidia github-desktop base-devel linux-headers git qbittorrent bitwarden electron qt shotcut obs-studio signal-desktop steam retroarch	retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb gamemode lib32-gamemode discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
+sudo pacman -S ttf-liberation vkd3d lib32-vkd3d wine-staging nvidia github-desktop base-devel linux-headers git qbittorrent bitwarden electron qt shotcut obs-studio signal-desktop steam retroarch retroarch-assets-glui retroarch-assets-ozone retroarch-assets-xmb gamemode lib32-gamemode discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
 
 #Install yay
 mkdir Git
