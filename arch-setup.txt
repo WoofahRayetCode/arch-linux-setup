@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#Install wget
+sudo pacman -S wget
 
 #File to regularly run to clean left over files
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
@@ -21,17 +21,15 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 #Add Chaotic Aur
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
-pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 sudo echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syy
 
-#Change update branch to Unstable
-sudo pacman-mirrors --api --set-branch unstable
-sudo pacman-mirrors --fasttrack 5
-sudo pacman -Syyu
+#Enable multilib
+sudo nano /etc/pacman.conf
 
 #Main programs I use
-sudo pacman -S alacritty github-desktop base-devel wine-staging linux-headers git qbittorrent bitwarden electron qt shotcut obs-studio signal-desktop gamemode lib32-gamemode steam goverlay winetricks protontricks lutris discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
+sudo pacman -S ttf-liberation vkd3d lib32-vkd3d wine-staging nvidia github-desktop base-devel linux-headers git qbittorrent bitwarden electron qt shotcut obs-studio signal-desktop steam retroarch gamemode lib32-gamemode discord telegram-desktop krita libreoffice-fresh strawberry vlc bleachbit guvcview
 
 #Install yay
 mkdir Git
@@ -41,7 +39,12 @@ cd yay
 makepkg -si
 
 #AUR Programs I use
-yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms ckb-next an-anime-game-launcher-bin jdownloader2 audiotube-git authy balena-etcher bluemail dosbox-staging dropbox vscodium-bin vscodium-bin-marketplace vscodium-bin-features minecraft-launcher protonup-qt
+yay -S duckstation-git pcsx2-git ppsspp-git mgba-qt-git melonds-git libmgba-git xone-dkms ckb-next jdownloader2 balena-etcher dosbox-staging vscodium-bin vscodium-bin-marketplace vscodium-bin-features minecraft-launcher protonup-qt
+
+#Enable stuff for ckb-next
+sudo systemctl start ckb-next-daemon
+sudo systemctl enable ckb-next-daemon
+
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
 
