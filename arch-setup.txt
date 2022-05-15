@@ -3,11 +3,9 @@ sudo pacman -S wget
 
 #File to regularly run to clean left over files
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
-chmod +x clean-files.sh
 
 #Remove icons I don't want on the programs menu
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
-chmod +x hide-icons.sh
 
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
@@ -35,15 +33,5 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-#Enable stuff for ckb-next
-sudo systemctl start ckb-next-daemon
-sudo systemctl enable ckb-next-daemon
-
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
-
-#Clean leftover stuff
-./clean-files.sh
-
-#Hide icons
-./hide-icons.sh
