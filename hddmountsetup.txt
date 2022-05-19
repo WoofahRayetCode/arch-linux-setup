@@ -8,12 +8,13 @@ sudo nano /etc/fstab
 sudo gedit /etc/fstab
 
 #Mount INTERNAL STORAGE HDD
-UUID=f95a96cd-c81f-4d15-92a7-02275eeff779 /home/ericparsley/STUFF ext4 defaults 0 0
-#Gain ownership of HDD
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STUFF
+UUID=3a2ac198-cfa4-4625-b4fc-fe2be0f9b717 /home/ericparsley/STUFF ext4 defaults 0 0
 
 #Reload shit to use next command
 sudo systemctl daemon-reload
 
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
+
+#Gain ownership of HDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STUFF
