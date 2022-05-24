@@ -1,14 +1,17 @@
 #Get disk names
 sudo blkid | grep UUID=
 #Make dirs to mount drives to
-mkdir STUFF
+mkdir GAMES
+mkdir STORAGE
 
 #Open fstab file
 sudo nano /etc/fstab
-sudo gedit /etc/fstab
 
-#Mount INTERNAL STORAGE HDD
-UUID=3a2ac198-cfa4-4625-b4fc-fe2be0f9b717 /home/ericparsley/STUFF ext4 defaults 0 0
+#Mount internal game hdd#1
+UUID=aada3a8e-05ec-4c43-b836-205d908953ff /home/ericparsley/GAMES ext4 defaults 0 0
+
+#Mount internal storage hdd#2
+UUID=8584159a-c4b8-4550-b8e3-36cd14b0e3ea /home/ericparsley/STORAGE ext4 defaults 0 0
 
 #Reload shit to use next command
 sudo systemctl daemon-reload
