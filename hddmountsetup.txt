@@ -8,10 +8,10 @@ mkdir STORAGE
 sudo nano /etc/fstab
 
 #Mount internal game hdd#1
-UUID=aada3a8e-05ec-4c43-b836-205d908953ff /home/ericparsley/GAMES ext4 defaults 0 0
+UUID=186d74fb-f281-4e9d-8ba1-c1e097111e8c /home/ericparsley/GAMES ext4 defaults 0 0
 
 #Mount internal storage hdd#2
-UUID=8584159a-c4b8-4550-b8e3-36cd14b0e3ea /home/ericparsley/STORAGE ext4 defaults 0 0
+UUID=d78127fe-3266-4a96-9f6a-679520654302 /home/ericparsley/STORAGE ext4 defaults 0 0
 
 #Reload shit to use next command
 sudo systemctl daemon-reload
