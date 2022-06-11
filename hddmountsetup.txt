@@ -1,17 +1,14 @@
 #Get disk names
 sudo blkid | grep UUID=
+
 #Make dirs to mount drives to
-mkdir GAMES
-mkdir STORAGE
+mkdir STUFF
 
 #Open fstab file
 sudo nano /etc/fstab
 
-#Mount internal game hdd#1
-UUID=186d74fb-f281-4e9d-8ba1-c1e097111e8c /home/ericparsley/GAMES ext4 defaults 0 0
-
-#Mount internal storage hdd#2
-UUID=d78127fe-3266-4a96-9f6a-679520654302 /home/ericparsley/STORAGE ext4 defaults 0 0
+#Mount internal game SSD#2
+UUID=e7c2793f-0f0c-4d6c-89e5-ad77e21b34be /home/ericparsley/STUFF ext4 defaults 0 0
 
 #Reload shit to use next command
 sudo systemctl daemon-reload
@@ -20,5 +17,4 @@ sudo systemctl daemon-reload
 sudo mount -a
 
 #Gain ownership of HDDs
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STUFF
