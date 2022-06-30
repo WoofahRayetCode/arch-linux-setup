@@ -29,15 +29,5 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syy
 
-#Enable multilib
-sudo nano /etc/pacman.conf
-
-#Install yay
-mkdir Git
-cd Git
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
