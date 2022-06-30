@@ -25,3 +25,7 @@ sudo rm -f lstopo.desktop
 sudo rm -f org.kde.plasma.emojier.desktop
 sudo rm -f stoken-gui-small.desktop
 sudo rm -f stoken-gui.desktop
+sudo rm -f assistant-qt4.desktop
+sudo rm -f designer-qt4.desktop
+sudo rm -f linguist-qt4.desktop
+sudo rm -f qdbusviewer-qt4.desktop
