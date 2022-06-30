@@ -2,7 +2,7 @@
 set -e
 
 cd /usr/share/applications/
-sudo rm -rf org.kde.cuttlefish.desktop
+sudo rm -f org.kde.cuttlefish.desktop
 sudo rm -f electron.desktop
 sudo rm -f electron16.desktop
 sudo rm -f org.kde.plasmaengineexplorer.desktop
