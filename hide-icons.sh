@@ -22,3 +22,5 @@ sudo rm -f mt32emu-qt.desktop
 sudo rm -f munt.desktop
 sudo rm -f lstopo.desktop
 sudo rm -f org.kde.plasma.emojier.desktop
+sudo rm -f stoken-gui-small.desktop
+sudo rm -f stoken-gui.desktop
