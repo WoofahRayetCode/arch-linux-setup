@@ -4,4 +4,5 @@ set -e
 sudo pacman -Rns $(pacman -Qtdq)
 sudo pacman -Scc
 yay -Scc
-rm -rf ~/.cache/*
+pikaur -Scc
+sudo rm -rf ~/.cache/*
