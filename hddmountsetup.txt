@@ -2,18 +2,18 @@
 sudo blkid | grep UUID=
 
 #Make dirs to mount drives to
-mkdir [hddname]
+mkdir [hddorssdname]
 
 #Open fstab file
 sudo nano /etc/fstab
 
-[uuid] /home/ericparsley/[hddname] [filesystem] defaults 0 0
+[uuid=#] /home/[username/[hddname] [filesystem] defaults 0 0
 
-#Reload shit to use next command
+#Reload to use next command
 sudo systemctl daemon-reload
 
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
 
 #Gain ownership of HDDs
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/[hddname]
+sudo chown -R -v [username]:[username] /home/[username]/[hddname]
