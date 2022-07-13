@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 
-#install git
-sudo pacman -S git
+#Set account info for git
 git config --global user.email ericiparsley@hotmail.com
 git config --global user.name WoofahRayetCode
 
@@ -11,19 +10,6 @@ sudo pacman -S wget
 
 #install parts for compiling aur stuff
 sudo pacman -S base-devel linux-headers
-
-#Enable commented out repos
-sudo nano /etc/pacman.conf
-testing
-community-testing
-multilib-testing
-
-#Make Git folder, move into folder, git clone pikaur, move into that, then build
-mkdir Git
-cd Git
-git clone https://aur.archlinux.org/pikaur.git
-cd pikaur
-makepkg -si --noconfirm
 
 #Grape the cpu so stuff compiles faster maybe?
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/grapethecpu.sh
@@ -52,7 +38,7 @@ sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 sudo echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-sudo pikaur -Syy
+sudo pacman -Syy
 
 #Add KDE unstable repo
 sudo echo -e "\n[kde-unstable]\nInclude = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
@@ -60,7 +46,7 @@ sudo pacman -Syy
 
 sudo pacman -S nvidia nvidia-settings qt qt6 wine-staging winetricks protontricks lutris ttf-liberation timeshift ark bleachbit partitionmanager discord steam telegram-desktop signal-desktop krita libreoffice-fresh kdenlive bluemail vkbasalt gamemode
 
-pikaur -S pcsx-redux-git duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher mangohud lib32-mangohud mangohud-common goverlay-bin replay-sorcery-git xone-dkms obs-studio-git protonup-qt visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc
+yay -S pcsx-redux-git duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher mangohud lib32-mangohud mangohud-common goverlay-bin replay-sorcery-git xone-dkms obs-studio-git protonup-qt visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
