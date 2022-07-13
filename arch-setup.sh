@@ -5,9 +5,6 @@ set -e
 git config --global user.email ericiparsley@hotmail.com
 git config --global user.name WoofahRayetCode
 
-#Install wget
-sudo pacman -S wget
-
 #install parts for compiling aur stuff
 sudo pacman -S base-devel linux-headers
 
@@ -44,7 +41,7 @@ sudo pacman -Syy
 sudo echo -e "\n[kde-unstable]\nInclude = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syy
 
-sudo pacman -S nvidia nvidia-settings qt qt6 wine-staging winetricks protontricks lutris ttf-liberation timeshift ark bleachbit partitionmanager discord steam telegram-desktop krita libreoffice-fresh kdenlive bluemail vkbasalt gamemode
+sudo pacman -S nvidia nvidia-settings qt qt6 gnucash wine-staging winetricks protontricks lutris ttf-liberation timeshift ark bleachbit partitionmanager discord steam telegram-desktop krita libreoffice-fresh kdenlive bluemail vkbasalt gamemode
 
 yay -S pcsx-redux-git duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher mangohud lib32-mangohud mangohud-common goverlay-bin replay-sorcery-git xone-dkms obs-studio-git protonup-qt visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc signal-desktop-beta
 
