@@ -60,7 +60,7 @@ sudo pacman -Syy
 
 sudo pacman -S nvidia nvidia-settings qt qt6 wine-staging winetricks protontricks lutris ttf-liberation timeshift ark bleachbit partitionmanager discord steam telegram-desktop signal-desktop krita libreoffice-fresh kdenlive bluemail vkbasalt gamemode
 
-pikaur -S pcsx-redux-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher mangohud lib32-mangohud mangohud-common goverlay-bin replay-sorcery-git xone-dkms obs-studio-git protonup-qt visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc
+pikaur -S pcsx-redux-git duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher mangohud lib32-mangohud mangohud-common goverlay-bin replay-sorcery-git xone-dkms obs-studio-git protonup-qt visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
