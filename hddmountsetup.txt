@@ -8,14 +8,9 @@ mkdir [hddorssdname]
 sudo nano /etc/fstab
 
 [uuid=#] /home/[username/[hddname] [filesystem] defaults 0 0
-[#Mount SSDSTORAGE1
-UUID=5e3b6d67-9a79-41b2-9be6-f292400fe136 /home/ericparsley/SSDSTORAGE1 btrfs defaults 0 0
 
-#Mount HDDSTORAGE1
-UUID=6bc73c33-b7b3-4544-9ea4-3b7e66355c77 /home/ericparsley/HDDSTORAGE1 btrfs defaults 0 0
-
-#Mount HDDSTORAGE2
-UUID=b0828e88-a191-4c6a-a7df-8bef54b9b8d8 /home/ericparsley/HDDSTORAGE2 btrfs defaults 0 0]
+#Mount STORAGE
+UUID=c0986443-744d-439d-badb-997cc791e80f /home/ericparsley/STORAGE btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
@@ -25,3 +20,4 @@ sudo mount -a
 
 #Gain ownership of HDDs
 sudo chown -R -v [username]:[username] /home/[username]/[hddname]
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE
