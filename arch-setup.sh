@@ -37,16 +37,12 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syy
 
-#Add KDE unstable repo
-sudo echo -e "\n[kde-unstable]\nInclude = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
-sudo pacman -Syy
-
 sudo pacman -S nvidia nvidia-settings qt qt6 gnucash wine-staging winetricks protontricks lutris ttf-liberation timeshift ark bleachbit partitionmanager discord steam telegram-desktop krita libreoffice-fresh kdenlive bluemail vkbasalt gamemode qbittorrent
 
-yay -S pcsx-redux-git duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher an-anime-game-launcher-bin mangohud lib32-mangohud mangohud-common goverlay-bin replay-sorcery-git xone-dkms obs-studio-git protonup-qt visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc signal-desktop-beta onedrive-abraunegg onedrivegui-git
+yay -S pcsx-redux-git duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher an-anime-game-launcher-bin mangohud lib32-mangohud mangohud-common goverlay-bin replay-sorcery-git xone-dkms obs-studio-git protonup-qt visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc signal-desktop-beta onedrive-abraunegg onedrivegui-git nordvpn-bin
 
 #Uninstall some apps
-sudo pacman -Rns okular kdeconnect htop
+sudo pacman -Rns okular kdeconnect htop ksysguard
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
