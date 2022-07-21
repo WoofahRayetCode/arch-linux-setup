@@ -9,16 +9,16 @@ git config --global user.name WoofahRayetCode
 sudo pacman -S base-devel linux-headers
 
 #Grape the cpu so stuff compiles faster maybe?
-wget https://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@raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/grapethecpu.sh
+wget --header 'Authorization: token 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' https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/grapethecpu.sh
 sudo chmod +x grapethecpu.sh
 sudo ./grapethecpu.sh
 
 #File to regularly run to clean left over files
-wget https://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@raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
+wget --header 'Authorization: token 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' https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
 sudo chmod +x clean-files.sh
 
 #Remove icons I don't want on the programs menu
-wget https://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@raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
+wget --header 'Authorization: token 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' https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
 sudo chmod +x hide-icons.sh
 
 #Enable parallel downloading
