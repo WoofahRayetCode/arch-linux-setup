@@ -42,7 +42,7 @@ sudo pacman -S nvidia qt qt6 gnucash wine-staging winetricks lutris timeshift ar
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher an-anime-game-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc signal-desktop-beta onedrive-abraunegg onedrivegui-git nordvpn-bin
 
 #Uninstall some apps
-sudo pacman -Rns okular kdeconnect htop ksysguard
+sudo pacman -Rns firefox okular kdeconnect htop ksysguard
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
