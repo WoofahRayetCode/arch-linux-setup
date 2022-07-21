@@ -9,7 +9,7 @@ git config --global user.name WoofahRayetCode
 sudo pacman -S base-devel linux-headers
 
 #Grape the cpu so stuff compiles faster maybe?
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/grapethecpu.sh
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/grapethecpu.sh?token=GHSAT0AAAAAABW2OXOOWT3DBB62CFT5DYQUYWY44HQ
 sudo chmod +x grapethecpu.sh
 sudo ./grapethecpu.sh
 
