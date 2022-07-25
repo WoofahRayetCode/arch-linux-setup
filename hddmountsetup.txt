@@ -3,14 +3,14 @@ sudo blkid | grep UUID=
 
 #Make dirs to mount drives to
 mkdir [hddorssdname]
+mkdir Storage
 
 #Open fstab file
 sudo nano /etc/fstab
 
 [uuid=#] /home/[username/[hddname] [filesystem] defaults 0 0
-
 #Mount STORAGE
-UUID=c0986443-744d-439d-badb-997cc791e80f /home/ericparsley/STORAGE btrfs defaults 0 0
+UUID=78ae0b75-ed91-4d15-a8a1-55c360c64e17 /home/ericparsley/Storage btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
@@ -20,4 +20,4 @@ sudo mount -a
 
 #Gain ownership of HDDs
 sudo chown -R -v [username]:[username] /home/[username]/[hddname]
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/STORAGE
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Storage
