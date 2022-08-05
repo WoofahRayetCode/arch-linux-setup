@@ -37,7 +37,7 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syy
 
-sudo pacman -S nvidia qt qt6 gnucash wine-staging winetricks lutris timeshift ark bleachbit partitionmanager discord telegram-desktop krita libreoffice-fresh kdenlive bluemail qbittorrent
+sudo pacman -S nvidia qt gnucash wine-staging winetricks lutris timeshift ark bleachbit partitionmanager discord telegram-desktop krita libreoffice-fresh kdenlive bluemail qbittorrent
 
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access minecraft-launcher an-anime-game-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 vlc signal-desktop-beta onedrive-abraunegg onedrivegui-git nordvpn-bin
 
@@ -47,6 +47,12 @@ sudo gpasswd -a ericparsley nordvpn
 
 #Uninstall some apps
 sudo pacman -Rns firefox okular kdeconnect htop ksysguard
+
+#Clean left over files from AUR stuff
+./clean-files.sh
+
+#Hide icons in programs menu that I don't want to see
+./hide-icons.sh
 
 #To make sure programs can use the Nvidia GPU
 nvidia-modprobe
