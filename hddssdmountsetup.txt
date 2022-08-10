@@ -7,8 +7,8 @@ mkdir Storage
 #Open fstab file
 sudo nano /etc/fstab
 
-#Mount STORAGE
-UUID=e5e5410f-9f77-4f05-b419-e58df604cf4a /home/ericparsley/Storage btrfs defaults 0 0
+#Mount Manjaro Storage
+UUID=08a552bc-60e3-4510-8cc2-6326b884e0d3 /home/ericparsley/Storage btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
