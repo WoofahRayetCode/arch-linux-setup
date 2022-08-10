@@ -10,6 +10,12 @@ sudo nano /etc/fstab
 #Mount Manjaro Storage
 UUID=08a552bc-60e3-4510-8cc2-6326b884e0d3 /home/ericparsley/Storage btrfs defaults 0 0
 
+#Mount Windows OS Drive
+UUID=BCD220B3D2207434 /home/ericparsley/WindowsOS ntfs-3g defaults 0 0
+
+#Mount Windows Storage
+UUID=0A50F78F50F77FAD /home/ericparsley/WindowsStorage ntfs-3g defaults 0 0
+
 #Reload to use next command
 sudo systemctl daemon-reload
 
