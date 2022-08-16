@@ -7,6 +7,7 @@ sudo rm -f electron.desktop
 sudo rm -f electron16.desktop
 sudo rm -f electron13.desktop
 sudo rm -f electron19.desktop
+sudo rm -f electron17.desktop
 sudo rm -f org.kde.plasmaengineexplorer.desktop
 sudo rm -f org.kde.plasma.lookandfeelexplorer.desktop
 sudo rm -f org.kde.plasma.themeexplorer.desktop
