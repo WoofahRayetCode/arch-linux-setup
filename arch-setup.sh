@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+#Uninstall some apps
+sudo pacman -Rns firefox okular kdeconnect htop ksysguard
+
 #Set account info for git
 git config --global user.email ericiparsley@hotmail.com
 git config --global user.name WoofahRayetCode
@@ -44,9 +47,6 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git mel
 #Run to make teamviewer work
 sudo systemctl start teamviewerd
 sudo systemctl enable teamviewerd
-
-#Uninstall some apps
-sudo pacman -Rns firefox okular kdeconnect htop ksysguard
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
