@@ -42,7 +42,7 @@ sudo pacman -Syy
 
 sudo pacman -S yay nvidia wine-staging winetricks lutris timeshift ark bleachbit bitwarden partitionmanager steam discord telegram-desktop krita libreoffice-fresh kdenlive bluemail qbittorrent
 
-yay -S duckstation-git pcsx-redux-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access retroarch-git protonup-qt minecraft-launcher an-anime-game-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin ventoy-bin authy teamviewer noisetorch jdownloader2 microsoft-edge-dev-bin vlc signal-desktop-beta onedrive-abraunegg onedrivegui-git
+yay -S duckstation-git pcsx-redux-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access retroarch-git protonup-qt minecraft-launcher an-anime-game-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin github-desktop-bin ventoy-bin authy teamviewer noisetorch jdownloader2 microsoft-edge-dev-bin vlc signal-desktop-beta onedrive-abraunegg onedrivegui-git
 
 #Run to make teamviewer work
 sudo systemctl start teamviewerd
