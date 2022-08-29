@@ -7,7 +7,7 @@ mkdir GAMES
 #Open fstab file
 sudo nano /etc/fstab
 
-#Mount Manjaro Storage
+#Mount Manjaro Game Storage
 UUID=f08b4996-a709-4250-a502-6244fa109b46 /home/ericparsley/GAMES btrfs defaults 0 0
 
 #Mount Windows OS Drive
