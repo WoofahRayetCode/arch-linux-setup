@@ -2,13 +2,13 @@
 sudo blkid | grep UUID=
 
 #Make dirs to mount drives to
-mkdir GAMES
+mkdir MANJAROSTORAGE
 
 #Open fstab file
 sudo nano /etc/fstab
 
-#Mount Manjaro Game Storage
-UUID=f08b4996-a709-4250-a502-6244fa109b46 /home/ericparsley/GAMES btrfs defaults 0 0
+#Mount MANJAROSTORAGE
+UUID=88427e7e-2174-4983-b0df-eff5016ec3d3 /home/ericparsley/MANJAROSTORAGE btrfs defaults 0 0
 
 #Mount Windows OS Drive
 UUID=BCD220B3D2207434 /home/ericparsley/WindowsOS ntfs-3g defaults 0 0
@@ -23,4 +23,4 @@ sudo systemctl daemon-reload
 sudo mount -a
 
 #Gain ownership of HDDs/SSDs
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/GAMES
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/MANJAROSTORAGE
