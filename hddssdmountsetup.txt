@@ -3,6 +3,8 @@ sudo blkid | grep UUID=
 
 #Make dirs to mount drives to
 mkdir MANJAROSTORAGE
+mkdir SHDD1
+mkdir SHDD2
 
 #Open fstab file
 sudo nano /etc/fstab
@@ -10,11 +12,11 @@ sudo nano /etc/fstab
 #Mount MANJAROSTORAGE
 UUID=88427e7e-2174-4983-b0df-eff5016ec3d3 /home/ericparsley/MANJAROSTORAGE btrfs defaults 0 0
 
-#Mount Windows OS Drive
-UUID=BCD220B3D2207434 /home/ericparsley/WindowsOS ntfs-3g defaults 0 0
+#Mount Shared HDD #1
+UUID=001485AA1FB4BB5F /home/ericparsley/SHDD1 ntfs-3g defaults 0 0
 
-#Mount Windows Storage
-UUID=0A50F78F50F77FAD /home/ericparsley/WindowsStorage ntfs-3g defaults 0 0
+#Mount Shared HDD #2
+UUID=779E2CAD3319ABBF /home/ericparsley/SHDD2 ntfs-3g defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
