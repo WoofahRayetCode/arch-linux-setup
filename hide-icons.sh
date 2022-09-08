@@ -32,3 +32,4 @@ sudo rm -f designer-qt4.desktop
 sudo rm -f linguist-qt4.desktop
 sudo rm -f qdbusviewer-qt4.desktop
 sudo rm -f io.mgba.mGBA.desktop
+sudo rm -f cmake-gui.desktop
