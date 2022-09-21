@@ -1,1 +1,4 @@
-sudo rm /var/lib/pacman/db.lck
+#!/bin/bash
+set -e
+
+pamac update --force-refresh
