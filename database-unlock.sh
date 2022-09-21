@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-pamac update --force-refresh
+sudo pamac update --force-refresh
