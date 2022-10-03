@@ -41,13 +41,10 @@ sudo echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sud
 sudo pacman -Syy
 
 #Install regularly used apps
-sudo pacman -S yay nvidia powerpill wine-staging winetricks lutris timeshift ark bleachbit bitwarden partitionmanager steam telegram-desktop caprine krita libreoffice-fresh kdenlive bluemail qbittorrent android-tools
-
-#Currently needed to compile cemu-git
-yay -S discord-rpc-git cubeb-git zarchive-git fmt-git
+sudo pacman -S pikaur powerpill wine-staging winetricks lutris timeshift ark bleachbit bitwarden partitionmanager steam telegram-desktop caprine krita libreoffice-fresh kdenlive bluemail qbittorrent android-tools
 
 #install AUR apps that I use
-yay -S duckstation-git pcsx-redux-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git yuzu-early-access ryujinx-git retroarch-git protonup-qt minecraft-launcher an-anime-game-launcher-bin heroic-games-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin github-desktop-bin ventoy-bin authy teamviewer noisetorch jdownloader2 microsoft-edge-stable-bin vlc signal-desktop-beta zoom onedrive-abraunegg onedrivegui-git discord_arch_electron streamdeck-ui android-messages-desktop-bin
+yay -S duckstation-git pcsx-redux-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git yuzu-early-access ryujinx-git retroarch-git protonup-qt minecraft-launcher an-anime-game-launcher-bin heroic-games-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin github-desktop-bin ventoy-bin authy teamviewer noisetorch jdownloader2 microsoft-edge-stable-bin vlc signal-desktop-beta zoom onedrive-abraunegg onedrivegui-git discord_arch_electron streamdeck-ui android-messages-desktop-bin youtube-music-bin
 
 #Run to make teamviewer work
 sudo systemctl start teamviewerd
@@ -58,6 +55,3 @@ sudo systemctl enable teamviewerd
 
 #Hide icons in programs menu that I don't want to see
 ./hide-icons.sh
-
-#To make sure programs can use the Nvidia GPU
-nvidia-modprobe
