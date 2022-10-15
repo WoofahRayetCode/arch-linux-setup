@@ -2,7 +2,7 @@
 set -e
 
 #Uninstall some apps
-sudo pacman -Rns firefox okular kdeconnect htop ksysguard
+#sudo pacman -Rns firefox okular kdeconnect htop ksysguard
 
 #Set account info for git
 git config --global user.email ericiparsley@hotmail.com
@@ -33,7 +33,7 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 #Change progressbar to pacman
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
-#Add ChaoticAur
+#Add Chaotic Aur
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
@@ -44,7 +44,7 @@ sudo pacman -Syy
 sudo pacman -S pikaur powerpill wine-staging winetricks lutris timeshift ark bleachbit bitwarden partitionmanager steam telegram-desktop caprine krita libreoffice-fresh kdenlive bluemail qbittorrent android-tools
 
 #install AUR apps that I use
-yay -S duckstation-git pcsx-redux-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git yuzu-early-access ryujinx-git retroarch-git protonup-qt minecraft-launcher an-anime-game-launcher-bin heroic-games-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin github-desktop-bin ventoy-bin authy teamviewer noisetorch jdownloader2 microsoft-edge-stable-bin vlc signal-desktop-beta zoom onedrive-abraunegg onedrivegui-git discord_arch_electron streamdeck-ui android-messages-desktop-bin youtube-music-bin
+yay -S duckstation-git pcsx-redux-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git yuzu-early-access ryujinx-git retroarch-git protonup-qt minecraft-launcher an-anime-game-launcher-bin heroic-games-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin github-desktop-bin ventoy-bin authy teamviewer noisetorch jdownloader2 microsoft-edge-stable-bin vlc signal-desktop-beta zoom onedrive-abraunegg onedrivegui-git webcord-git streamdeck-ui android-messages-desktop-bin youtube-music-bin linux-xanmod-edge 
 
 #Run to make teamviewer work
 sudo systemctl start teamviewerd
