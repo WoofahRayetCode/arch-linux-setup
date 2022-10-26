@@ -44,7 +44,7 @@ sudo pacman -Syy
 sudo pacman -S wine-staging winetricks lutris bleachbit partitionmanager steam discord telegram-desktop krita libreoffice-fresh kdenlive qbittorrent android-tools
 
 #install AUR apps that I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access ryujinx-git retroarch-git protonup-qt minecraft-launcher an-anime-game-launcher-bin heroic-games-launcher-bin xone-dkms obs-studio-git visual-studio-code-bin github-desktop-bin ventoy-bin teamviewer noisetorch jdownloader2 microsoft-edge-stable-bin vlc signal-desktop-beta zoom onedrive-abraunegg onedrivegui-git streamdeck-ui android-messages-desktop-bin youtube-music-bin linux-xanmod-edge 
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access ryujinx-git retroarch-git protonup-qt minecraft-launcher an-anime-game-launcher-bin heroic-games-launcher-bin xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch jdownloader2 microsoft-edge-stable-bin zoom streamdeck-ui android-messages-desktop-bin youtube-music-bin linux-xanmod-edge 
 
 #Run to make teamviewer work
 sudo systemctl start teamviewerd
