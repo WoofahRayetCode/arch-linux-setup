@@ -44,7 +44,11 @@ sudo pacman -Syy
 sudo pacman -S bluez bluez-utils bluedevil wine-staging winetricks lutris bleachbit partitionmanager steam discord krita libreoffice-fresh kdenlive qbittorrent android-tools
 
 #install AUR apps that I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git yuzu-early-access ryujinx-git retroarch-git protonup-qt minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch streamdeck-ui android-messages-desktop-bin youtube-music-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git protonup-qt minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch streamdeck-ui android-messages-desktop-bin youtube-music-bin
+
+#For cemu-git
+yay -S zarchive-git
+
 #Start bluetooth service
 systemctl start bluetooth.service
 systemctl enable bluetooth.service
