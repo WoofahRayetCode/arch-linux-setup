@@ -33,3 +33,4 @@ sudo rm -f linguist-qt4.desktop
 sudo rm -f qdbusviewer-qt4.desktop
 sudo rm -f io.mgba.mGBA.desktop
 sudo rm -f cmake-gui.desktop
+sudo rm -f org.kde.discover.desktop
