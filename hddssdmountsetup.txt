@@ -2,21 +2,16 @@
 sudo blkid | grep UUID=
 
 #Make dirs to mount drives to
-mkdir NEONSTORAGE
-mkdir SHDD1
-mkdir SHDD2
+mkdir Games Storage
 
 #Open fstab file
 sudo nano /etc/fstab
 
-#Mount NEONSTORAGE
-UUID=63715c15-a0c5-46c5-ab22-6bd4d84ddf99 /home/ericparsley/NEONSTORAGE ext4 defaults 0 0
+#Game SSD
+UUID=c16e2029-1787-4ee1-9144-62514d4a44b9 /home/ericparsley/Games btrfs defaults 0 0
 
-#Mount Shared HDD #1
-UUID=001485AA1FB4BB5F /home/ericparsley/SHDD1 ntfs-3g defaults 0 0
-
-#Mount Shared HDD #2
-UUID=779E2CAD3319ABBF /home/ericparsley/SHDD2 ntfs-3g defaults 0 0
+#Storage HDD
+UUID=76c86817-fb28-48c9-83b1-db5a0cd2b9fe /home/ericparsley/Storage btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
@@ -25,4 +20,4 @@ sudo systemctl daemon-reload
 sudo mount -a
 
 #Gain ownership of HDDs/SSDs
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/MANJAROSTORAGE
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/#
