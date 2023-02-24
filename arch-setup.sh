@@ -12,9 +12,9 @@ git config --global user.name WoofahRayetCode
 sudo pacman -S base-devel linux-headers
 
 #Grape the cpu so stuff compiles faster maybe?
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/grapethecpu.sh
-sudo chmod +x grapethecpu.sh
-sudo ./grapethecpu.sh
+#wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/grapethecpu.sh
+#sudo chmod +x grapethecpu.sh
+#sudo ./grapethecpu.sh
 
 #File to regularly run to clean left over files
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
@@ -43,19 +43,19 @@ sudo pacman -Syy
 #Install regularly used apps
 sudo pacman -S bluez bluez-utils bluedevil wine-staging winetricks lutris bleachbit partitionmanager steam discord telegram-desktop caprine krita libreoffice-fresh kdenlive qbittorrent android-tools
 
-#install AUR apps that I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git protonup-qt minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch streamdeck-ui android-messages-desktop-bin youtube-music-bin
-
 #For cemu-git
 yay -S zarchive-git
+
+#install AUR apps that I use
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git protonup-qt minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch streamdeck-ui android-messages-desktop-bin youtube-music-bin
 
 #Start bluetooth service
 systemctl start bluetooth.service
 systemctl enable bluetooth.service
 
 #Run to make teamviewer work
-sudo systemctl start teamviewerd
-sudo systemctl enable teamviewerd
+systemctl start teamviewerd
+systemctl enable teamviewerd
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
