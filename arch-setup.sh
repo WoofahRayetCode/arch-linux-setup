@@ -42,7 +42,7 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
-sudo pacman -S bluez bluez-utils bluedevil wine-staging winetricks lutris bleachbit steam discord telegram-desktop caprine signal-desktop krita libreoffice-fresh android-tools
+sudo pacman -S bluez bluez-utils bluedevil partitionmanager wine-staging winetricks lutris bleachbit steam discord telegram-desktop caprine signal-desktop krita libreoffice-fresh android-tools
 
 #For cemu-git
 yay -S zarchive-git
