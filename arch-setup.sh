@@ -49,7 +49,7 @@ sudo pacman -S bluez bluez-utils bluedevil partitionmanager wine-staging mangohu
 yay -S zarchive-git
 
 #install AUR apps that I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git protonup-qt goverlay minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git pamac-aur protonup-qt goverlay minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
 
 #Start bluetooth service
 systemctl start bluetooth.service
