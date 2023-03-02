@@ -10,6 +10,7 @@ git config --global user.email ericiparsley@hotmail.com
 git config --global user.name WoofahRayetCode
 
 #Install yay
+#Dont forget to edit /etc/makepkg.conf and set MAKEFLAGS="-j16"
 mkdir Git
 cd Git
 git clone https://aur.archlinux.org/yay.git
