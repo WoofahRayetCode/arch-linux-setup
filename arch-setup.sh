@@ -8,6 +8,10 @@ git config --global user.name WoofahRayetCode
 #install parts for compiling aur stuff
 sudo pacman -S base-devel linux-headers
 
+#Download file for easily fixing database lock issue
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/database-unlock.sh
+chmod +x database-unlock.sh
+
 #File to regularly run to clean left over files
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
 sudo chmod +x clean-files.sh
