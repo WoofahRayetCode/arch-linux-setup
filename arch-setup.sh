@@ -42,13 +42,13 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
-sudo pacman -S bluez bluez-utils bluedevil partitionmanager wine-staging winetricks lutris bleachbit steam discord telegram-desktop caprine signal-desktop krita libreoffice-fresh android-tools
+sudo pacman -S bluez bluez-utils bluedevil partitionmanager wine-staging mangohud winetricks lutris bleachbit steam discord telegram-desktop caprine signal-desktop krita libreoffice-fresh android-tools
 
 #For cemu-git
 yay -S zarchive-git
 
 #install AUR apps that I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git protonup-qt minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git protonup-qt goverlay minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
 
 #Start bluetooth service
 systemctl start bluetooth.service
