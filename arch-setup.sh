@@ -1,15 +1,15 @@
 #!/bin/bash
 set -e
 
-#Set account info for git
-git config --global user.email ericiparsley@hotmail.com
-git config --global user.name WoofahRayetCode
-
 #Remove some apps
 sudo pacman -S vim
 
-#Install yay
+#Install and set up Git
 sudo pacman -S git
+git config --global user.email ericiparsley@hotmail.com
+git config --global user.name WoofahRayetCode
+
+#Install yay
 mkdir Git
 cd Git
 git clone https://aur.archlinux.org/yay.git
