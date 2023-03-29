@@ -2,7 +2,7 @@
 set -e
 
 #Remove some apps
-sudo pacman -S vim
+sudo pacman -Rns vim htop
 
 #Install and set up Git
 sudo pacman -S git
