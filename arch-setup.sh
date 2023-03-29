@@ -45,6 +45,9 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 #Install regularly used apps
 sudo pacman -S bluez bluez-utils bluedevil partitionmanager wine-staging winetricks lutris bleachbit steam discord telegram-desktop caprine signal-desktop krita libreoffice-fresh android-tools
 
+#For C# stuff
+yay -S dotnet-runtime dotnet-sdk
+
 #For cemu-git
 yay -S zarchive-git
 
