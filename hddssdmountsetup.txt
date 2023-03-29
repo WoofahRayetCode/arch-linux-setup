@@ -8,10 +8,10 @@ mkdir Games Storage
 sudo nano /etc/fstab
 
 #Game SSD
-UUID=d4cbdd82-70fc-4fec-a62c-d3f22976d8ce /home/ericparsley/Games ext4 defaults 0 0
+UUID=8815b86b-032c-42b5-9373-bb9e943abf1b /home/ericparsley/Games ext4 defaults 0 0
 
 #Storage HDD
-UUID=13b33a8a-34fe-4556-83e7-f32cbf34d9da /home/ericparsley/Storage ext4 defaults 0 0
+UUID=61577c38-7d5e-4f81-8bf7-4e88eb103cff /home/ericparsley/Storage ext4 defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
