@@ -48,9 +48,6 @@ sudo pacman -S bluez bluez-utils bluedevil spectacle partitionmanager wine-stagi
 #For C# stuff
 yay -S dotnet-runtime dotnet-sdk
 
-#For cemu-git
-yay -S zarchive-git
-
 #install AUR apps that I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git pamac-aur protonup-qt goverlay antimicrox minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
 
