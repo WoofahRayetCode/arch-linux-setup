@@ -34,3 +34,8 @@ sudo rm -f qdbusviewer-qt4.desktop
 sudo rm -f io.mgba.mGBA.desktop
 sudo rm -f cmake-gui.desktop
 sudo rm -f org.kde.discover.desktop
+
+cd
+
+cd /home/ericparsley/.local/share/applications
+sudo rm -f ppsspp-sdl.desktop
