@@ -2,7 +2,7 @@
 set -e
 
 #Remove some apps
-sudo pacman -Rns vim htop
+sudo pacman -Rns vim htop kdeconnect ksysguard yakuake 
 
 #Install and set up Git
 sudo pacman -S git
