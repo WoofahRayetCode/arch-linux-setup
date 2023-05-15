@@ -17,6 +17,7 @@ sudo rm -f linguist.desktop
 sudo rm -f qdbusviewer.desktop
 sudo rm -f org.kde.kuserfeedback-console.desktop
 sudo rm -f duckstation-nogui.desktop
+sudo rm -f ppsspp-sdl.desktop
 sudo rm -f bssh.desktop
 sudo rm -f bvnc.desktop
 sudo rm -f qv4l2.desktop
