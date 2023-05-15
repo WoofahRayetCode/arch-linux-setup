@@ -20,4 +20,5 @@ sudo systemctl daemon-reload
 sudo mount -a
 
 #Gain ownership of HDDs/SSDs
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/#
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Games
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Storage
