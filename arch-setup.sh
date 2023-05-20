@@ -2,21 +2,12 @@
 set -e
 
 #Remove some apps
-sudo pacman -Rns vim htop kdeconnect ksysguard yakuake 
+sudo pacman -Rns htop kdeconnect ksysguard yakuake 
 
 #Install and set up Git
 sudo pacman -S git
 git config --global user.email ericiparsley@hotmail.com
 git config --global user.name WoofahRayetCode
-
-#Install yay
-#Dont forget to edit /etc/makepkg.conf and set MAKEFLAGS="-j16"
-mkdir Git
-cd Git
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd
 
 #install parts for compiling aur stuff
 sudo pacman -S base-devel linux-headers
@@ -43,20 +34,13 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
-sudo pacman -S bluez bluez-utils bluedevil spectacle partitionmanager wine-staging winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh android-tools
-
-#For C# stuff
-yay -S dotnet-runtime dotnet-sdk
+sudo pacman -S partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh android-tools
 
 #Emulators I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git
 
 #install AUR apps that I use
-yay -S protonup-qt goverlay antimicrox minecraft-launcher xone-dkms obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
-
-#Start bluetooth service
-systemctl start bluetooth.service
-systemctl enable bluetooth.service
+yay -S mullvad-vpn protonup-qt goverlay antimicrox minecraft-launcher xpadneo-dkms-git obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
 
 #Run to make teamviewer work
 systemctl start teamviewerd
