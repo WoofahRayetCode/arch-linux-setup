@@ -24,6 +24,10 @@ sudo chmod +x clean-files.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
 sudo chmod +x hide-icons.sh
 
+#Download script for autostarting noisetorch
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/noisetorch_autostart.sh
+chmod +x noisetorch_autostart.sh
+
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
 
