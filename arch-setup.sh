@@ -44,7 +44,7 @@ sudo pacman -S partitionmanager v4l2loopback-dkms wine-staging btop winetricks l
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git
 
 #install AUR apps that I use
-yay -S mullvad-vpn protonup-qt goverlay antimicrox minecraft-launcher xpadneo-dkms-git obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
+yay -S mullvad-vpn onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
 
 #Run to make teamviewer work
 systemctl start teamviewerd
