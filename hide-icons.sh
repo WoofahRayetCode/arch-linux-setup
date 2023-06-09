@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd /usr/share/applications/
+cd /usr/share/applications
 sudo rm -f org.kde.cuttlefish.desktop
 sudo rm -f electron.desktop
 sudo rm -f electron16.desktop
