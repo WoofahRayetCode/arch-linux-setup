@@ -41,14 +41,10 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 sudo pacman -S partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh android-tools
 
 #Emulators I use
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git retroarch-git
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git snes9x-git nestopia mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git yuzu-early-access retroarch-git
 
 #install AUR apps that I use
-yay -S mullvad-vpn onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git obs-studio-git ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin
-
-#Run to make teamviewer work
-systemctl start teamviewerd
-systemctl enable teamviewerd
+yay -S mullvad-vpn onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git obs-studio-git protonup-qt etcher-bin ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin visual-studio-code-bin timeshift heroic-games-launcher microsoft-edge-stable-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
