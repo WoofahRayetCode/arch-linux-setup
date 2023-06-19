@@ -17,7 +17,8 @@ UUID=d2efb19a-7727-48b2-8903-5e51d1ec56dc /home/ericparsley/Games btrfs defaults
 UUID=d87f8ddb-8609-4bf3-8e16-cfb878285d14 /home/ericparsley/Storage btrfs defaults 0 0
 
 #Network Share Mount
-//192.168.0.183/Public /mnt/share/wdmycloudnas cifs guest,uid=1000 0 0
+//192.168.0.183/Public /home/ericparsley/WDMyCloudNAS cifs rw,auto,nofail,file_mode=0777,dir_mode=0777,umask=0 0 0
+
 
 #Reload to use next command
 sudo systemctl daemon-reload
