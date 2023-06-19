@@ -72,6 +72,7 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo echo "  " >> /etc/pacman.conf
 sudo echo "[chaotic-aur] >> /etc/pacman.conf" >> /etc/pacman.conf
 sudo echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+sudo pacman -Sy
 
 #Emulators I use
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git yuzu-early-access retroarch-git
