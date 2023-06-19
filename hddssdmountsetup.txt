@@ -4,6 +4,12 @@ sudo blkid | grep UUID=
 #Make dirs to mount drives to
 mkdir Games Storage
 
+#Dir for NAS
+sudo mkdir /mnt/share/wdmycloudnas
+
+#Mount NAS
+sudo mount.cifs //192.168.0.183/Public /mnt/share/wdmycloudnas
+
 #Open fstab file
 sudo nano /etc/fstab
 
@@ -12,6 +18,9 @@ UUID=d2efb19a-7727-48b2-8903-5e51d1ec56dc /home/ericparsley/Games ext4 defaults 
 
 #Storage HDD
 UUID=d2efb19a-7727-48b2-8903-5e51d1ec56dc /home/ericparsley/Storage ext4 defaults 0 0
+
+#Network Share Mount
+//192.168.0.183/Public /mnt/share/wdmycloudnas cifs guest,uid=1000 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
@@ -22,3 +31,4 @@ sudo mount -a
 #Gain ownership of HDDs/SSDs
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Games
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Storage
+sudo chown -R -v ericparsley:ericparsley /mnt/share/wdmycloudnas
