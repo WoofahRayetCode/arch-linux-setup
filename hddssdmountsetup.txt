@@ -14,7 +14,7 @@ sudo nano /etc/fstab
 UUID=d2efb19a-7727-48b2-8903-5e51d1ec56dc /home/ericparsley/Games btrfs defaults 0 0
 
 #Storage HDD
-UUID=d2efb19a-7727-48b2-8903-5e51d1ec56dc /home/ericparsley/Storage btrfs defaults 0 0
+UUID=d87f8ddb-8609-4bf3-8e16-cfb878285d14 /home/ericparsley/Storage btrfs defaults 0 0
 
 #Network Share Mount
 //192.168.0.183/Public /mnt/share/wdmycloudnas cifs guest,uid=1000 0 0
