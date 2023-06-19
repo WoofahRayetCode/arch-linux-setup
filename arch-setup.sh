@@ -44,7 +44,7 @@ sudo pacman -S partitionmanager v4l2loopback-dkms wine-staging btop winetricks l
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git snes9x-git nestopia mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git yuzu-early-access retroarch-git
 
 #install AUR apps that I use
-yay -S mullvad-vpn onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git obs-studio-git protonup-qt etcher-bin ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin visual-studio-code-bin timeshift heroic-games-launcher microsoft-edge-stable-bin
+yay -S mullvad-vpn gcdemu onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git obs-studio-git protonup-qt etcher-bin ventoy-bin teamviewer noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin visual-studio-code-bin timeshift heroic-games-launcher microsoft-edge-stable-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
