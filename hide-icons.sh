@@ -8,6 +8,15 @@ sudo rm -f electron16.desktop
 sudo rm -f electron13.desktop
 sudo rm -f electron19.desktop
 sudo rm -f electron17.desktop
+sudo rm -f electron22.desktop
+sudo rm -f electron24.desktop
+sudo rm -f fluidd.desktop
+sudo rm -f yad-icon-browser.desktop
+sudo rm -f qvidcap.desktop
+sudo rm -f yad-settings.desktop
+sudo rm -f org.kde.kmenuedit.desktop
+sudo rm -f uxterm.desktop
+sudo rm -f xterm.desktop
 sudo rm -f org.kde.plasmaengineexplorer.desktop
 sudo rm -f org.kde.plasma.lookandfeelexplorer.desktop
 sudo rm -f org.kde.plasma.themeexplorer.desktop
