@@ -10,7 +10,7 @@ sudo rm -f electron19.desktop
 sudo rm -f electron17.desktop
 sudo rm -f electron22.desktop
 sudo rm -f electron24.desktop
-sudo rm -f fluidd.desktop
+sudo rm -f fluid.desktop
 sudo rm -f yad-icon-browser.desktop
 sudo rm -f qvidcap.desktop
 sudo rm -f yad-settings.desktop
