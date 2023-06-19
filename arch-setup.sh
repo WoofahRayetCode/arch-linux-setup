@@ -14,6 +14,7 @@ sudo pacman -S base-devel linux-headers
 
 #Set up drives 
 mkdir Games Storage WDMyCloudNAS
+sudo mount.cifs //192.168.0.183/Public /home/ericparsley/WDMyCloudNAS -o username=ericparsley,uid=1000,gid=1000,vers=2.0
 sudo nano /etc/fstab
 sudo echo "  " >> /etc/fstab
 sudo echo "#Game SSD" >> /etc/fstab
@@ -49,6 +50,9 @@ chmod +x noisetorch_autostart.sh
 #Download onedrive sunc file
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/onedrive_sync.sh
 chmod +x onedrive_sync.sh
+
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/check_space.sh
+chmod +x check_space.sh
 
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
