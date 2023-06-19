@@ -19,7 +19,6 @@ UUID=d87f8ddb-8609-4bf3-8e16-cfb878285d14 /home/ericparsley/Storage btrfs defaul
 #Network Share Mount
 //192.168.0.183/Public /home/ericparsley/WDMyCloudNAS cifs rw,auto,nofail,file_mode=0777,dir_mode=0777,umask=0 0 0
 
-
 #Reload to use next command
 sudo systemctl daemon-reload
 
