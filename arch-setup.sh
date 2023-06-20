@@ -55,6 +55,9 @@ chmod +x onedrive_sync.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/check_space.sh
 chmod +x check_space.sh
 
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/nas_mount.sh
+chmod +x nas_mount.sh
+
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
 
