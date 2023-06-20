@@ -2,7 +2,7 @@
 set -e
 
 #Make pacman.conf and fstab not be a pain in the ass
-sudo chown -R ericparaley:ericparsley /etc/pacman.conf
+sudo chown -R ericparsley:ericparsley /etc/pacman.conf
 sudo chown -R ericparsley:ericparsley /etc/fstab
 
 #Remove some apps
