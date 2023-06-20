@@ -6,9 +6,10 @@ sudo chown -R ericparsley:ericparsley /etc/pacman.conf
 sudo chown -R ericparsley:ericparsley /etc/fstab
 
 #Remove some apps
-sudo pacman -Rns htop kdeconnect ksysguard yakuake 
+sudo pacman -Rns htop kdeconnect ksysguard yakuake
 
 #Install and set up Git
+sudo pacman -Sy
 sudo pacman -S git
 git config --global user.email ericiparsley@hotmail.com
 git config --global user.name WoofahRayetCode
@@ -16,16 +17,15 @@ git config --global user.name WoofahRayetCode
 #install parts for compiling aur stuff
 sudo pacman -S base-devel linux-headers
 
-#Set up drives 
+#Set up drives
 mkdir Games Storage WDMyCloudNAS
-sudo mount.cifs //192.168.0.183/Public /home/ericparsley/WDMyCloudNAS -o username=ericparsley,uid=1000,gid=1000,vers=2.0
-sudo nano /etc/fstab
 sudo echo "#Game SSD" >> /etc/fstab
 sudo echo "UUID=d2efb19a-7727-48b2-8903-5e51d1ec56dc /home/ericparsley/Games btrfs defaults 0 0" >> /etc/fstab
 sudo echo "#Storage HDD" >> /etc/fstab
 sudo echo "UUID=d87f8ddb-8609-4bf3-8e16-cfb878285d14 /home/ericparsley/Storage btrfs defaults 0 0" >> /etc/fstab
 sudo echo "#Network Share Mount" >> /etc/fstab
 sudo echo "//192.168.0.183/Public /home/ericparsley/WDMyCloudNAS cifs rw,auto,nofail,file_mode=0777,dir_mode=0777,umask=0 0 0" >> /etc/fstab
+sudo mount.cifs //192.168.0.183/Public /home/ericparsley/WDMyCloudNAS -o username=ericparsley,uid=1000,gid=1000,vers=2.0
 sudo systemctl daemon-reload
 sudo mount -a
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Games
@@ -75,7 +75,7 @@ flatpak install bottles
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-sudo echo "[chaotic-aur] >> /etc/pacman.conf" >> /etc/pacman.conf
+sudo echo "[chaotic-aur]" >> /etc/pacman.conf
 sudo echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Sy
 
@@ -85,7 +85,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git lib
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mullvad-vpn jdownloader2 gcdemu onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git rustdesk-git twitter obs-studio-git protonup-qt ventoy-bin balena-etcher noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin timeshift heroic-games-launcher microsoft-edge-stable-bin
+yay -S mullvad-vpn jdownloader2 gcdemu onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git rustdesk-git twitter obs-studio-git protonup-qt ventoy-bin balena-etcher noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin timeshift heroic-games-launcher microsoft-edge-stable-bin visual-studio-code-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
