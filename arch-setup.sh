@@ -38,11 +38,11 @@ chmod +x database-unlock.sh
 
 #File to regularly run to clean left over files
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
-sudo chmod +x clean-files.sh
+chmod +x clean-files.sh
 
 #Remove icons I don't want on the programs menu
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
-sudo chmod +x hide-icons.sh
+chmod +x hide-icons.sh
 
 #Download script for autostarting noisetorch
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/noisetorch_autostart.sh
@@ -58,6 +58,9 @@ chmod +x check_space.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/nas_mount.sh
 chmod +x nas_mount.sh
 
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/expect_nas_mount.exp
+chmod +x expect_nas_mount.exp
+
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
 
@@ -69,7 +72,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S flatpak yay partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh kdenlive obs-studio android-tools
+sudo pacman -S flatpak expect yay partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh kdenlive obs-studio android-tools
 
 #Flatpak app I use
 flatpak install bottles
