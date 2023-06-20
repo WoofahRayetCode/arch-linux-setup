@@ -69,7 +69,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S flatpak yay partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh kdenlive android-tools
+sudo pacman -S flatpak yay partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh kdenlive obs-studio android-tools
 
 #Flatpak app I use
 flatpak install bottles
@@ -88,7 +88,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git lib
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mullvad-vpn jdownloader2 gcdemu onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git rustdesk-git twitter obs-studio-git protonup-qt ventoy-bin balena-etcher noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin timeshift heroic-games-launcher microsoft-edge-stable-bin visual-studio-code-bin
+yay -S mullvad-vpn jdownloader2 gcdemu onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git rustdesk-git twitter protonup-qt ventoy-bin balena-etcher noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin timeshift heroic-games-launcher microsoft-edge-stable-bin visual-studio-code-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
