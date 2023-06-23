@@ -44,3 +44,8 @@ sudo rm -f qdbusviewer-qt4.desktop
 sudo rm -f io.mgba.mGBA.desktop
 sudo rm -f cmake-gui.desktop
 sudo rm -f org.kde.discover.desktop
+sudo rm -f blackmagicraw-player.desktop
+sudo rm -f blackmagicraw-speedtest.desktop
+sudo rm -f DaVinciControlPanelsSetup.desktop
+sudo rm -f DaVinciResolveCaptureLogs.desktop
+sudo rm -f DaVinciResolveInstaller.desktop
