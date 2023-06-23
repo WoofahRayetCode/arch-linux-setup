@@ -1,6 +1,0 @@
-#!/usr/bin/expect
-
-spawn ./nas_mount.sh
-expect "password for ericparsley:"
-send -- "StlkrWlf1990"
-expect eof
