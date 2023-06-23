@@ -28,9 +28,6 @@ sudo echo "//192.168.0.183/Public /home/ericparsley/WDMyCloudNAS cifs rw,auto,no
 sudo mount.cifs //192.168.0.183/Public /home/ericparsley/WDMyCloudNAS -o username=ericparsley,uid=1000,gid=1000,vers=2.0
 sudo systemctl daemon-reload
 sudo mount -a
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Games
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Storage
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/WDMyCloudNAS
 
 #Download file for easily fixing database lock issue
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/database-unlock.sh
@@ -58,9 +55,6 @@ chmod +x check_space.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/nas_mount.sh
 chmod +x nas_mount.sh
 
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/expect_nas_mount.exp
-chmod +x expect_nas_mount.exp
-
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
 
@@ -72,7 +66,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S flatpak expect yay partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh kdenlive obs-studio android-tools
+sudo pacman -S flatpak expect yay partitionmanager vlc v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh kdenlive obs-studio android-tools
 
 #Flatpak app I use
 flatpak install bottles
@@ -91,7 +85,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git lib
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mullvad-vpn jdownloader2 gcdemu onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git rustdesk-git twitter protonup-qt ventoy-bin balena-etcher noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin timeshift heroic-games-launcher microsoft-edge-stable-bin visual-studio-code-bin
+yay -S mullvad-vpn jdownloader2 gcdemu onedrive-abraunegg protonup-qt antimicrox minecraft-launcher xpadneo-dkms-git rustdesk-git twitter protonup-qt ventoy-bin balena-etcher noisetorch-git streamdeck-ui android-messages-desktop-bin youtube-music-bin timeshift davinci-resolve heroic-games-launcher microsoft-edge-stable-bin visual-studio-code-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
