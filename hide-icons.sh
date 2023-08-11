@@ -3,12 +3,6 @@ set -e
 
 cd /usr/share/applications
 sudo rm -f org.kde.cuttlefish.desktop
-sudo rm -f electron.desktop
-sudo rm -f electron16.desktop
-sudo rm -f electron13.desktop
-sudo rm -f electron19.desktop
-sudo rm -f electron17.desktop
-sudo rm -f electron22.desktop
 sudo rm -f electron24.desktop
 sudo rm -f fluid.desktop
 sudo rm -f yad-icon-browser.desktop
@@ -26,13 +20,10 @@ sudo rm -f linguist.desktop
 sudo rm -f qdbusviewer.desktop
 sudo rm -f org.kde.kuserfeedback-console.desktop
 sudo rm -f duckstation-nogui.desktop
-sudo rm -f ppsspp-sdl.desktop
 sudo rm -f bssh.desktop
 sudo rm -f bvnc.desktop
 sudo rm -f qv4l2.desktop
 sudo rm -f avahi-discover.desktop
-sudo rm -f mt32emu-qt.desktop
-sudo rm -f munt.desktop
 sudo rm -f lstopo.desktop
 sudo rm -f org.kde.plasma.emojier.desktop
 sudo rm -f stoken-gui-small.desktop
@@ -41,11 +32,3 @@ sudo rm -f assistant-qt4.desktop
 sudo rm -f designer-qt4.desktop
 sudo rm -f linguist-qt4.desktop
 sudo rm -f qdbusviewer-qt4.desktop
-sudo rm -f io.mgba.mGBA.desktop
-sudo rm -f cmake-gui.desktop
-sudo rm -f org.kde.discover.desktop
-sudo rm -f blackmagicraw-player.desktop
-sudo rm -f blackmagicraw-speedtest.desktop
-sudo rm -f DaVinciControlPanelsSetup.desktop
-sudo rm -f DaVinciResolveCaptureLogs.desktop
-sudo rm -f DaVinciResolveInstaller.desktop
