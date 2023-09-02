@@ -4,9 +4,6 @@ sudo blkid | grep UUID=
 #Make dirs to mount drives to
 mkdir Games Storage WDMyCloudNAS
 
-#Mount NAS
-sudo mount.cifs //192.168.0.183/Public /home/ericparsley/WDMyCloudNAS -o username=ericparsley,uid=1000,gid=1000,vers=2.0
-
 #Open fstab file
 sudo nano /etc/fstab
 
