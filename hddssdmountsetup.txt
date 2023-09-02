@@ -10,11 +10,8 @@ sudo mount.cifs //192.168.0.183/Public /home/ericparsley/WDMyCloudNAS -o usernam
 #Open fstab file
 sudo nano /etc/fstab
 
-#Game SSD
-UUID=d2efb19a-7727-48b2-8903-5e51d1ec56dc /home/ericparsley/Games btrfs defaults 0 0
-
 #Storage HDD
-UUID=d87f8ddb-8609-4bf3-8e16-cfb878285d14 /home/ericparsley/Storage btrfs defaults 0 0
+UUID=3ac25546-214a-403b-92d3-a834586e0a09 /home/ericparsley/Storage btrfs defaults 0 0
 
 #Network Share Mount
 //192.168.0.183/Public /home/ericparsley/WDMyCloudNAS cifs rw,auto,nofail,file_mode=0777,dir_mode=0777,umask=0 0 0
@@ -26,6 +23,4 @@ sudo systemctl daemon-reload
 sudo mount -a
 
 #Gain ownership of HDDs/SSDs
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Games
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Storage
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/WDMyCloudNAS
