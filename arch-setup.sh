@@ -34,10 +34,11 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S flatpak partitionmanager v4l2loopback-dkms qbittorrent wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S flatpak lutris partitionmanager v4l2loopback-dkms qbittorrent wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
+flatpak install flathub com.github.Matoking.protontricks
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
@@ -54,7 +55,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git lib
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mesa-git lib32-mesa-git vulkan-radeon lib32-vulkan-radeon mullvad-vpn jdownloader2 gcdemu minecraft-launcher ventoy-bin android-messages-desktop-bin youtube-music-bin timeshift visual-studio-code-bin
+yay -S mesa-git lib32-mesa-git vulkan-radeon lib32-vulkan-radeon mullvad-vpn jdownloader2 protonup-qt signal-desktop-beta gcdemu minecraft-launcher ventoy-bin android-messages-desktop-bin youtube-music-bin timeshift visual-studio-code-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
