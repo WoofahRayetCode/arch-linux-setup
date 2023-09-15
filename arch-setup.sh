@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+#Change makeflag so aur stuff compiles faster
+sudo nano /etc/makepkg.conf
+
 #Set up Git
 git config --global user.email ericiparsley@hotmail.com
 git config --global user.name WoofahRayetCode
@@ -31,7 +34,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S flatpak partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
