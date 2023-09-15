@@ -34,7 +34,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S partitionmanager v4l2loopback-dkms qbittorrent wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
