@@ -1,3 +1,4 @@
+
 #Get disk names
 sudo blkid | grep UUID=
 
@@ -11,7 +12,7 @@ sudo nano /etc/fstab
 UUID=b82214a3-9569-45c4-81d0-d5284947ec0e /home/ericparsley/Games btrfs defaults 0 0
 
 #Storage HDD
-UUID=8f6e1db2-0c5e-4041-b352-c89dd8298dfc /home/ericparsley/Storage btrfs defaults 0 0
+UUID=8f6e1db2-0c5e-4041-b352-c89dd8298dfc/home/ericparsley/Storage btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
