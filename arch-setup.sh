@@ -17,10 +17,6 @@ chmod +x clean-files.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
 chmod +x hide-icons.sh
 
-#Download onedrive sunc file
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/onedrive_sync.sh
-chmod +x onedrive_sync.sh
-
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/check_space.sh
 chmod +x check_space.sh
 
@@ -35,7 +31,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S flatpak expect yay partitionmanager vlc v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord element-desktop telegram-desktop caprine signal-desktop krita libreoffice-fresh kdenlive obs-studio android-tools
+sudo pacman -S flatpak partitionmanager v4l2loopback-dkms wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
@@ -51,14 +47,10 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git lib
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mullvad-vpn jdownloader2 gcdemu onedrive-abraunegg minecraft-launcher ventoy-bin android-messages-desktop-bin youtube-music-bin timeshift visual-studio-code-bin
+yay -S mullvad-vpn jdownloader2 gcdemu minecraft-launcher ventoy-bin android-messages-desktop-bin youtube-music-bin timeshift visual-studio-code-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
 
 #Hide icons in programs menu that I don't want to see
 ./hide-icons.sh
-
-#Setup OneDrive
-onedrive
-./onedrive_sync.sh
