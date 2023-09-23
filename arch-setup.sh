@@ -63,12 +63,12 @@ sudo pacman -Suy
 
 #Install important Asus G14 stuff
 sudo pacman -S asusctl
-sudo systemctl enable --now power-profiles-daemon.service
 sudo pacman -S supergfxctl
-sudo systemctl enable --now supergfxd
 sudo pacman -S rog-control-center
 sudo pacman -Sy linux-g14 linux-g14-headers
 sudo pacman -S nvidia-dkms
+sudo systemctl enable --now power-profiles-daemon.service
+sudo systemctl enable --now supergfxd
 
 #Emulators
 sudo pacman -Sy
