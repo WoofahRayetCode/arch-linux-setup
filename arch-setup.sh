@@ -4,6 +4,12 @@ set -e
 #Change makeflag so aur stuff compiles faster
 sudo nano /etc/makepkg.conf
 
+#Key stuff for laptop repo
+sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+
 #Set up Git
 git config --global user.email ericiparsley@hotmail.com
 git config --global user.name WoofahRayetCode
@@ -45,9 +51,24 @@ sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-sudo echo \n\n"[chaotic-aur]" >> /etc/pacman.conf
+sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
-sudo pacman -Sy
+
+#Enable G14 Repo
+sudo echo -e "\n[g14]" >> /etc/pacman.conf
+sudo echo -e "Server = https://arch.asus-linux.org" >> /etc/pacman.conf
+
+#Update all the shits
+sudo pacman -Suy
+
+#Install important Asus G14 stuff
+sudo pacman -S asusctl
+sudo systemctl enable --now power-profiles-daemon.service
+sudo pacman -S supergfxctl
+sudo systemctl enable --now supergfxd
+sudo pacman -S rog-control-center
+sudo pacman -Sy linux-g14 linux-g14-headers
+sudo pacman -S nvidia-dkms
 
 #Emulators
 sudo pacman -Sy
