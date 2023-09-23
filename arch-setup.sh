@@ -71,7 +71,7 @@ sudo systemctl enable --now power-profiles-daemon.service
 sudo systemctl enable --now supergfxd
 
 #Emulators
-sudo pacman -Sy
+sudo pacman -Syyu
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git yuzu-early-access retroarch-git
 
 #install AUR apps that I use
