@@ -44,7 +44,7 @@ sudo pacman -S flatpak mame-tools lutris partitionmanager v4l2loopback-dkms qbit
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
-flatpak install flathub com.github.Matoking.protontricks
+flatpak install flathub org.kde.kwalletmanager5
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
