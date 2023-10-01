@@ -34,8 +34,3 @@ sudo rm -f assistant-qt4.desktop
 sudo rm -f designer-qt4.desktop
 sudo rm -f linguist-qt4.desktop
 sudo rm -f qdbusviewer-qt4.desktop
-
-cd
-
-cd /home/ericparsley/.local/share/applications
-sudo rm -f org.kde.drkonqi.coredump.gui.desktop
