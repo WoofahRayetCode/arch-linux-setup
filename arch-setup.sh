@@ -4,6 +4,10 @@ set -e
 #Change makeflag so aur stuff compiles faster
 sudo nano /etc/makepkg.conf
 
+#Enable bluetooth
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+
 #Key stuff for G14 repo
 sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
@@ -40,11 +44,10 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S flatpak mame-tools lutris partitionmanager v4l2loopback-dkms qbittorrent wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S flatpak kwalletmanager mame-tools lutris partitionmanager v4l2loopback-dkms qbittorrent wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
-flatpak install flathub org.kde.kwalletmanager5
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
@@ -76,7 +79,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git lib
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mesa-git lib32-mesa-git freedownloadmanager mullvad-vpn protonup-qt freedownloadmanager signal-desktop-beta gcdemu minecraft-launcher ventoy-bin protonup-qt android-messages-desktop-bin youtube-music-bin timeshift visual-studio-code-bin
+yay -S mullvad-vpn freedownloadmanager signal-desktop-beta gcdemu minecraft-launcher ventoy-bin protonup-qt android-messages-desktop-bin youtube-music-bin timeshift visual-studio-code-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
