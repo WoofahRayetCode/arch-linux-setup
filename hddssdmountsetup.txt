@@ -9,7 +9,7 @@ mkdir Games
 sudo nano /etc/fstab
 
 #Games SSD
-UUID=3afd88b2-9dd8-4e15-a90d-2775660b60e2 /home/ericparsley/Games btrfs defaults 0 0
+UUID=460d2074-405c-46e0-98be-b4f04c244338 /home/ericparsley/Games btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
@@ -19,4 +19,3 @@ sudo mount -a
 
 #Gain ownership of HDDs/SSDs
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Games
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Storage
