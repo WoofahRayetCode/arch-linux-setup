@@ -42,6 +42,9 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 #Change progressbar to pacman
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
+#Remove some stuff
+sudo pacman -Rns htop vim
+
 #Install regularly used apps
 sudo pacman -Sy
 sudo pacman -S base-devel linux-headers kwalletmanager kwallet-pam mame-tools lutris partitionmanager v4l2loopback-dkms qbittorrent wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
