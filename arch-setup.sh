@@ -44,7 +44,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S flatpak kwalletmanager mame-tools lutris partitionmanager v4l2loopback-dkms qbittorrent wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S flatpak base-devel linux-headers kwalletmanager mame-tools lutris partitionmanager v4l2loopback-dkms qbittorrent wine-staging btop winetricks lutris bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
