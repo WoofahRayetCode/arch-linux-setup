@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 
 #Change makeflag so aur stuff compiles faster
 sudo nano /etc/makepkg.conf
