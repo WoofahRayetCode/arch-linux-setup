@@ -69,7 +69,6 @@ sudo pacman -S asusctl
 sudo pacman -S supergfxctl
 sudo pacman -S rog-control-center
 sudo pacman -Sy linux-g14 linux-g14-headers
-sudo pacman -S nvidia-dkms
 sudo systemctl enable --now power-profiles-daemon.service
 sudo systemctl enable --now supergfxd
 
