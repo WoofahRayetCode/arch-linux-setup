@@ -9,7 +9,7 @@ mkdir Games
 sudo nano /etc/fstab
 
 #Games SSD
-UUID=460d2074-405c-46e0-98be-b4f04c244338 /home/ericparsley/Games btrfs defaults 0 0
+UUID=6aff92fc-289b-446c-bcbd-18a3542c3eec /home/ericparsley/Games btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
