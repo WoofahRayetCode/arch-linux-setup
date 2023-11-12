@@ -43,7 +43,7 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Remove some stuff
-sudo pacman -Rns htop vim
+#sudo pacman -Rns htop vim
 
 #Install regularly used apps
 sudo pacman -Sy
@@ -57,20 +57,8 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
-#Enable G14 Repo
-sudo echo -e "\n[g14]" >> /etc/pacman.conf
-sudo echo -e "Server = https://arch.asus-linux.org" >> /etc/pacman.conf
-
 #Update all the shits
 sudo pacman -Syu
-
-#Install important Asus G14 stuff
-sudo pacman -S asusctl
-sudo pacman -S supergfxctl
-sudo pacman -S rog-control-center
-sudo pacman -Sy linux-g14 linux-g14-headers
-sudo systemctl enable --now power-profiles-daemon.service
-sudo systemctl enable --now supergfxd
 
 #Emulators
 sudo pacman -Syyu
