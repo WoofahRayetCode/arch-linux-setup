@@ -57,12 +57,12 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
-#Update all the shits
-sudo pacman -Syu
-
 #Enable G14 Repo Stuff
 sudo echo -e "\n[g14]" >> /etc/pacman.conf
 sudo echo -e "Server = https://arch.asus-linux.org" >> /etc/pacman.conf
+
+#Update all the shits
+sudo pacman -Syu
 
 #Asus laptop stuff
 sudo pacman -Sy linux-g14 linux-g14-headers
@@ -72,6 +72,7 @@ systemctl enable --now supergfxd
 sudo pacman -S rog-control-center
 grub-mkconfig -o /boot/grub/grub.cfg
 
+#Setting up yay
 cd
 mkdir Git
 cd Git
