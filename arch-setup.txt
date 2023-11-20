@@ -63,6 +63,14 @@ sudo pacman -Syu
 #Asus laptop stuff
 sudo pacman -S linux-g14 linux-g14-headers
 
+cd
+mkdir Git
+cd Git
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+cd
+
 #Emulators
 sudo pacman -Syyu
 yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git libmgba-git melonds-git citra-qt-git dolphin-emu-git cemu-git ryujinx-git yuzu-early-access retroarch-git
