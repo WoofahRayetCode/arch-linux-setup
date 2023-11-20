@@ -61,7 +61,7 @@ sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Syu
 
 #Enable G14 Repo Stuff
-sudo echo -e '\n[g14]" >> /etc/pacman.conf
+sudo echo -e "\n[g14]" >> /etc/pacman.conf
 sudo echo -e "Server = https://arch.asus-linux.org" > /etc/pacman.conf
 
 #Asus laptop stuff
