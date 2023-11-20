@@ -9,7 +9,7 @@ mkdir Games Storage
 sudo nano /etc/fstab
 
 #Games SSD
-UUID=18ba3f0a-47ca-467a-bfe9-fbc973b5884a /home/ericparsley/Games btrfs defaults 0 0
+UUID=bf73ab98-94dc-4e50-8411-77cb6ba43dbd /home/ericparsley/Games btrfs defaults 0 0
 
 #Storage SSD
 UUID=e41f0a87-207e-4b62-ad46-1455ea25b36b /home/ericparsley/Storage btrfs defaults 0 0
