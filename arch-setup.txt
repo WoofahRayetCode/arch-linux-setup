@@ -61,7 +61,12 @@ sudo echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Syu
 
 #Asus laptop stuff
-sudo pacman -S linux-g14 linux-g14-headers
+sudo pacman -Sy linux-g14 linux-g14-headers
+sudo pacman -S asusctl
+sudo pacman -S supergfxctl
+systemctl enable --now supergfxd
+sudo pacman -S rog-control-center
+grub-mkconfig -o /boot/grub/grub.cfg
 
 cd
 mkdir Git
