@@ -12,7 +12,7 @@ sudo nano /etc/fstab
 UUID=bf73ab98-94dc-4e50-8411-77cb6ba43dbd /home/ericparsley/Games btrfs defaults 0 0
 
 #Storage SSD
-UUID=e41f0a87-207e-4b62-ad46-1455ea25b36b /home/ericparsley/Storage btrfs defaults 0 0
+UUID=783f05d2-0d07-4845-9e3f-56ceedf2fb4a /home/ericparsley/Storage btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
