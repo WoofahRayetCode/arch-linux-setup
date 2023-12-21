@@ -47,7 +47,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S base-devel linux-headers movit kdenlive mame-tools lutris qbittorrent lib32-mangohud mangohud wine-staging winetricks bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S base-devel linux-headers movit kdenlive easyeffects mame-tools lutris qbittorrent lib32-mangohud mangohud wine-staging winetricks bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
@@ -70,6 +70,7 @@ sudo pacman -S asusctl
 sudo pacman -S supergfxctl
 systemctl enable --now supergfxd
 sudo pacman -S rog-control-center
+sudo pacman -S ASUS-WMI-FAN-CONTROL
 grub-mkconfig -o /boot/grub/grub.cfg
 
 #Setting up yay
@@ -87,7 +88,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git lib
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mullvad-vpn freedownloadmanager signal-desktop-beta gcdemu minecraft-launcher ventoy-bin protonup-qt android-messages-desktop-bin youtube-music-bin timeshift visual-studio-code-bin
+yay -S mullvad-vpn freedownloadmanager gcdemu minecraft-launcher ventoy-bin protonup-qt android-messages-desktop-bin youtube-music-bin timeshift visual-studio-code-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
