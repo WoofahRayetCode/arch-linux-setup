@@ -75,7 +75,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mgba-qt-git lib
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mullvad-vpn freedownloadmanager gcdemu minecraft-launcher ventoy-bin protonup-qt youtube-music-bin timeshift visual-studio-code-bin
+yay -S mullvad-vpn freedownloadmanager gcdemu minecraft-launcher ventoy-bin protonup-qt youtube-music-bin timeshift
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
