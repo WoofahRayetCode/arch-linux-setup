@@ -14,6 +14,9 @@ UUID=a2b94264-4041-4600-b7f4-5e2b72d90c23 /home/ericparsley/Games btrfs defaults
 #Storage SSD
 UUID=783f05d2-0d07-4845-9e3f-56ceedf2fb4a /home/ericparsley/Storage btrfs defaults 0 0
 
+#Data SSD
+UUID=e4d32f4d-c567-405d-8664-1536c253fe49 /home/ericparsley/Data btrfs defaults 0 0
+
 #Reload to use next command
 sudo systemctl daemon-reload
 
@@ -23,4 +26,5 @@ sudo mount -a
 #Gain ownership of HDDs/SSDs
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Games
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Storage
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 
