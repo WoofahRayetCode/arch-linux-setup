@@ -4,6 +4,14 @@ set -e
 #Change makeflag so aur stuff compiles faster
 sudo nano /etc/makepkg.conf
 
+sudo pacman -Syu
+
+sudo pacman -S base-devel
+
+sudo nano /etc/pacman.conf
+
+sudo pacman -Syu
+
 #Install YAY
 sudo pacman -S git
 mkdir Git
@@ -48,7 +56,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S base-devel linux-headers nvidia-settings movit kdenlive easyeffects mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging winetricks bleachbit steam telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S base-devel linux-headers nvidia-settings movit kdenlive partitionmanager easyeffects mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging winetricks bleachbit steam telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
@@ -64,7 +72,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git fceux-git snes9
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mullvad-vpn vesktop freedownloadmanager gcdemu minecraft-launcher ventoy-bin protonup-qt youtube-music-bin timeshift
+yay -S mullvad-vpn google-chrome vesktop freedownloadmanager gcdemu minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
