@@ -4,15 +4,12 @@ set -e
 #Change makeflag so aur stuff compiles faster
 sudo nano /etc/makepkg.conf
 
-sudo pacman -Syu
-
-sudo pacman -S base-devel
-
+#Enable multilib
 sudo nano /etc/pacman.conf
 
-sudo pacman -Syu
-
 #Install YAY
+sudo pacman -S base-devel linux-headers
+sudo pacman -Syu
 sudo pacman -S git
 mkdir Git
 cd Git
@@ -56,7 +53,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S base-devel linux-headers nvidia-settings movit kdenlive kalarm partitionmanager easyeffects mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging winetricks bleachbit steam telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S nvidia-settings movit kdenlive kalarm partitionmanager easyeffects mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging winetricks bleachbit steam telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
