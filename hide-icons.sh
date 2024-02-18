@@ -4,6 +4,7 @@ set -e
 cd /usr/share/applications
 sudo rm -f org.kde.cuttlefish.desktop
 sudo rm -f electron24.desktop
+sudo rm -f electron26.desktop
 sudo rm -f fluid.desktop
 sudo rm -f yad-icon-browser.desktop
 sudo rm -f qvidcap.desktop
