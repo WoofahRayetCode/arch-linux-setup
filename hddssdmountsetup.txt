@@ -3,13 +3,14 @@
 sudo blkid | grep UUID=
 
 #Make dirs to mount drives to
-mkdir Games Storage Data
+mkdir Games Storage
 
 #Open fstab file
 sudo nano /etc/fstab
 
-#Data SSD
-UUID=bf580196-1399-4398-8488-116ee117adad /home/ericparsley/Data btrfs defaults 0 0
+#Games and Data
+UUID=4408b00e-be00-46c8-a415-cd2809954e89 /home/ericparsley/Games btrfs defaults 0 0
+UUID=2d2b0909-2b29-4e5c-ac7a-2ae7fe4d9ff4 /home/ericparsley/Storage btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
@@ -20,5 +21,4 @@ sudo mount -a
 #Gain ownership of HDDs/SSDs
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Games
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Storage
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 
