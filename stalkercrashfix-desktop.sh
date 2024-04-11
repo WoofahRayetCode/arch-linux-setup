@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-cd /home/ericparsley/GAMES/Steam/steamapps/common/STALKER\ Clear\ Sky/gamedata
+cd /home/ericparsley/.steam/steam/steamapps/common/STALKER\ Clear\ Sky/gamedata
 find -type f -name "Thumbs.db" -exec rm -i {} \;
 cd
 
-cd /home/ericparsley/GAMES/Steam/steamapps/common/STALKER\ Shadow\ of\ Chernobyl/gamedata
+cd /home/ericparsley/.steam/steam/steamapps/common/STALKER\ Shadow\ of\ Chernobyl/gamedata
 find -type f -name "Thumbs.db" -exec rm -i {} \;
 cd
 
-cd /home/ericparsley/GAMES/Steam/steamapps/common/STALKER\ Call\ of\ Pripyat/gamedata
+cd /home/ericparsley/.steam/steam/steamapps/common/STALKER\ Call\ of\ Pripyat/gamedata
 find -type f -name "Thumbs.db" -exec rm -i {} \;
 cd
