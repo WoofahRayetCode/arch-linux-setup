@@ -2,8 +2,10 @@
 set -e
 
 cd /usr/share/applications
+sudo rm -f cmake-gui.desktop
 sudo rm -f org.kde.cuttlefish.desktop
 sudo rm -f electron24.desktop
+sudo rm -f electron27.desktop
 sudo rm -f electron26.desktop
 sudo rm -f electron28.desktop
 sudo rm -f fluid.desktop
@@ -40,3 +42,5 @@ sudo rm -f jshell-java-openjdk.desktop
 sudo rm -f jconsole-java-openjdk.desktop
 sudo rm -f org.kde.discover.desktop
 sudo rm -f org.kde.drkonqi.coredump.gui
+sudo rm -f jconsole-java-openjdk.desktop
+sudo rm -f jshell-java-openjdk.desktop
