@@ -1,3 +1,3 @@
 # General Linux Setup Stuff
 
-Stuff I use for setting up Arch based distros.
+What I use for getting arch linux set up.
