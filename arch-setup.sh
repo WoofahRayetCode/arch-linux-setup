@@ -7,17 +7,6 @@ sudo nano /etc/makepkg.conf
 #Enable multilib
 sudo nano /etc/pacman.conf
 
-#Install YAY
-sudo pacman -S base-devel linux-headers
-sudo pacman -Syu
-sudo pacman -S git
-mkdir Git
-cd Git
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd
-
 #Enable bluetooth
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
@@ -53,7 +42,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S movit kdenlive kalarm partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging winetricks bleachbit steam telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S movit kdenlive kalarm partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging winetricks bleachbit steam discord telegram-desktop caprine krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
@@ -65,11 +54,11 @@ sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
 #Emulators
 sudo pacman -Syyu
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mesen2-git rmg-git mgba-qt-git libmgba-git melonds-git panda3ds-git dolphin-emu-git cemu-git suyu-dev-git ryujinx-git retroarch-git
+yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mesen2-git rmg-git mgba-qt-git libmgba-git melonds-git panda3ds-git lemonade-emu-git dolphin-emu-git cemu-git suyu-dev-git ryujinx-git retroarch-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mullvad-vpn standardnotes-bin google-chrome vesktop freedownloadmanager gcdemu minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift
+yay -S mullvad-vpn standardnotes-bin google-chrome gcdemu minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
