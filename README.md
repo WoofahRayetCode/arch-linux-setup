@@ -1,3 +1,3 @@
-# General Linux Setup Stuff
+# Arch Linux Setup files
 
-What I use for getting arch linux set up.
+Files to set up Arch Linux.
