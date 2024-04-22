@@ -31,9 +31,9 @@ chmod +x hide-icons.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/check_space.sh
 chmod +x check_space.sh
 
-#File for updating TTL for tethering
-wget [link]
-chmod +x [file]
+#File for updating system TTL for tethering
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/ttl-255-sysctl.conf
+sudo mv ttl-255-sysctl.conf /etc/sysctl.d/
 
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
