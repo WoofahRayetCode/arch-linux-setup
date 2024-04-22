@@ -4,6 +4,7 @@ set -e
 cd /usr/share/applications
 sudo rm -f cmake-gui.desktop
 sudo rm -f org.kde.cuttlefish.desktop
+sudo rm -f xdvi.desktop
 sudo rm -f electron24.desktop
 sudo rm -f electron27.desktop
 sudo rm -f electron26.desktop
