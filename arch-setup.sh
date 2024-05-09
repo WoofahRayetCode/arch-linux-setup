@@ -31,6 +31,10 @@ chmod +x hide-icons.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/check_space.sh
 chmod +x check_space.sh
 
+#Autostart file for Noisetorch
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/noisetorch_autostart.sh
+chmod +x noisetorch_autostart.sh
+
 #File for updating system TTL for tethering
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/ttl-255-sysctl.conf
 sudo mv ttl-255-sysctl.conf /etc/sysctl.d/
