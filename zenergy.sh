@@ -2,7 +2,7 @@
 set -e
 
 cd
-cd /home/ericparsley/Documents/Git
+cd /home/ericparsley/Documents/Github/
 git clone https://github.com/BoukeHaarsma23/zenergy.git
 cd zenergy
 make
