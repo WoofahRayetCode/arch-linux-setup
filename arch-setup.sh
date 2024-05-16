@@ -66,7 +66,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mesen2-git rmg-
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S chatall-bin mullvad-vpn standardnotes-bin openrgb-bin liquidctl-git coolercontrol stream-overlay obs-backgroundremoval caprine google-chrome gcdemu xone-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
+yay -S chatall-bin mullvad-vpn standardnotes-bin openrgb-bin liquidctl-git coolercontrol stream-overlay obs-backgroundremoval caprine google-chrome gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
 
 #So sensor stuff can work
 sudo sensors-detect
