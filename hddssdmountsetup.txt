@@ -9,7 +9,7 @@ mkdir Data
 sudo nano /etc/fstab
 
 #Data SSD
-UUID=46c7df92-b152-4dd0-9f3f-51fb50c9ea66 /home/ericparsley/Data btrfs defaults 0 0
+UUID=1c89ba15-e656-4910-bbbf-a95d0dd13a83 /home/ericparsley/Data btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
