@@ -50,7 +50,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings usbmuxd openh264 movit kdenlive kalarm partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam discord caprine telegram-desktop krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam telegram-desktop krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
@@ -66,7 +66,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mesen2-git rmg-
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S mediawriter chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval caprine google-chrome gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
+yay -S mediawriter chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval google-chrome gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git vesktop-bin
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
