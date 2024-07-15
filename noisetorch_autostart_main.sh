@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-noisetorch -s bluez_input.44:5E:CD:4C:4A:29 -i -o bluez_input.44:5E:CD:4C:4A:29
+noisetorch -s alsa_input.usb-3142_fifine_Microphone-00.analog-stereo -i -o alsa_input.usb-3142_fifine_Microphone-00.analog-stereo
