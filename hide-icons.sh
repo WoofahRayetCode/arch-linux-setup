@@ -12,6 +12,7 @@ sudo rm -f electron26.desktop
 sudo rm -f electron28.desktop
 sudo rm -f electron29.desktop
 sudo rm -f electron30.desktop
+sudo rm -f electron31.desktop
 sudo rm -f fluid.desktop
 sudo rm -f yad-icon-browser.desktop
 sudo rm -f qvidcap.desktop
