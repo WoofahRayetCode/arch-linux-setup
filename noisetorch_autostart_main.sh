@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-noisetorch -s alsa_input.usb-MV-SILICON_fifine_SC3_20190808-00.analog-stereo -i -o alsa_input.usb-MV-SILICON_fifine_SC3_20190808-00.analog-stereo
+noisetorch -s bluez_input.44:5E:CD:4C:4A:29 -i -o bluez_input.44:5E:CD:4C:4A:29
