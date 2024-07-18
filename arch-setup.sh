@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-#Change makeflag so aur stuff compiles faster
+#Change makeflag so aur programs compiles faster
 sudo nano /etc/makepkg.conf
 
 #Enable multilib
