@@ -12,8 +12,8 @@ sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 
 #Set up Git
-git config --global user.name "WoofahRayetCode"
-git config --global user.email "56867834+WoofahRayetCode@users.noreply.github.com"
+git config --global user.name WoofahRayetCode
+git config --global user.email 56867834+WoofahRayetCode@users.noreply.github.com
 
 #Download file for easily fixing database lock issue
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/database-unlock.sh
