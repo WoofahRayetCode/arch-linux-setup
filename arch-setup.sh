@@ -69,7 +69,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mesen2-git rmg-
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S envycontrol tenacity-git coolercontrol noisetorch betterdiscord-installer mediawriter chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
+yay -S envycontrol tenacity-git baca-ereader-git coolercontrol noisetorch betterdiscord-installer mediawriter chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
