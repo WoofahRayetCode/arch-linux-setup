@@ -39,6 +39,9 @@ chmod +x noisetorch_autostart.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/ttl-255-sysctl.conf
 sudo mv ttl-255-sysctl.conf /etc/sysctl.d/
 
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/TIAS2781RCA2.bin
+sudo cp TIAS2781RCA2.bin /lib/firmware/
+
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
 
