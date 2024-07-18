@@ -69,7 +69,10 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mesen2-git rmg-
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S supergfxctl betterdiscord-installer mediawriter chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
+yay -S supergfxctl plasma6-applets-supergfxctl betterdiscord-installer mediawriter chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
+
+#Enable supergfxctl
+
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
