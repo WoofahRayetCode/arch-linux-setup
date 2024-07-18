@@ -12,8 +12,8 @@ sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 
 #Set up Git
-git config --global user.email ericiparsley@hotmail.com
-git config --global user.name WoofahRayetCode
+git config --global user.name "WoofahRayetCode"
+git config --global user.email "56867834+WoofahRayetCode@users.noreply.github.com"
 
 #Download file for easily fixing database lock issue
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/database-unlock.sh
@@ -53,7 +53,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings neofetch usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam protontricks discord telegram-desktop krita libreoffice-fresh obs-studio android-tools
+sudo pacman -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings neofetch bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam protontricks discord telegram-desktop krita libreoffice-fresh obs-studio android-tools
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
@@ -69,7 +69,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mesen2-git rmg-
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S envycontrol coolercontrol noisetorch betterdiscord-installer mediawriter chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
+yay -S envycontrol tenacity-git coolercontrol noisetorch betterdiscord-installer mediawriter chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift noisetorch-git
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
