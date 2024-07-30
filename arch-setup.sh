@@ -65,7 +65,7 @@ sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
 #Emulators
 sudo pacman -Syyu
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git mesen2-git rmg-git mgba-qt-git libmgba-git melonds-git lime3ds-git dolphin-emu-git cemu-git ryujinx-git retroarch-git
+yay -S duckstation-avx-git pcsx2-avx-git rpcs3-git ppsspp-avx-git vita3k-avx-git mesen2-git rmg-git mgba-qt-git libmgba-git melonds-git lime3ds-git dolphin-emu-avx-git cemu-git ryujinx-git retroarch-git
 
 #install AUR apps that I use
 sudo pacman -Sy
