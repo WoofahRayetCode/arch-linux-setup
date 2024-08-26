@@ -53,7 +53,12 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
+
+#Lenovo 9i
 sudo pacman -S base-devel nvidia-dkms lib32-nvidia-utils nvidia-utils nvidia-settings ladspa noise-suppression-for-voice alacritty freedownloadmanager neofetch bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam protontricks discord telegram-desktop krita libreoffice-fresh obs-studio android-tools
+
+#Asus Tuf A16 
+sudo pacman -S base-devel ladspa noise-suppression-for-voice freedownloadmanager bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam protontricks discord telegram-desktop krita libreoffice-fresh android-tools
 
 #Enable Chaotic AUR
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
