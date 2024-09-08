@@ -55,7 +55,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 sudo pacman -Sy
 
 #Lenovo 9i
-sudo pacman -S base-devel linux-cachyos-nvidia flatpak nvidia-settings ladspa noise-suppression-for-voice alacritty freedownloadmanager neofetch bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
+sudo pacman -S base-devel flatpak nvidia-dkms nvidia-settings ladspa noise-suppression-for-voice alacritty freedownloadmanager bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
 
 #Flatpak apps
 flatpak install flathub com.obsproject.Studio
@@ -75,7 +75,7 @@ yay -S duckstation-avx-git pcsx2-avx-git rpcs3-git ppsspp-avx-git vita3k-avx-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S envycontrol lmstudio-appimage webapp-manager tenacity-git baca-ereader-git coolercontrol betterdiscord-installer-bin chatall-bin mullvad-vpn standardnotes-bin stream-overlay obs-backgroundremoval-git gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift
+yay -S envycontrol lmstudio-appimage webapp-manager tenacity-git baca-ereader-git coolercontrol chatall-bin standardnotes-bin stream-overlay obs-backgroundremoval-git gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
