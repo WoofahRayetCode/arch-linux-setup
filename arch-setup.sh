@@ -78,7 +78,7 @@ sudo pacman -Sy
 yay -S envycontrol lmstudio-appimage webapp-manager tenacity-git baca-ereader-git coolercontrol chatall-bin standardnotes-bin stream-overlay obs-backgroundremoval-git gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift
 
 #Make 4090 work at full power
-sudo systemctl enable nvidia-powered.service
+sudo systemctl enable nvidia-powerd.service
 sudo systemctl start nvidia-powerd.service
 
 #Clean left over files from AUR stuff
