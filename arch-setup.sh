@@ -2,10 +2,10 @@
 set -e
 
 #Change makeflag so aur programs compiles faster
-sudo nano /etc/makepkg.conf
+sudo micro /etc/makepkg.conf
 
 #Enable multilib
-sudo nano /etc/pacman.conf
+sudo micro /etc/pacman.conf
 
 #Enable bluetooth
 sudo systemctl start bluetooth.service
@@ -55,7 +55,11 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 sudo pacman -Sy
 
 #Lenovo 9i
+<<<<<<< HEAD
+sudo pacman -S base-devel flatpak nvidia-dkms nvidia-settings nvidia-utils lib32-nvidia-utils bluedevil ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
+=======
 sudo pacman -S base-devel flatpak nvidia-dkms nvidia-settings bluedevil ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
+>>>>>>> 9318a66d893d160c5390eb87bbb2d44c83b70924
 
 #Flatpak apps
 flatpak install flathub com.obsproject.Studio
@@ -69,13 +73,16 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
+#Install yay
+sudo pacman -S yay
+
 #Emulators
 sudo pacman -Syyu
 yay -S duckstation-avx-git pcsx2-avx-git rpcs3-git ppsspp-avx-git vita3k-avx-git flycast-avx-git mesen2-git rmg-git mgba-qt-git libmgba-git melonds-git lime3ds-git dolphin-emu-avx-git cemu-git ryujinx-git retroarch-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S envycontrol lmstudio-appimage webapp-manager tenacity-git baca-ereader-git coolercontrol chatall-bin standardnotes-bin stream-overlay obs-backgroundremoval-git gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin visual-studio-code-bin timeshift
+yay -S envycontrol lmstudio-appimage webapp-manager tenacity-git baca-ereader-git coolercontrol standardnotes-bin stream-overlay obs-backgroundremoval-git gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin
 
 #Make 4090 work at full power
 sudo systemctl enable nvidia-powerd.service
