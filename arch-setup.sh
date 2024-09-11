@@ -55,11 +55,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 sudo pacman -Sy
 
 #Lenovo 9i
-<<<<<<< HEAD
 sudo pacman -S base-devel flatpak nvidia-dkms nvidia-settings nvidia-utils lib32-nvidia-utils bluedevil ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
-=======
-sudo pacman -S base-devel flatpak nvidia-dkms nvidia-settings bluedevil ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
->>>>>>> 9318a66d893d160c5390eb87bbb2d44c83b70924
 
 #Flatpak apps
 flatpak install flathub com.obsproject.Studio
