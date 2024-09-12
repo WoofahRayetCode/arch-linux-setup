@@ -70,7 +70,7 @@ yay -S duckstation-avx-git pcsx2-avx-git rpcs3-git ppsspp-avx-git vita3k-avx-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S envycontrol proton-vpn-gtk-app lmstudio-appimage webapp-manager tenacity-git baca-ereader-git coolercontrol standardnotes-bin stream-overlay obs-backgroundremoval-git gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin vscodium-bin-features vscodium-bin-marketplace
+yay -S envycontrol idevicerestore proton-vpn-gtk-app lmstudio-appimage webapp-manager tenacity-git baca-ereader-git coolercontrol standardnotes-bin stream-overlay obs-backgroundremoval-git gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin vscodium-bin-features vscodium-bin-marketplace
 
 #Make 4090 work at full power
 sudo systemctl enable nvidia-powerd.service
