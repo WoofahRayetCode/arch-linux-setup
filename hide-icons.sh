@@ -2,6 +2,7 @@
 set -e
 
 cd /usr/share/applications
+sudo rm -f codium-wayland.desktop
 sudo rm -f cmake-gui.desktop
 sudo rm -f org.kde.cuttlefish.desktop
 sudo rm -f xdvi.desktop
