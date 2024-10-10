@@ -70,7 +70,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S rustdesk-bin simplest-file-renamer-bin envycontrol idevicerestore proton-vpn-gtk-app lmstudio-appimage webapp-manager tenacity-git baca-ereader-git coolercontrol standardnotes-bin stream-overlay obs-backgroundremoval-git gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin vscodium-bin-features vscodium-bin-marketplace
+yay -S rustdesk-bin simplest-file-renamer-bin envycontrol idevicerestore msty webapp-manager tenacity-git baca-ereader-git coolercontrol standardnotes-bin stream-overlay gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin vscodium-bin-features vscodium-bin-marketplace
 
 #Make 4090 work at full power
 sudo systemctl enable nvidia-powerd.service
