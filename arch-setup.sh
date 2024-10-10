@@ -55,7 +55,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 sudo pacman -Sy
 
 #Lenovo 9i
-sudo pacman -S base-devel jre-openjdk flatpak nvidia-settings nvidia-utils lib32-nvidia-utils bluedevil ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
+sudo pacman -S base-devel jre-openjdk flatpak bluedevil ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive partitionmanager mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
 
 #Flatpak apps
 flatpak install flathub com.obsproject.Studio
@@ -70,7 +70,7 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S rustdesk-bin simplest-file-renamer-bin envycontrol idevicerestore msty webapp-manager tenacity-git baca-ereader-git coolercontrol standardnotes-bin stream-overlay gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin vscodium-bin-features vscodium-bin-marketplace
+yay -S rustdesk-bin simplest-file-renamer-bin idevicerestore webapp-manager tenacity-git baca-ereader-git coolercontrol standardnotes-bin stream-overlay gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin vscodium-bin-features vscodium-bin-marketplace
 
 #Make 4090 work at full power
 sudo systemctl enable nvidia-powerd.service
