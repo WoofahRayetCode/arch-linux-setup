@@ -4,6 +4,7 @@ sudo blkid | grep UUID=
 
 #Make dirs to mount drives to
 mkdir Data
+mkdir ExtHDD
 
 #Open fstab file
 sudo nano /etc/fstab
@@ -11,12 +12,17 @@ sudo nano /etc/fstab
 #Data SSD Desktop
 UUID=f3764c45-dabb-499a-ae1d-42d02cd278bb /home/gamers/Data btrfs defaults 0 0
 
+#External 5TB HDD
+UUID=34B455AAB4556EFC /home/gamers/ExtHDD ntfs-3g defaults 0 0
+
 #Reload to use next command
 sudo systemctl daemon-reload
 
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
 
-#Gain ownership of drives on Desktop
+#Gain ownership of secondary drive on Desktop
 sudo chown -R -v gamers:gamers /home/gamers/Data
+#Gain full ownership of External 5TB HDD for desktop
+sudo chown -R -v gamers:gamers /home/gamers/ExtHDD
 
