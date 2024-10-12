@@ -10,10 +10,10 @@ mkdir ExtHDD
 sudo nano /etc/fstab
 
 #Data SSD Desktop
-UUID=f3764c45-dabb-499a-ae1d-42d02cd278bb /home/gamers/Data btrfs defaults 0 0
+UUID=f3764c45-dabb-499a-ae1d-42d02cd278bb /home/gamerscomp/Data btrfs defaults 0 0
 
 #External 5TB HDD
-UUID=34B455AAB4556EFC /home/gamers/ExtHDD ntfs-3g defaults 0 0
+UUID=34B455AAB4556EFC /home/gamerscomp/ExtHDD ntfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
