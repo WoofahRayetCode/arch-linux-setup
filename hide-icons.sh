@@ -51,6 +51,4 @@ sudo rm -f org.kde.drkonqi.coredump.gui
 sudo rm -f jconsole-java-openjdk.desktop
 sudo rm -f jshell-java-openjdk.desktop
 sudo rm -f vim.desktop
-sudo rm -f org.kde.kwrite.desktop
-sudo rm -f org.kde.konsole.desktop
-sudo rm -f fish.desktop
+
