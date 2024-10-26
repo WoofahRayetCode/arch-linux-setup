@@ -81,8 +81,8 @@ sudo pacman -Sy
 yay -S rustdesk-bin simplest-file-renamer-bin idevicerestore webapp-manager tenacity-git baca-ereader-git standardnotes-bin gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin obs-studio-git vscodium-bin-features vscodium-bin-marketplace
 
 #Make 4090 work at full power on laptop - KEEP THIS!
-#sudo systemctl enable nvidia-powerd.service
-#sudo systemctl start nvidia-powerd.service
+sudo systemctl enable nvidia-powerd.service
+sudo systemctl start nvidia-powerd.service
 
 #Clean left over files from AUR stuff
 ./clean-files.sh
