@@ -51,8 +51,8 @@ chmod +x noisetorch_autostart.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/ttl-255-sysctl.conf
 sudo cp ttl-255-sysctl.conf /etc/sysctl.d/
 
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/TIAS2781RCA2.bin
-sudo betterdis TIAS2781RCA2.bin /lib/firmware/
+#wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/TIAS2781RCA2.bin
+#sudo betterdis TIAS2781RCA2.bin /lib/firmware/
 
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
@@ -65,7 +65,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S base-devel linux611-headers glances envycontrol ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
+sudo pacman -S base-devel linux611-headers jq i2c-tools glances envycontrol ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
@@ -83,6 +83,10 @@ yay -S rustdesk-bin msty-bin simplest-file-renamer-bin idevicerestore webapp-man
 
 #Important Drivers?
 yay -S mkinitcpio-firmware 
+
+#Fix for audio on 9i Laptop - Perfect this fix for foreseeable future
+wget https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/tas2781-fix.sh
+chmod +x tas2781-fix.sh
 
 #Make 4090 work at full power on laptop - KEEP THIS!
 sudo systemctl enable nvidia-powerd.service
