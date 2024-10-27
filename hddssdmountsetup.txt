@@ -25,7 +25,7 @@ sudo systemctl daemon-reload
 sudo mount -a
 
 $Gain ownership of DATA SSD on Laptop
-sudo chown -R -v gamers:gamers /home/ericparsley/Data
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 
 #Gain ownership of secondary drive on Desktop
 sudo chown -R -v gamers:gamers /home/gamers/Data
