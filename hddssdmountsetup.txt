@@ -12,6 +12,9 @@ sudo nano /etc/fstab
 #Data SSD Desktop
 UUID=f3764c45-dabb-499a-ae1d-42d02cd278bb /home/gamerscomp/Data btrfs defaults 0 0
 
+#Data SSD Laptop
+UUID=60883d58-12e9-4c3e-86e9-a56bc2a8d2fa /home/ericparsley/Data btrfs defaults 0 0
+
 #External 5TB HDD
 UUID=34B455AAB4556EFC /home/gamerscomp/ExtHDD ntfs defaults 0 0
 
@@ -20,6 +23,9 @@ sudo systemctl daemon-reload
 
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
+
+$Gain ownership of DATA SSD on Laptop
+sudo chown -R -v gamers:gamers /home/gamers/Data
 
 #Gain ownership of secondary drive on Desktop
 sudo chown -R -v gamers:gamers /home/gamers/Data
