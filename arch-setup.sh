@@ -85,9 +85,10 @@ yay -S rustdesk-bin msty-bin simplest-file-renamer-bin idevicerestore webapp-man
 yay -S mkinitcpio-firmware 
 
 #Fix for audio on 9i Laptop - Perfect this fix for foreseeable future
-wget https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/tas2781-fix.sh
-chmod +x tas2781-fix.sh
-sudo ./tas2781-fix.sh
+curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --  
+#wget https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/tas2781-fix.sh
+#chmod +x tas2781-fix.sh
+#sudo ./tas2781-fix.sh
 
 #Make 4090 work at full power on laptop - KEEP THIS!
 sudo systemctl enable nvidia-powerd.service
