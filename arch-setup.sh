@@ -48,8 +48,8 @@ wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/n
 chmod +x noisetorch_autostart.sh
 
 #File for updating system TTL for tethering
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/ttl-255-sysctl.conf
-sudo cp ttl-255-sysctl.conf /etc/sysctl.d/
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/ttl-65-sysctl.conf
+sudo cp ttl-65-sysctl.conf /etc/sysctl.d/
 
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
