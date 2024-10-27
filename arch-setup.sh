@@ -65,7 +65,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S base-devel linux-headers ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
+sudo pacman -S base-devel linux611-headers ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
@@ -80,6 +80,9 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 #install AUR apps that I use
 sudo pacman -Sy
 yay -S rustdesk-bin simplest-file-renamer-bin idevicerestore webapp-manager tenacity-git baca-ereader-git standardnotes-bin gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin obs-studio-git vscodium-bin-features vscodium-bin-marketplace
+
+#Important Drivers?
+yay -S mkinitcpio-firmware 
 
 #Make 4090 work at full power on laptop - KEEP THIS!
 sudo systemctl enable nvidia-powerd.service
