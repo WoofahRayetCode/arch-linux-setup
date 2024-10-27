@@ -2,6 +2,8 @@
 set -e
 
 cd /usr/share/applications
+sudo rm -f org.kde.kdeconnect.app.desktop
+sudo rm -f org.kde.kdeconnect.sms.desktop
 sudo rm -f codium-wayland.desktop
 sudo rm -f cmake-gui.desktop
 sudo rm -f org.kde.cuttlefish.desktop
@@ -51,4 +53,3 @@ sudo rm -f org.kde.drkonqi.coredump.gui
 sudo rm -f jconsole-java-openjdk.desktop
 sudo rm -f jshell-java-openjdk.desktop
 sudo rm -f vim.desktop
-
