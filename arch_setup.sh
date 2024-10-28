@@ -5,8 +5,7 @@ set -e
 sudo micro /etc/makepkg.conf
 
 #Enable multilib and add chaotic aur
-sudo micro /etc/pacman.conf
-
+sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
 sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
