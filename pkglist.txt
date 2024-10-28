@@ -17,6 +17,7 @@ bash-language-server
 biglybt
 bleachbit
 bluedevil
+bluemail
 breeze-gtk
 breeze5
 btrfs-progs
@@ -47,6 +48,7 @@ ffmpegthumbs
 firefox
 flatpak
 gamemode
+gamescope-sk-git
 gcdemu
 glances
 glibc-locales
@@ -65,9 +67,10 @@ htop
 idevicerestore
 inetutils
 install-grub
-intel-ucode
+intel-ucode-git
 inxi
 jfsutils
+joplin-appimage
 jq
 jre-openjdk
 kaccounts-providers
@@ -116,7 +119,7 @@ linux-firmware-git
 linux611
 linux611-headers
 logrotate
-lutris
+lutris-git
 lvm2
 makepkg-optimize
 mame-tools
@@ -201,6 +204,7 @@ power-profiles-daemon
 powerdevil
 powertop
 ppsspp-git
+proton-ge-custom-bin
 protonup-qt
 qt6-imageformats
 qt6-virtualkeyboard
@@ -212,7 +216,6 @@ samba
 sddm
 sddm-breath-theme
 sddm-kcm
-simplest-file-renamer-bin
 sof-firmware
 spectacle
 squashfs-tools
@@ -227,7 +230,7 @@ texinfo
 ttf-dejavu
 udiskie
 udisks2
-umu-launcher
+umu-launcher-git
 unarchiver
 update-grub
 usb_modeswitch
