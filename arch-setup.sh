@@ -47,10 +47,6 @@ chmod +x check_space.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/noisetorch_autostart.sh
 chmod +x noisetorch_autostart.sh
 
-#File for updating system TTL for tethering
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/ttl-65-sysctl.conf
-sudo cp ttl-65-sysctl.conf /etc/sysctl.d/
-
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
 
@@ -62,7 +58,7 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S base-devel linux611-headers qt6-wayland jq i2c-tools glances envycontrol krename ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit mame-tools lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode lib32-gamemode steam-native-runtime discord android-tools
+sudo pacman -S base-devel linux611-headers qt6-wayland  glances envycontrol krename ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit mame-tools lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode lib32-gamemode steam-native-runtime discord android-tools
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
@@ -89,16 +85,14 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S obs-studio-tytan652 msty-bin simplest-file-renamer-bin idevicerestore biglybt gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
+yay -S obs-studio-tytan652 msty-bin idevicerestore biglybt gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 #Important Drivers?
 yay -S mkinitcpio-firmware 
 
 #Fix for audio on 9i Laptop - Perfect this fix for foreseeable future
-curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --  
-#wget https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/tas2781-fix.sh
-#chmod +x tas2781-fix.sh
-#sudo ./tas2781-fix.sh
+sudo pacman -S jq i2c-tools
+curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
 
 #Make 4090 work at full power on laptop - KEEP THIS!
 sudo systemctl enable nvidia-powerd.service
