@@ -59,7 +59,7 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy obs-studio-tytan652 msty-bin idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
+yay -Sy obs-studio-tytan652 msty-bin joplin-appimage idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 #Important Drivers?
 yay -Sy mkinitcpio-firmware 
