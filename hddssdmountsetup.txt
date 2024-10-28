@@ -24,9 +24,8 @@ sudo systemctl daemon-reload
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
 
-$Gain ownership of DATA SSD on Laptop
+#Gain ownership of secondary drive on Laptop
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
-
 #Gain ownership of secondary drive on Desktop
 sudo chown -R -v gamers:gamers /home/gamers/Data
 #Gain full ownership of External 5TB HDD for desktop
