@@ -31,7 +31,10 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
-sudo pacman -Sy base-devel linux611-headers qt6-wayland krename glances envycontrol krename ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit mame-tools lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode lib32-gamemode steam-native-runtime discord android-tools
+sudo pacman -Sy base-devel linux-headers cachyos-gaming-meta linux-cachyos-nvidia nvidia-settings nvidia-utils lib32-nvidia-utils switcheroo-control qt6-wayland glances gamescope envycontrol ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode lib32-gamemode steam android-tools
+
+#Needed to start switchroo service right away
+sudo systemctl enable --now switcheroo-control
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
@@ -49,6 +52,11 @@ flatpak install flathub org.kde.krita
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub org.musicbrainz.Picard
 flatpak install flathub io.github.elevenhsoft.WebApps
+flatpak install flathub com.discordapp.Discord
+flatpak install flathub net.lutris.Lutris
+flatpak install flathub org.kde.krename
+flatpak install flathub com.vscodium.codium
+flatpak install flathub net.cozic.joplin_desktop
 
 #Install yay
 sudo pacman -Sy yay
@@ -59,12 +67,12 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy obs-studio-tytan652 msty-bin joplin-appimage idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
+yay -Sy intel-ucode-git obs-studio-tytan652 msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 #Important Drivers?
 yay -Sy mkinitcpio-firmware 
 
-#Fix for audio on 9i Laptop - Perfect this fix for foreseeable future
+#Fix for audio on 9i Laptop - Perfer this fix for foreseeable future
 curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
 
 #Make 4090 work at full power on 9i laptop - KEEP THIS!
