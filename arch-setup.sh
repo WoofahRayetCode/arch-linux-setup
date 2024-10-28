@@ -58,13 +58,24 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
 sudo pacman -Sy
-sudo pacman -S base-devel linux611-headers qt6-wayland jq i2c-tools glances envycontrol ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit kdenlive mame-tools lutris qbittorrent lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode steam-native-runtime protontricks discord telegram-desktop krita libreoffice-fresh android-tools
+sudo pacman -S base-devel linux611-headers qt6-wayland krename glances envycontrol krename ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit mame-tools lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode lib32-gamemode steam-native-runtime discord android-tools
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
 flatpak install flathub chat.simplex.simplex
 flatpak install flathub org.strawberrymusicplayer.strawberry
 flatpak install flathub org.gnome.baobab
+flatpak install flathub org.kde.kdenlive
+flatpak install flathub me.proton.Pass
+flatpak install flathub com.rustdesk.RustDesk
+flatpak install flathub org.standardnotes.standardnotes
+flatpak install flathub net.davidotek.pupgui2
+flatpak install flathub com.github.Matoking.protontricks
+flatpak install flathub org.telegram.desktop
+flatpak install flathub org.kde.krita
+flatpak install flathub org.libreoffice.LibreOffice
+flatpak install flathub org.musicbrainz.Picard
+flatpak run io.github.elevenhsoft.WebApps
 
 #Install yay
 sudo pacman -S yay
@@ -75,14 +86,13 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S makepkg-optimize obs-studio-tytan652 rustdesk-bin msty-bin simplest-file-renamer-bin idevicerestore webapp-manager tenacity-git baca-ereader-git standardnotes-bin gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin obs-studio-git
+yay -S obs-studio-tytan652 msty-bin idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 #Important Drivers?
 yay -S mkinitcpio-firmware 
 
 #Fix for audio on 9i Laptop - Perfect this fix for foreseeable future
-curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
-
+curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --  
 #Make 4090 work at full power on laptop - KEEP THIS!
 sudo systemctl enable nvidia-powerd.service
 sudo systemctl start nvidia-powerd.service
