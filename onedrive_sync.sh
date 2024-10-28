@@ -5,4 +5,4 @@ cd
 mkdir OneDrive
 cd OneDrive
 
-onedrive --syncdir /home/ericparsley/OneDrive --synchronize --force
+onedrive --syncdir /home/ericparsley/OneDrive --resync --synchronize --force
