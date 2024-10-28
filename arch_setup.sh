@@ -17,8 +17,6 @@ sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
-sudo pacman -Sy
-
 #Enable bluetooth
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
@@ -33,8 +31,7 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
-sudo pacman -Sy
-sudo pacman -S base-devel linux611-headers qt6-wayland krename glances envycontrol krename ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit mame-tools lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode lib32-gamemode steam-native-runtime discord android-tools
+sudo pacman -Sy base-devel linux611-headers qt6-wayland krename glances envycontrol krename ntfs-3g jre-openjdk flatpak ladspa noise-suppression-for-voice bash-language-server usbmuxd openh264 movit mame-tools lib32-mangohud mangohud goverlay wine-staging vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode lib32-gamemode steam-native-runtime discord android-tools
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
@@ -54,18 +51,18 @@ flatpak install flathub org.musicbrainz.Picard
 flatpak install flathub io.github.elevenhsoft.WebApps
 
 #Install yay
-sudo pacman -S yay
+sudo pacman -Sy yay
 
 #Emulators
 sudo pacman -Syyu
-yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
+yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S obs-studio-tytan652 msty-bin idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
+yay -Sy obs-studio-tytan652 msty-bin idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 #Important Drivers?
-yay -S mkinitcpio-firmware 
+yay -Sy mkinitcpio-firmware 
 
 #Fix for audio on 9i Laptop - Perfect this fix for foreseeable future
 curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
