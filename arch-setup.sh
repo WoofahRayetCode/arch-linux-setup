@@ -7,8 +7,8 @@ sudo micro /etc/makepkg.conf
 #Enable multilib and add chaotic aur
 sudo micro /etc/pacman.conf
 
-[chaotic-aur]
-Include = /etc/pacman.d/chaotic-mirrorlist
+sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
+sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
 sudo pacman-key --init
 
@@ -47,10 +47,6 @@ chmod +x check_space.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/noisetorch_autostart.sh
 chmod +x noisetorch_autostart.sh
 
-#File for updating system TTL for tethering
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/ttl-65-sysctl.conf
-sudo cp ttl-65-sysctl.conf /etc/sysctl.d/
-
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
 
@@ -79,16 +75,13 @@ yay -S duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -S obs-studio-tytan652 rustdesk-bin msty-bin simplest-file-renamer-bin idevicerestore webapp-manager tenacity-git baca-ereader-git standardnotes-bin gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin obs-studio-git vscodium-bin-features vscodium-bin-marketplace
+yay -S makepkg-optimize obs-studio-tytan652 rustdesk-bin msty-bin simplest-file-renamer-bin idevicerestore webapp-manager tenacity-git baca-ereader-git standardnotes-bin gcdemu xpadneo-dkms minecraft-launcher ventoy-bin protonup-qt youtube-music-bin obs-studio-git
 
 #Important Drivers?
 yay -S mkinitcpio-firmware 
 
 #Fix for audio on 9i Laptop - Perfect this fix for foreseeable future
-curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --  
-#wget https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/tas2781-fix.sh
-#chmod +x tas2781-fix.sh
-#sudo ./tas2781-fix.sh
+curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
 
 #Make 4090 work at full power on laptop - KEEP THIS!
 sudo systemctl enable nvidia-powerd.service
