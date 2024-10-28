@@ -23,30 +23,6 @@ sudo pacman -Sy
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 
-#Set up Git
-git config --global user.name WoofahRayetCode
-git config --global user.email 56867834+WoofahRayetCode@users.noreply.github.com
-
-#Download file for easily fixing database lock issue
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/database-unlock.sh
-chmod +x database-unlock.sh
-
-#File to regularly run to clean left over files
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/clean-files.sh
-chmod +x clean-files.sh
-
-#Remove icons I don't want on the programs menu
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/hide-icons.sh
-chmod +x hide-icons.sh
-
-#Check whats using space
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-stuff/master/check_space.sh
-chmod +x check_space.sh
-
-#Autostart file for Noisetorch
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/master/noisetorch_autostart.sh
-chmod +x noisetorch_autostart.sh
-
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
 
@@ -75,7 +51,7 @@ flatpak install flathub org.telegram.desktop
 flatpak install flathub org.kde.krita
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub org.musicbrainz.Picard
-flatpak run io.github.elevenhsoft.WebApps
+flatpak install flathub io.github.elevenhsoft.WebApps
 
 #Install yay
 sudo pacman -S yay
@@ -92,8 +68,9 @@ yay -S obs-studio-tytan652 msty-bin idevicerestore gcdemu xpadneo-dkms ventoy-bi
 yay -S mkinitcpio-firmware 
 
 #Fix for audio on 9i Laptop - Perfect this fix for foreseeable future
-curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --  
-#Make 4090 work at full power on laptop - KEEP THIS!
+curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
+
+#Make 4090 work at full power on 9i laptop - KEEP THIS!
 sudo systemctl enable nvidia-powerd.service
 sudo systemctl start nvidia-powerd.service
 
