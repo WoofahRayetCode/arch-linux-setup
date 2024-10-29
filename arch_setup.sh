@@ -66,7 +66,7 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy intel-ucode-git obs-studio-tytan652 msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
+yay -Sy onedrive-abraunegg-git intel-ucode-git obs-studio-tytan652 msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 #Important Drivers?
 yay -Sy mkinitcpio-firmware 
