@@ -57,6 +57,11 @@ flatpak install flathub org.kde.krename
 flatpak install flathub com.vscodium.codium
 flatpak install flathub net.cozic.joplin_desktop
 
+#Run to get better discord set up
+curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
+chmod +x betterdiscordctl
+udo mv betterdiscordctl /usr/local/bin
+
 #Install yay
 sudo pacman -Sy yay
 
