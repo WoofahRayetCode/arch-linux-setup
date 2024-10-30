@@ -91,12 +91,12 @@ sudo ./hide_icons.sh
 #set up OneDrive
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/onedrive_sync_setup.sh
 sudo chmod +x onedrive_sync_setup.sh
-sudo ./onedrive_sync_setup.sh
+./onedrive_sync_setup.sh
 
 #Run to sync OneDrive after initial setup
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/onedrive_sync.sh
 sudo chmod +x onedrive_sync.sh
-sudo ./onedrive_sync.sh
+./onedrive_sync.sh
 
 #Need to run this file at every login so Mangohud can read wattage for Intel CPU
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/goverlay_intel_power_reading.sh
