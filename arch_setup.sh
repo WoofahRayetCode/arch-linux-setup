@@ -58,7 +58,7 @@ flatpak install flathub net.cozic.joplin_desktop
 #Run to get better discord set up
 curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
 chmod +x betterdiscordctl
-udo mv betterdiscordctl /usr/local/bin
+sudo mv betterdiscordctl /usr/local/bin
 
 #Install yay
 sudo pacman -Sy yay
