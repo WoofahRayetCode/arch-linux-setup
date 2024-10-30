@@ -71,9 +71,6 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 sudo pacman -Sy
 yay -Sy makepkg-optimize onedrive-abraunegg-git peazip gnome-keyring msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin brave
 
-#Important Drivers?
-yay -Sy mkinitcpio-firmware 
-
 #Fix for audio on 9i Laptop - Perfer this fix for foreseeable future
 curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
 
@@ -81,8 +78,26 @@ curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/
 sudo systemctl enable nvidia-powerd.service
 sudo systemctl start nvidia-powerd.service
 
-#Clean left over files from AUR stuff
-./clean-files.sh
+#Clean left over files
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/clean_files.sh
+chmod +x clean_files.sh
+sudo ./clean_files.sh
 
-#Hide icons in programs menu that I don't want to see
-./hide-icons.sh
+#Hide icons for program I dont use
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/hide_icons.sh
+sudo chmod +x hide_icons.sh
+sudo ./hide_icons.sh
+
+#set up OneDrive
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/onedrive_sync_setup.sh
+sudo chmod +x onedrive_sync_setup.sh
+sudo ./onedrive_sync_setup.sh
+
+#Run to sync OneDrive after initial setup
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/onedrive_sync.sh
+sudo chmod +x onedrive_sync.sh
+sudo ./onedrive_sync.sh
+
+#Need to run this file at every login so Mangohud can read wattage for Intel CPU
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/goverlay_intel_power_reading.sh
+sudo chmod +x goverlay_intel_power_reading.sh
