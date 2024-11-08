@@ -98,6 +98,11 @@ wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/hea
 sudo chmod +x onedrive_sync.sh
 ./onedrive_sync.sh
 
+#Needed for AMD desktop. KEEP THIS!
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/zenergy.sh
+chmod +x zenergy.sh
+./zenergy.sh
+
 #Need to run this file at every login so Mangohud can read wattage for Intel CPU
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/goverlay_intel_power_reading.sh
 sudo chmod +x goverlay_intel_power_reading.sh
