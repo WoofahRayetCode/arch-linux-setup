@@ -25,7 +25,7 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
-sudo pacman -Sy base-devel linux-headers cachyos-gaming-meta partitionmanager linux-cachyos-nvidia nvidia-settings nvidia-utils lib32-nvidia-utils switcheroo-control qt6-wayland glances gamescope envycontrol ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools lib32-mangohud mangohud goverlay vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks bleachbit gamemode lib32-gamemode steam android-tools
+sudo pacman -Sy base-devel linux-headers cachyos-gaming-meta partitionmanager linux-cachyos-nvidia nvidia-settings nvidia-utils lib32-nvidia-utils switcheroo-control qt6-wayland gamescope envycontrol ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools lib32-mangohud mangohud goverlay vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks protontricks bleachbit gamemode lib32-gamemode steam android-tools
 
 #Needed for UUP Dump ISO creation
 sudo pacman -S cabextract wimlib chntpw cdrtools aria2
