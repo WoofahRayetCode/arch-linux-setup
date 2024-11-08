@@ -53,6 +53,7 @@ flatpak install flathub com.discordapp.Discord
 flatpak install flathub org.kde.krename
 flatpak install flathub com.vscodium.codium
 flatpak install flathub net.cozic.joplin_desktop
+flatpak install flathub com.microsoft.Edge
 
 #Run to get better discord set up
 curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
@@ -68,7 +69,7 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy makepkg-optimize onedrive-abraunegg-git peazip gnome-keyring msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin brave
+yay -Sy onedrive-abraunegg-git peazip gnome-keyring msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin microsoft-edge-stable-bin
 
 #Fix for audio on 9i Laptop - Perfer this fix for foreseeable future
 curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
