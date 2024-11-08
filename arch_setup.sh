@@ -50,7 +50,6 @@ flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub org.musicbrainz.Picard
 flatpak install flathub io.github.elevenhsoft.WebApps
 flatpak install flathub com.discordapp.Discord
-flatpak install flathub net.lutris.Lutris
 flatpak install flathub org.kde.krename
 flatpak install flathub com.vscodium.codium
 flatpak install flathub net.cozic.joplin_desktop
