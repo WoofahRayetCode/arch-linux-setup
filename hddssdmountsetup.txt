@@ -10,7 +10,7 @@ mkdir ExtHDD
 sudo nano /etc/fstab
 
 #Data SSD Desktop
-UUID=f3764c45-dabb-499a-ae1d-42d02cd278bb /home/gamerscomp/Data btrfs defaults 0 0
+UUID=77eb65ee-a255-4d25-b1c4-1815b3f5a0d6 /home/gamers/Data btrfs defaults 0 0
 
 #Data SSD Laptop
 UUID=acdc5f50-ed9d-416e-8c29-ae91d91b761b /home/ericparsley/Data btrfs defaults 0 0
