@@ -34,7 +34,6 @@ sudo pacman -S cabextract wimlib chntpw cdrtools aria2
 sudo systemctl enable --now switcheroo-control
 
 #Flatpak apps
-flatpak install flathub de.z_ray.OptimusUI
 flatpak install flathub com.github.wwmm.easyeffects
 flatpak install flathub org.strawberrymusicplayer.strawberry
 flatpak install flathub org.kde.kdenlive
