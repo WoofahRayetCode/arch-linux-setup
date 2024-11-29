@@ -25,7 +25,7 @@ sudo systemctl daemon-reload
 sudo mount -a
 
 #Gain ownership of secondary drive on Laptop
-sudo chown -R -v ericiparsley:ericiparsley /home/ericparsley/Data
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 #Gain ownership of secondary drive on Desktop
 sudo chown -R -v gamers:gamers /home/gamers/Data
 #Gain full ownership of External 5TB HDD for desktop
