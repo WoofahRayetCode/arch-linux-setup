@@ -78,7 +78,6 @@ flatpak install flathub org.kde.krita
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub io.github.elevenhsoft.WebApps
 flatpak install flathub org.kde.krename
-flatpak install flathub com.visualstudio.code
 
 # Install yay if not already installed
 if ! command -v yay &>/dev/null; then
@@ -90,7 +89,7 @@ fi
 install_packages duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 # Install AUR apps that I use
-install_packages envycontrol vk-hdr-layer-kwin6-git vesktop onedrive-abraunegg-git peazip gnome-keyring lmstudio proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
+install_packages envycontrol visual-studio-code-bin vk-hdr-layer-kwin6-git vesktop onedrive-abraunegg-git peazip gnome-keyring lmstudio proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 # Fix for audio on 9i Laptop - Prefer this fix for foreseeable future
 curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
