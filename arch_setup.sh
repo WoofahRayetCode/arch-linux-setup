@@ -35,7 +35,6 @@ sudo systemctl enable --now switcheroo-control
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
-flatpak install flathub org.strawberrymusicplayer.strawberry
 flatpak install flathub org.kde.kdenlive
 flatpak install flathub me.proton.Pass
 flatpak install flathub com.rustdesk.RustDesk
@@ -44,7 +43,6 @@ flatpak install flathub com.github.Matoking.protontricks
 flatpak install flathub org.kde.krita
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub io.github.elevenhsoft.WebApps
-flatpak install flathub com.discordapp.Discord
 flatpak install flathub org.kde.krename
 flatpak install flathub com.vscodium.codium
 
@@ -62,7 +60,7 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy envycontrol onedrive-abraunegg-git peazip gnome-keyring msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
+yay -Sy envycontrol vesktop onedrive-abraunegg-git peazip gnome-keyring msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 #Fix for audio on 9i Laptop - Perfer this fix for foreseeable future
 curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
