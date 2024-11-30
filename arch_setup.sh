@@ -44,12 +44,7 @@ flatpak install flathub org.kde.krita
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub io.github.elevenhsoft.WebApps
 flatpak install flathub org.kde.krename
-flatpak install flathub com.vscodium.codium
-
-#Run to get better discord set up
-curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
-chmod +x betterdiscordctl
-sudo mv betterdiscordctl /usr/local/bin
+flatpak install flathub com.visualstudio.code
 
 #Install yay
 sudo pacman -Sy yay
@@ -60,7 +55,7 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy envycontrol vesktop onedrive-abraunegg-git peazip gnome-keyring msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
+yay -Sy envycontrol vk-hdr-layer-kwin6-git vesktop onedrive-abraunegg-git peazip gnome-keyring msty-bin proton-ge-custom-bin umu-launcher sideloader-bin bluemail idevicerestore gcdemu xpadneo-dkms ventoy-bin youtube-music-bin
 
 #Fix for audio on 9i Laptop - Perfer this fix for foreseeable future
 curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
@@ -78,6 +73,17 @@ sudo ./clean_files.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/hide_icons.sh
 sudo chmod +x hide_icons.sh
 sudo ./hide_icons.sh
+
+#CPU boost agressiveness script
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/cpu_boost_switcher.sh
+sudo chmod +x cpu_boost_switcher.sh
+sudo cp cpu_boost_switcher.sh /usr/local/bin/
+
+#GPU switcher script for hybrid laptop.
+wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/envycontrol_gpu_switcher.sh
+sudo chmod +x envycontrol_gpu_switcher.sh
+sudo cp envycontrol_gpu_switcher.sh /usr/local/bin/
+
 
 #set up OneDrive
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/onedrive_sync_setup.sh
