@@ -13,7 +13,7 @@ sudo nano /etc/fstab
 UUID=77eb65ee-a255-4d25-b1c4-1815b3f5a0d6 /home/gamers/Data btrfs defaults 0 0
 
 #Data SSD Laptop
-UUID=637b8d4a-788b-4e45-8ce5-6c213db78d8b /home/ericparsley/Data btrfs defaults 0 0
+UUID=45f02980-39e1-4505-94e5-5c81698a91f3 /home/ericparsley/Data btrfs defaults 0 0
 
 #External 5TB HDD
 UUID=34B455AAB4556EFC /home/gamerscomp/ExtHDD ntfs defaults 0 0
