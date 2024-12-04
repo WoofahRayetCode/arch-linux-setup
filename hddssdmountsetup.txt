@@ -10,7 +10,7 @@ mkdir ExtHDD
 sudo nano /etc/fstab
 
 #Data SSD Desktop
-UUID=77eb65ee-a255-4d25-b1c4-1815b3f5a0d6 /home/gamers/Data btrfs defaults 0 0
+UUID=77eb65ee-86699896-31ef-494a-b6f2-05954650e6af /home/ericparsley/Data btrfs defaults 0 0
 
 #Data SSD Laptop
 UUID=45f02980-39e1-4505-94e5-5c81698a91f3 /home/ericparsley/Data btrfs defaults 0 0
@@ -27,7 +27,7 @@ sudo mount -a
 #Gain ownership of secondary drive on Laptop
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 #Gain ownership of secondary drive on Desktop
-sudo chown -R -v gamers:gamers /home/gamers/Data
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 #Gain full ownership of External 5TB HDD for desktop
-sudo chown -R -v gamers:gamers /home/gamers/ExtHDD
+sudo chown -R -v ericparsley:ericparsley /home/gamers/ExtHDD
 
