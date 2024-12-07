@@ -8,7 +8,8 @@ sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 sudo pacman-key --init
-sudo echo -e "\n\n" >> /etc/pacman.conf
+sudo echo -e "\n" >> /etc/pacman.conf
+sudo echo -e "\n" >> /etc/pacman.conf
 sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
@@ -26,7 +27,7 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
-sudo pacman -Sy base-devel linux-headers jq partitionmanager nvidia-dkms nvidia-settings nvidia-utils lib32-nvidia-utils switcheroo-control ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools lib32-mangohud mangohud goverlay vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks protontricks bleachbit gamemode lib32-gamemode steam android-tools
+sudo pacman -Sy base-devel linux-headers jq partitionmanager nvidia-dkms nvidia-settings nvidia-utils lib32-nvidia-utils envycontrol switcheroo-control ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools lib32-mangohud mangohud goverlay vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks protontricks bleachbit gamemode lib32-gamemode steam android-tools
 
 #Needed for UUP Dump ISO creation
 sudo pacman -S cabextract wimlib chntpw cdrtools aria2
@@ -46,7 +47,7 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy vesktop onedrive-abraunegg-git peazip lmstudio proton-ge-custom-bin umu-launcher sideloader-bin idevicerestore xpadneo-dkms ventoy-bin
+yay -Sy vesktop onedrive-abraunegg-git peazip msty-bin proton-ge-custom-bin umu-launcher sideloader-bin idevicerestore xpadneo-dkms ventoy-bin
 
 #Fix for audio for Lenovo laptops that use TAS2781 - Perfer this fix for foreseeable future
 #curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
