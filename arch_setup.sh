@@ -9,7 +9,6 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 sudo pacman-key --init
 sudo echo -e "\n" >> /etc/pacman.conf
-sudo echo -e "\n" >> /etc/pacman.conf
 sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
