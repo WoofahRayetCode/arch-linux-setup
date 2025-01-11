@@ -15,8 +15,8 @@ UUID=77eb65ee-86699896-31ef-494a-b6f2-05954650e6af /home/ericparsley/Data btrfs 
 #Data SSD Laptop
 UUID=93892967-198b-45b5-9067-d0c79022132a /home/ericparsley/Data btrfs defaults 0 0
 
-#External 5TB HDD
-UUID=34B455AAB4556EFC /home/gamerscomp/ExtHDD ntfs defaults 0 0
+#External 14TB HDD
+UUID=102415D5102415D5 /home/gamerscomp/ExtHDD ntfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
