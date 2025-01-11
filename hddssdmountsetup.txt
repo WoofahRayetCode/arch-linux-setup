@@ -29,5 +29,5 @@ sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 #Gain ownership of secondary drive on Desktop
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 #Gain full ownership of External 14TB HDD for desktop
-sudo chown -R -v ericparsley:ericparsley /home/gamers/ExtHDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/ExtHDD
 
