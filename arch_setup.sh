@@ -42,14 +42,11 @@ sudo pacman -Sy yay
 
 #Emulators
 sudo pacman -Syyu
-yay -Sy duckstation-git pcsx2-git rpcs3-git ppsspp-git vita3k-git
+yay -Sy duckstation-git pcsx-redux-git pcsx2-git play-emu rpcs3-git shadps4-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy vesktop onedrive-abraunegg-git peazip msty-bin proton-ge-custom-bin umu-launcher sideloader-bin idevicerestore xpadneo-dkms ventoy-bin
-
-#Fix for audio for Lenovo laptops that use TAS2781 - Perfer this fix for foreseeable future
-#curl -s https://raw.githubusercontent.com/DanielWeiner/tas2781-fix-16IRX8H/refs/heads/main/install.sh | bash -s --
+yay -Sy peazip msty-bin proton-ge-custom-bin umu-launcher sideloader-bin idevicerestore xpadneo-dkms ventoy-bin zenergy-git
 
 #Full power for Nvidia GPUs - KEEP THIS!
 sudo systemctl enable nvidia-powerd.service
@@ -64,22 +61,3 @@ sudo ./clean_files.sh
 wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/hide_icons.sh
 sudo chmod +x hide_icons.sh
 sudo ./hide_icons.sh
-
-#set up OneDrive
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/onedrive_sync_setup.sh
-sudo chmod +x onedrive_sync_setup.sh
-./onedrive_sync_setup.sh
-
-#Run to sync OneDrive after initial setup
-wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/onedrive_sync.sh
-sudo chmod +x onedrive_sync.sh
-./onedrive_sync.sh
-
-#Needed for AMD desktop. KEEP THIS!
-#wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/zenergy.sh
-#chmod +x zenergy.sh
-#./zenergy.sh
-
-#Need to run this file at every login so Mangohud can read wattage for Intel CPU
-#wget https://raw.githubusercontent.com/WoofahRayetCode/arch-linux-setup/refs/heads/master/goverlay_intel_power_reading.sh
-#sudo chmod +x goverlay_intel_power_reading.sh
