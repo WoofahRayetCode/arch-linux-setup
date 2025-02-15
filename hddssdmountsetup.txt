@@ -3,20 +3,31 @@
 sudo blkid | grep UUID=
 
 #Make dirs to mount drives to
-mkdir Data
-mkdir ExtHDD
+mkdir DesktopSSDData
+mkdir LaptopSSDData
+mkdir Ext4TBSSD/
+mkdir Ext5TBHDD
+mkdir Ext14TBHDD
+
+
 
 #Open fstab file
 sudo nano /etc/fstab
 
 #Data SSD Desktop
-UUID=77eb65ee-86699896-31ef-494a-b6f2-05954650e6af /home/ericparsley/Data btrfs defaults 0 0
+UUID=77eb65ee-86699896-31ef-494a-b6f2-05954650e6af /home/ericparsley/DesktopSSDData btrfs defaults 0 0
 
 #Data SSD Laptop
-UUID=93892967-198b-45b5-9067-d0c79022132a /home/ericparsley/Data btrfs defaults 0 0
+UUID=93892967-198b-45b5-9067-d0c79022132a /home/ericparsley/LaptopData btrfs defaults 0 0
+
+#External 4TB SSD 
+UUID=EEF839E2F839AA2B /home/ericparsley/Ext4TBSSD ntfs defaults 0 0
+
+#External 5TB HDD
+UUID=? /home/ericparsley/Ext5TBHDD ntfs defaults 0 0
 
 #External 14TB HDD
-UUID=102415D5102415D5 /home/ericparsley/ExtHDD ntfs defaults 0 0
+UUID=102415D5102415D5 /home/ericparsley/Ext14TBHDD ntfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
@@ -24,10 +35,14 @@ sudo systemctl daemon-reload
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
 
-#Gain ownership of secondary drive on Laptop
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
 #Gain ownership of secondary drive on Desktop
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Data
-#Gain full ownership of External 14TB HDD for desktop
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/ExtHDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/DesktopSSDData
+#Gain ownership of secondary drive on Laptop
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/LaptopSSDData
+#Gain ownership of External 4TB SSD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Ext4TBSSD
+#Gain ownership of External 5TB HDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Ext5TBHDD
+#Gain ownership of External 14TB HDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Ext14TBHDD
 
