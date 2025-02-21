@@ -2,8 +2,6 @@
 set -e
 
 cd /usr/share/applications
-sudo rm -f org.kde.kdeconnect.app.desktop
-sudo rm -f org.kde.kdeconnect.sms.desktop
 sudo rm -f codium-wayland.desktop
 sudo rm -f cmake-gui.desktop
 sudo rm -f org.kde.cuttlefish.desktop
@@ -16,6 +14,8 @@ sudo rm -f electron28.desktop
 sudo rm -f electron29.desktop
 sudo rm -f electron30.desktop
 sudo rm -f electron31.desktop
+sudo rm -f electron32.desktop
+sudo rm -f electron33.desktop
 sudo rm -f fluid.desktop
 sudo rm -f yad-icon-browser.desktop
 sudo rm -f qvidcap.desktop
@@ -31,9 +31,6 @@ sudo rm -f designer.desktop
 sudo rm -f linguist.desktop
 sudo rm -f qdbusviewer.desktop
 sudo rm -f org.kde.kuserfeedback-console.desktop
-sudo rm -f duckstation-nogui.desktop
-sudo rm -f ppsspp-sdl.desktop
-sudo rm -f io.mgba.mGBA.desktop
 sudo rm -f bssh.desktop
 sudo rm -f bvnc.desktop
 sudo rm -f qv4l2.desktop
