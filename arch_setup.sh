@@ -38,4 +38,4 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy peazip msty-bin sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin standardnotes-bin
+yay -Sy peazip msty-bin sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin standardnotes-bin zenergy-dkms-git
