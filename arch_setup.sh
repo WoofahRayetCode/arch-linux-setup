@@ -34,7 +34,7 @@ sudo pacman -Sy yay
 
 #Emulators
 sudo pacman -Syyu
-yay -Sy duckstation-git pcsx-redux-git pcsx2-git play-emu rpcs3-git shadps4-git ppsspp-git vita3k-git
+yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
