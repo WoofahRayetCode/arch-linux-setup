@@ -21,7 +21,7 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
 #Install regularly used apps
-sudo pacman -Sy base-devel linux-headers jq partitionmanager ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud goverlay vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks protontricks bleachbit gamemode lib32-gamemode steam android-tools libreoffice-fresh
+sudo pacman -Sy base-devel linux-headers jq partitionmanager qbittorrent ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud goverlay vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks protontricks bleachbit gamemode lib32-gamemode steam android-tools libreoffice-fresh
 
 #Needed for UUP Dump ISO creation
 sudo pacman -S cabextract wimlib chntpw cdrtools aria2
@@ -38,4 +38,4 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy peazip msty-bin sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin standardnotes-bin zenergy-dkms-git
+yay -Sy peazip msty-bin sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin standardnotes-bin obs-backgroundremoval zenergy-dkms-git
