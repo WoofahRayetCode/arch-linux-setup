@@ -8,8 +8,8 @@ sudo rm -f org.kde.cuttlefish.desktop
 sudo rm -f xdvi.desktop
 sudo rm -f mpv.desktop
 sudo rm -f electron24.desktop
-sudo rm -f electron27.desktop
 sudo rm -f electron26.desktop
+sudo rm -f electron27.desktop
 sudo rm -f electron28.desktop
 sudo rm -f electron29.desktop
 sudo rm -f electron30.desktop
