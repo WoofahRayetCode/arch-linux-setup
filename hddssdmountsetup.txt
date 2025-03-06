@@ -15,7 +15,7 @@ mkdir Ext14TBHDD
 sudo nano /etc/fstab
 
 #Data SSD Desktop
-UUID=77eb65ee-86699896-31ef-494a-b6f2-05954650e6af /home/ericparsley/DesktopSSDData btrfs defaults 0 0
+UUID=4cf9b6f2-fef5-4ac2-83d8-593ae40a26a0 /home/ericparsley/DesktopSSDData btrfs defaults 0 0
 
 #Data SSD Laptop
 UUID=93892967-198b-45b5-9067-d0c79022132a /home/ericparsley/LaptopData btrfs defaults 0 0
