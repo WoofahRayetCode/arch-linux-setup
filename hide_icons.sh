@@ -2,7 +2,6 @@
 set -e
 
 cd /usr/share/applications
-sudo rm -f codium-wayland.desktop
 sudo rm -f cmake-gui.desktop
 sudo rm -f org.kde.cuttlefish.desktop
 sudo rm -f xdvi.desktop
@@ -50,3 +49,8 @@ sudo rm -f org.kde.drkonqi.coredump.gui
 sudo rm -f jconsole-java-openjdk.desktop
 sudo rm -f jshell-java-openjdk.desktop
 sudo rm -f vim.desktop
+sudo rm -f blackmagicraw-player.desktopblackmagicraw-player.desktop
+sudo rm -f blackmagicraw-speedtest.desktop
+sudo rm -f DaVinciControlPanelsSetup.desktop
+sudo rm -f DaVinciResolveCaptureLogs.desktop
+sudo rm -f DaVinciResolveInstaller.desktop
