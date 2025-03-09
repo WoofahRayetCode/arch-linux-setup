@@ -50,6 +50,7 @@ sudo rm -f jconsole-java-openjdk.desktop
 sudo rm -f jshell-java-openjdk.desktop
 sudo rm -f vim.desktop
 sudo rm -f blackmagicraw-player.desktopblackmagicraw-player.desktop
+sudo rm -f blackmagicraw-player.desktop
 sudo rm -f blackmagicraw-speedtest.desktop
 sudo rm -f DaVinciControlPanelsSetup.desktop
 sudo rm -f DaVinciResolveCaptureLogs.desktop
