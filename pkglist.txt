@@ -11,6 +11,7 @@ amd-ucode
 android-tools
 aria2
 ark
+avidemux-qt6-git
 awesome-terminal-fonts
 base
 base-devel
@@ -56,7 +57,6 @@ chwd
 cmake
 cpupower
 cryptsetup
-davinci-resolve
 device-mapper
 dhclient
 diffutils
@@ -76,12 +76,13 @@ ethtool
 exfatprogs
 f2fs-tools
 faugus-launcher
-ffmpeg
+ffmpeg-full
 ffmpegthumbnailer
 ffmpegthumbs
 firefox
 flatpak
 freedownloadmanager
+frei0r-plugins
 fsarchiver
 gamemode
 git
@@ -137,6 +138,7 @@ linux-cachyos-headers
 linux-firmware
 linux-headers
 logrotate
+losslesscut-git
 lsb-release
 lsscsi
 lvm2
@@ -153,6 +155,7 @@ mkinitcpio
 modemmanager
 msty-bin
 mtools
+mullvad-vpn-bin
 nano
 nano-syntax-highlighting
 netctl
@@ -253,6 +256,7 @@ sddm
 sddm-kcm
 sg3_utils
 shadps4-git
+shutter-encoder-bin
 sideloader-bin
 smartmontools
 snapper
