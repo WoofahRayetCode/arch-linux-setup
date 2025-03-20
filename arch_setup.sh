@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 
+#set git config
+git config --global user.name "Eric Parsley"
+git config --global user.email "ericiparsley@hotmail.com"
+git config --global core.editor "visual-studio-code --wait"
+git config --global pull.rebase true
+git config --global init.defaultBranch master 
+
 #Add chaotic aur
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
