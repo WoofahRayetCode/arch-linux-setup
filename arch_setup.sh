@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-#Enable multilib and add chaotic aur
+#Add chaotic aur
 sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
@@ -10,6 +10,21 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg
 sudo pacman-key --init
 sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+
+#Asus Repo
+sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+sudo echo -e "\n[g14]" >> /etc/pacman.conf
+sudo echo -e "\nServer = https://arch.asus-linux.org" >> /etc/pacman.conf
+
+#Refresh
+sudo pacman -Sy
+
+#Add key
+wget "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x8b15a6b0e9a3fa35" -O g14.sec
+sudo pacman-key -a g14.sec
 
 #Enable parallel downloading
 sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
@@ -20,14 +35,23 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 #Change progressbar to pacman
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
+#Asus programs
+sudo pacman -S asusctl power-profiles-daemon
+sudo pacman -S supergfxctl switcheroo-control
+sudo pacman -S rog-control-center
+systemctl enable --now power-profiles-daemon.service
+systemctl enable --now supergfxd
+systemctl enable --now switcheroo-control
+
 #Install regularly used apps
-sudo pacman -Sy base-devel linux-headers handbrake dragon jq partitionmanager qbittorrent ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud goverlay vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers winetricks protontricks bleachbit gamemode lib32-gamemode steam android-tools libreoffice-fresh
+sudo pacman -Sy base-devel linux-headers mkinitcpio-firmware handbrake dragon jq partitionmanager qbittorrent ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud goverlay vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers wine-staging winetricks protontricks bleachbit gamemode lib32-gamemode steam android-tools libreoffice-fresh
 
 #Needed for UUP Dump ISO creation
 sudo pacman -S cabextract wimlib chntpw cdrtools aria2
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
+flatpak install flathub net.davidotek.pupgui2
 
 #Install yay
 sudo pacman -Sy yay
@@ -38,4 +62,4 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy peazip msty-bin sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin standardnotes-bin obs-backgroundremoval davinci-resolve freedownloadmanager zenergy-dkms-git
+yay -Sy peazip sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve freedownloadmanager zenergy-dkms-git
