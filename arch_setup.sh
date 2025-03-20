@@ -1,12 +1,6 @@
 #!/bin/bash
 set -e
 
-#Alias for pacman
-sudo echo -e "export PASSWORD=StlkrWlf1990" >> ~/.bashrc
-sudo echo -e "alias pacman=sudo pacman" >> ~/.bashrc
-sudo echo -e "alias update=yay" >> ~/.bashrc
-sudo echo -e "alias bashup=source ~/.bashrc" >> ~/.bashrc
-
 #Add stuff to environment variables
 sudo echo -e "MANGOHUD=1" >> /etc/environment
 sudo echo -e "DXVK_HDR=1" >> /etc/environment
@@ -20,7 +14,7 @@ sudo echo -e "PROTON_ENABLE_NGX_UPDATER=1" >> /etc/environment
 #set git config
 git config --global user.name "Eric Parsley"
 git config --global user.email "ericiparsley@hotmail.com"
-git config --global core.editor "visual-studio-code --wait"
+git config --global core.editor "visual-studio-code-bin --wait"
 git config --global pull.rebase true
 git config --global init.defaultBranch master 
 
