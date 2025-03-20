@@ -24,7 +24,7 @@ sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 sudo echo -e "\n[g14]" >> /etc/pacman.conf
-sudo echo -e "\nServer = https://arch.asus-linux.org" >> /etc/pacman.conf
+sudo echo -e "Server = https://arch.asus-linux.org" >> /etc/pacman.conf
 
 #Refresh
 sudo pacman -Sy
@@ -56,6 +56,8 @@ sudo pacman -Sy base-devel linux-headers mkinitcpio-firmware handbrake dragon jq
 #Needed for UUP Dump ISO creation
 sudo pacman -S cabextract wimlib chntpw cdrtools aria2
 
+
+
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
 flatpak install flathub net.davidotek.pupgui2
@@ -69,4 +71,4 @@ yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy peazip sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin github-desktop-bin betterbird-bin librewolf-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve freedownloadmanager zenergy-dkms-git
+yay -Sy peazip sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin github-desktop-bin dotnet-sdk-bin betterbird-bin librewolf-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve freedownloadmanager zenergy-dkms-git
