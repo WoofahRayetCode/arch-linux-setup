@@ -1,6 +1,22 @@
 #!/bin/bash
 set -e
 
+#Alias for pacman
+sudo echo -e "export PASSWORD=StlkrWlf1990" >> ~/.bashrc
+sudo echo -e "alias pacman=sudo pacman" >> ~/.bashrc
+sudo echo -e "alias update=yay" >> ~/.bashrc
+sudo echo -e "alias bashup=source ~/.bashrc" >> ~/.bashrc
+
+#Add stuff to environment variables
+sudo echo -e "MANGOHUD=1" >> /etc/environment
+sudo echo -e "DXVK_HDR=1" >> /etc/environment
+sudo echo -e "ENABLE_HDR_WSI=1" >> /etc/environment
+sudo echo -e "KWIN_DRM_ALLOW_NVIDIA_COLORSPACE=1" >> /etc/environment
+sudo echo -e "VKD3D_CONFIG=dxr11,dxr" >> /etc/environment
+sudo echo -e "PROTON_ENABLE_NVAPI=1" >> /etc/environment
+sudo echo -e "PROTON_ENABLE_NGX_UPDATER=1" >> /etc/environment
+
+
 #set git config
 git config --global user.name "Eric Parsley"
 git config --global user.email "ericiparsley@hotmail.com"
@@ -9,7 +25,6 @@ git config --global pull.rebase true
 git config --global init.defaultBranch master 
 
 #Add chaotic aur
-sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
@@ -55,8 +70,6 @@ sudo pacman -Sy base-devel linux-headers mkinitcpio-firmware handbrake dragon jq
 
 #Needed for UUP Dump ISO creation
 sudo pacman -S cabextract wimlib chntpw cdrtools aria2
-
-
 
 #Flatpak apps
 flatpak install flathub com.github.wwmm.easyeffects
