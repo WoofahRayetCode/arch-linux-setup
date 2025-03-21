@@ -10,7 +10,6 @@ sudo echo -e "VKD3D_CONFIG=dxr11,dxr" >> /etc/environment
 sudo echo -e "PROTON_ENABLE_NVAPI=1" >> /etc/environment
 sudo echo -e "PROTON_ENABLE_NGX_UPDATER=1" >> /etc/environment
 
-
 #set git config
 git config --global user.name "Eric Parsley"
 git config --global user.email "ericiparsley@hotmail.com"
@@ -51,6 +50,17 @@ sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
 #Change progressbar to pacman
 sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 
+#Install yay
+sudo pacman -Sy yay
+
+#Emulators
+sudo pacman -Syyu
+yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
+
+#install AUR apps that I use
+sudo pacman -Sy
+yay -Sy peazip sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin github-desktop-bin dotnet-sdk-bin betterbird-bin librewolf-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve freedownloadmanager zenergy-dkms-git
+
 #Asus programs
 sudo pacman -S asusctl power-profiles-daemon
 sudo pacman -S supergfxctl switcheroo-control
@@ -69,13 +79,6 @@ sudo pacman -S cabextract wimlib chntpw cdrtools aria2
 flatpak install flathub com.github.wwmm.easyeffects
 flatpak install flathub net.davidotek.pupgui2
 
-#Install yay
-sudo pacman -Sy yay
-
-#Emulators
-sudo pacman -Syyu
-yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
-
-#install AUR apps that I use
-sudo pacman -Sy
-yay -Sy peazip sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin github-desktop-bin dotnet-sdk-bin betterbird-bin librewolf-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve freedownloadmanager zenergy-dkms-git
+#Clean leftover packages and hide extra icons
+./clean-files.sh
+./hide-icons.sh
