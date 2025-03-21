@@ -9,6 +9,9 @@ sudo echo -e "KWIN_DRM_ALLOW_NVIDIA_COLORSPACE=1" >> /etc/environment
 sudo echo -e "VKD3D_CONFIG=dxr11,dxr" >> /etc/environment
 sudo echo -e "PROTON_ENABLE_NVAPI=1" >> /etc/environment
 sudo echo -e "PROTON_ENABLE_NGX_UPDATER=1" >> /etc/environment
+sudo echo -e "PROTON_FULLSCREEN_FSR=1" >> /etc/environment
+sudo echo -e "PROTON_FULLSCREEN_FSR_MODE=performance" >> /etc/environment
+sudo echo -e "PROTON_FULLSCREEN_FSR_STRENGTH=2.5" >> /etc/environment
 
 #set git config
 git config --global user.name "Eric Parsley"
