@@ -6,6 +6,11 @@ sudo chown -R -v ericparsley:ericparsley /etc/environment
 sudo echo -e "VK_LAYER_PATH=/usr/share/vulkan/explicit_layer.d" >> /etc/environment
 sudo echo -e "VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json" >> /etc/environment
 sudo echo -e "VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd.json" >> /etc/environment
+sudo echo -e "GAMESCOPE=1" >> /etc/environment
+sudo echo -e "FSR-UPSCALE=2" >> /etc/environment
+sudo echo -e "FSR_SHARPNESS=6" >> /etc/environment
+sudo echo -e "FSR_MODE=performance" >> /etc/environment
+sudo echo -e "FSR_STRENGTH=2.5" >> /etc/environment
 sudo echo -e "MANGOHUD=1" >> /etc/environment
 sudo echo -e "DXVK_HDR=1" >> /etc/environment
 sudo echo -e "ENABLE_HDR_WSI=1" >> /etc/environment
