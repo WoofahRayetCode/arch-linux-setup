@@ -2,6 +2,10 @@
 set -e
 
 #Add stuff to environment variables
+sudo chown -R -v ericparsley:ericparsley /etc/environment
+sudo echo -e "VK_LAYER_PATH=/usr/share/vulkan/explicit_layer.d" >> /etc/environment
+sudo echo -e "VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json" >> /etc/environment
+sudo echo -e "VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd.json" >> /etc/environment
 sudo echo -e "MANGOHUD=1" >> /etc/environment
 sudo echo -e "DXVK_HDR=1" >> /etc/environment
 sudo echo -e "ENABLE_HDR_WSI=1" >> /etc/environment
