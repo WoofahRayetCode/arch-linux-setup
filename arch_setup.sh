@@ -3,14 +3,6 @@ set -e
 
 #Add stuff to environment variables
 sudo chown -R -v ericparsley:ericparsley /etc/environment
-sudo echo -e "VK_LAYER_PATH=/usr/share/vulkan/explicit_layer.d" >> /etc/environment
-sudo echo -e "VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json" >> /etc/environment
-sudo echo -e "VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/amd_icd.json" >> /etc/environment
-sudo echo -e "GAMESCOPE=1" >> /etc/environment
-sudo echo -e "FSR-UPSCALE=2" >> /etc/environment
-sudo echo -e "FSR_SHARPNESS=6" >> /etc/environment
-sudo echo -e "FSR_MODE=performance" >> /etc/environment
-sudo echo -e "FSR_STRENGTH=2.5" >> /etc/environment
 sudo echo -e "MANGOHUD=1" >> /etc/environment
 sudo echo -e "DXVK_HDR=1" >> /etc/environment
 sudo echo -e "ENABLE_HDR_WSI=1" >> /etc/environment
@@ -18,6 +10,11 @@ sudo echo -e "KWIN_DRM_ALLOW_NVIDIA_COLORSPACE=1" >> /etc/environment
 sudo echo -e "VKD3D_CONFIG=dxr11,dxr" >> /etc/environment
 sudo echo -e "PROTON_ENABLE_NVAPI=1" >> /etc/environment
 sudo echo -e "PROTON_ENABLE_NGX_UPDATER=1" >> /etc/environment
+sudo echo -e "GAMESCOPE=1" >> /etc/environment
+sudo echo -e "FSR-UPSCALE=2" >> /etc/environment
+sudo echo -e "FSR_SHARPNESS=6" >> /etc/environment
+sudo echo -e "FSR_MODE=performance" >> /etc/environment
+sudo echo -e "FSR_STRENGTH=2.5" >> /etc/environment
 sudo echo -e "PROTON_FULLSCREEN_FSR=1" >> /etc/environment
 sudo echo -e "PROTON_FULLSCREEN_FSR_MODE=performance" >> /etc/environment
 sudo echo -e "PROTON_FULLSCREEN_FSR_STRENGTH=2.5" >> /etc/environment
@@ -65,9 +62,12 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 #Install yay
 sudo pacman -Sy yay
 
-#Emulators
+#Sony Playstation Emulators
 sudo pacman -Syyu
 yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
+
+#Nintendo Emulators
+yay -S mesen2-git rmg-git mgba-git melonds-git azahar-git dolphin-emu-git cemu-git citron-git
 
 #install AUR apps that I use
 sudo pacman -Sy
