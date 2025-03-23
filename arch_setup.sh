@@ -67,7 +67,7 @@ sudo pacman -Syyu
 yay -Sy duckstation-git pcsx2-git rpcs3-git shadps4-git ppsspp-git vita3k-git
 
 #Nintendo Emulators
-yay -S mesen2-git rmg-git mgba-git melonds-qt-git azahar-git dolphin-emu-git cemu-git citron-git
+yay -S mesen2-git rmg-git mgba-qt-git melonds-git azahar-git dolphin-emu-git cemu-git citron-git
 
 #install AUR apps that I use
 sudo pacman -Sy
