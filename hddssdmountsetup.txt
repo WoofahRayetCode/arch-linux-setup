@@ -1,5 +1,5 @@
 #Get disk names
-sudo blkid | grep UUID=
+sudo fdisk -l
 
 #Make dirs to mount drives to
 mkdir Ext4TBHDD
@@ -9,10 +9,10 @@ mkdir Ext14TBHDD
 sudo nano /etc/fstab
 
 #External 4TB HDD
-UUID=8dbc98ed-a0c2-4b64-910e-953767aa7dc5 /home/ericparsley/Ext4TBHDD btrfs defaults 0 0
+UUID=853949DA-BB4B-4C45-B9D9-830459EE6F5B /home/ericparsley/Ext4TBHDD btrfs defaults 0 0
 
 #External 14TB HDD
-UUID=0e682a2e-263d-4a81-96e8-0445992a47cd /home/ericparsley/Ext14TBHDD btrfs defaults 0 0
+UUID=012DBF83-F4F9-456B-85EC-6AB50577B74F /home/ericparsley/Ext14TBHDD btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
