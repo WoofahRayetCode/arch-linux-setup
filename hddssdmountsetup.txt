@@ -12,7 +12,7 @@ sudo nano /etc/fstab
 UUID=086af883-14c5-4b64-b2a7-8c7afae77150 /home/ericparsley/Ext4TBHDD ext4 defaults 0 0
 
 #External 14TB HDD
-UUID=086af883-14c5-4b64-b2a7-8c7afae77150 /home/ericparsley/Ext14TBHDD ext4 defaults 0 0
+UUID=aef25ae2-8b73-450f-88ee-4630a93197a5 /home/ericparsley/Ext14TBHDD ext4 defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
