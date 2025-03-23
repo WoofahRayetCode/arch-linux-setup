@@ -9,10 +9,10 @@ mkdir Ext14TBHDD
 sudo nano /etc/fstab
 
 #External 4TB HDD
-UUID=853949DA-BB4B-4C45-B9D9-830459EE6F5B /home/ericparsley/Ext4TBHDD btrfs defaults 0 0
+UUID=853949DA-BB4B-4C45-B9D9-830459EE6F5B /home/ericparsley/Ext4TBHDD ext4 defaults 0 0
 
 #External 14TB HDD
-UUID=012DBF83-F4F9-456B-85EC-6AB50577B74F /home/ericparsley/Ext14TBHDD btrfs defaults 0 0
+UUID=012DBF83-F4F9-456B-85EC-6AB50577B74F /home/ericparsley/Ext14TBHDD ext4 defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
