@@ -9,7 +9,7 @@ mkdir Ext14TBHDD
 sudo nano /etc/fstab
 
 #External 4TB HDD
-UUID=086af883-14c5-4b64-b2a7-8c7afae77150 /home/ericparsley/Ext4TBHDD ext4 defaults 0 0
+UUID=697a0556-25aa-40ab-986c-26baaaed03b5 /home/ericparsley/Ext4TBHDD btrfs defaults 0 0
 
 #External 14TB HDD
 UUID=aef25ae2-8b73-450f-88ee-4630a93197a5 /home/ericparsley/Ext14TBHDD ext4 defaults 0 0
