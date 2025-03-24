@@ -18,6 +18,7 @@ sudo echo -e "FSR_STRENGTH=2.5" >> /etc/environment
 sudo echo -e "PROTON_FULLSCREEN_FSR=1" >> /etc/environment
 sudo echo -e "PROTON_FULLSCREEN_FSR_MODE=performance" >> /etc/environment
 sudo echo -e "PROTON_FULLSCREEN_FSR_STRENGTH=2.5" >> /etc/environment
+sudo echo =e "GAMEMODERUNEXEC=gamemode" >> /etc/environment
 
 #set git config
 git config --global user.name "Eric Parsley"
