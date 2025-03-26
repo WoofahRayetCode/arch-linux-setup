@@ -84,7 +84,7 @@ systemctl enable --now supergfxd
 systemctl enable --now switcheroo-control
 
 #Install regularly used apps
-sudo pacman -Sy base-devel linux-headers mkinitcpio-firmware handbrake dragon jq partitionmanager ktimer qbittorrent ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud goverlay lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers wine-staging winetricks protontricks bleachbit gamemode lib32-gamemode steam discord android-tools libreoffice-fresh
+sudo pacman -Sy base-devel linux-headers mkinitcpio-firmware filezilla handbrake dragon jq partitionmanager ktimer qbittorrent ntfs-3g jre-openjdk flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud goverlay lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers wine-staging winetricks protontricks bleachbit gamemode lib32-gamemode steam discord android-tools libreoffice-fresh
 
 #Needed for UUP Dump ISO creation
 sudo pacman -S cabextract wimlib chntpw cdrtools aria2
