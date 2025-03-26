@@ -2,11 +2,15 @@
 ls -l /dev/disk/by-uuid/
 
 #Make dirs to mount drives to
+mkdir Int1TBSSD
 mkdir Ext4TBHDD
 mkdir Ext14TBHDD
 
 #Open fstab file
 sudo nano /etc/fstab
+
+#Laptop Internal 1TB SSD
+UUID=cd750a99-9576-48d5-8911-30c24d86fef7 /home/ericparsley/Int1TBSSD btrfs defaults 0 0 
 
 #External 4TB HDD
 UUID=697a0556-25aa-40ab-986c-26baaaed03b5 /home/ericparsley/Ext4TBHDD btrfs defaults 0 0
