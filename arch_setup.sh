@@ -73,7 +73,7 @@ yay -S mesen2-git rmg-git mgba-qt-git melonds-git azahar-git dolphin-emu-git cem
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy peazip sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin github-desktop-bin dotnet-sdk-bin betterbird-bin librewolf-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve freedownloadmanager zenergy-dkms-git
+yay -Sy peazip binmerge sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin github-desktop-bin dotnet-sdk-bin betterbird-bin librewolf-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve freedownloadmanager zenergy-dkms-git
 
 #Asus programs
 sudo pacman -S asusctl power-profiles-daemon
