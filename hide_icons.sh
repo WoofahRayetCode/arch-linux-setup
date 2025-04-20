@@ -15,6 +15,7 @@ sudo rm -f electron30.desktop
 sudo rm -f electron31.desktop
 sudo rm -f electron32.desktop
 sudo rm -f electron33.desktop
+sudo rm -f io.mgba.mGBA.desktop
 sudo rm -f fluid.desktop
 sudo rm -f yad-icon-browser.desktop
 sudo rm -f qvidcap.desktop
