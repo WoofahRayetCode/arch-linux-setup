@@ -10,7 +10,7 @@ mkdir Ext14TBHDD
 sudo nano /etc/fstab
 
 #Laptop Internal 1TB SSD
-UUID=cd750a99-9576-48d5-8911-30c24d86fef7 /home/ericparsley/Int1TBSSD btrfs defaults 0 0 
+UUID=79d0664d-187d-468f-9021-8771168d3015 /home/ericparsley/Int1TBSSD btrfs defaults 0 0 
 
 #External 4TB HDD
 UUID=697a0556-25aa-40ab-986c-26baaaed03b5 /home/ericparsley/Ext4TBHDD btrfs defaults 0 0
@@ -23,6 +23,9 @@ sudo systemctl daemon-reload
 
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
+
+#Gain ownership of Internal 1TB SSD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Int1TBSSD
 
 #Gain ownership of External 4TB HDD
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Ext4TBHDD
