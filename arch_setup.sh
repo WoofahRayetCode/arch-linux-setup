@@ -63,7 +63,7 @@ yay -S mesen2-git rmg-git mgba-qt-git melonds-git azahar-git dolphin-emu-git cem
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy peazip chatterino2-git binmerge sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin dotnet-sdk-bin microsoft-edge-dev-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve zenergy-dkms-git
+yay -Sy peazip chatterino2-nightly-bin binmerge sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin dotnet-sdk-bin microsoft-edge-dev-bin standardnotes-bin obs-studio-git obs-backgroundremoval davinci-resolve zenergy-dkms-git
 
 #Asus programs
 #sudo pacman -S asusctl power-profiles-daemon
