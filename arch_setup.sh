@@ -51,8 +51,8 @@ sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
 #Install yay
 sudo pacman -Sy yay
 
-#AMD Proprietary OpenGL drivers
-yay -S amdgpu-pro-ogpl lib32-amdgpu-pro-ogpl vulkan-amdgpu-pro-ogpl lib32-vulkan-amdgpu-pro-ogpl amf-amdgpu-pro
+#Microsoft Emulator
+yay -S xenia-canary-bin xemu-git
 
 #Sony Playstation Emulators
 sudo pacman -Syyu
