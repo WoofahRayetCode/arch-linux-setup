@@ -10,7 +10,7 @@ mkdir Ext14TBHDD
 sudo nano /etc/fstab
 
 #Laptop Internal 1TB SSD
-UUID=79d0664d-187d-468f-9021-8771168d3015 /home/ericparsley/Int1TBSSD btrfs defaults 0 0 
+UUID=e2db911c-d36a-4857-8e92-7d982a1beb92 /home/ericparsley/Int1TBSSD btrfs defaults 0 0 
 
 #External 4TB HDD
 UUID=6747b9a2-d768-499d-8d0d-6706d20b335d /home/ericparsley/Ext4TBHDD btrfs defaults 0 0
