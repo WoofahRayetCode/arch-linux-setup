@@ -12,11 +12,11 @@ sudo echo -e "PROTON_ENABLE_NVAPI=1" >> /etc/environment
 sudo echo -e "PROTON_ENABLE_NGX_UPDATER=1" >> /etc/environment
 
 #set git config
-git config --global user.name "Eric Parsley"
-git config --global user.email "ericiparsley@hotmail.com"
-git config --global core.editor "visual-studio-code-bin --wait"
-git config --global pull.rebase true
-git config --global init.defaultBranch master 
+git config --global user.name "Eric Parsley" \
+               user.email "ericiparsley@hotmail.com" \
+               core.editor "visual-studio-code-bin --wait" \
+               pull.rebase true \
+               init.defaultBranch master
 
 #Add chaotic aur
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
@@ -44,9 +44,9 @@ sudo pacman -Sy
 #sudo pacman-key -a g14.sec
 
 #Enable parallel downloading, output colorizating, change progressbar to pacman
-sudo sed -i 's/#ParallelDownloads/ParallelDownloads/g' /etc/pacman.conf
-sudo sed -i 's/#Color/Color/g' /etc/pacman.conf
-sudo sed -i 's/VerbosePkgLists/VerbosePkgLists\nILoveCandy/g' /etc/pacman.conf
+sudo sed -i -e 's/#ParallelDownloads/ParallelDownloads/' \
+            -e 's/#Color/Color/' \
+            -e '/VerbosePkgLists/a ILoveCandy' /etc/pacman.conf
 
 #Install yay
 sudo pacman -Sy yay
