@@ -12,11 +12,11 @@ sudo echo -e "PROTON_ENABLE_NVAPI=1" >> /etc/environment
 sudo echo -e "PROTON_ENABLE_NGX_UPDATER=1" >> /etc/environment
 
 #set git config
-git config --global user.name "Eric Parsley" \
-               user.email "ericiparsley@hotmail.com" \
-               core.editor "visual-studio-code-bin --wait" \
-               pull.rebase true \
-               init.defaultBranch master
+git config --global user.name "Eric Parsley"
+git config --global user.email "ericiparsley@hotmail.com"
+git config --global core.editor "visual-studio-code-bin --wait"
+git config --global pull.rebase true
+git config --global init.defaultBranch master
 
 #Add chaotic aur
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
