@@ -28,26 +28,6 @@ sudo chown -R -v ericparsley:ericparsley /etc/pacman.conf
 sudo echo -e "\n[chaotic-aur]" >> /etc/pacman.conf
 sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
-#Asus Repo
-#sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-#sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-#sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-#sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-#sudo echo -e "\n[g14]" >> /etc/pacman.conf
-#sudo echo -e "Server = https://arch.asus-linux.org" >> /etc/pacman.conf
-
-#Refresh
-sudo pacman -Sy
-
-#Add G14 Repo key
-#wget "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x8b15a6b0e9a3fa35" -O g14.sec
-#sudo pacman-key -a g14.sec
-
-#Enable parallel downloading, output colorizating, change progressbar to pacman
-sudo sed -i -e 's/#ParallelDownloads/ParallelDownloads/' \
-            -e 's/#Color/Color/' \
-            -e '/VerbosePkgLists/a ILoveCandy' /etc/pacman.conf
-
 #Install yay
 sudo pacman -Sy yay
 
@@ -63,18 +43,10 @@ yay -S mesen2-git rmg-git mgba-qt-git melonds-git azahar-git dolphin-emu-git cem
 
 #install AUR apps that I use
 sudo pacman -Sy
-yay -Sy peazip chatterino2-nightly-bin binmerge sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin dotnet-sdk-bin microsoft-edge-dev-bin standardnotes-bin obs-studio-tytan652 obs-backgroundremoval davinci-resolve zenergy-dkms-git
-
-#Asus programs
-#sudo pacman -S asusctl power-profiles-daemon
-#sudo pacman -S supergfxctl switcheroo-control
-#sudo pacman -S rog-control-center
-#systemctl enable --now power-profiles-daemon.service
-#systemctl enable --now supergfxd
-#systemctl enable --now switcheroo-control
+yay -Sy peazip chatterino2-nightly-bin binmerge sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin dotnet-sdk-bin microsoft-edge-stable-bin obs-studio-tytan652 obs-backgroundremoval davinci-resolve zenergy-dkms-git
 
 #Install regularly used apps
-sudo pacman -Sy base-devel linux-headers mkinitcpio-firmware jdownloader2 filezilla handbrake dragon jq partitionmanager ktimer qbittorrent ntfs-3g flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud goverlay lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers wine-staging winetricks protontricks bleachbit gamemode lib32-gamemode steam vesktop android-tools libreoffice-fresh
+sudo pacman -Sy base-devel linux-headers mkinitcpio-firmware filezilla handbrake jq partitionmanager ktimer qbittorrent ntfs-3g flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud mangojuice lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers wine-staging winetricks protontricks bleachbit gamemode lib32-gamemode steam vesktop android-tools libreoffice-fresh
 
 #Needed for UUP Dump ISO creation
 sudo pacman -S cabextract wimlib chntpw cdrtools aria2
