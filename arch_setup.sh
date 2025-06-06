@@ -45,6 +45,10 @@ yay -S mesen2-git rmg-git mgba-qt-git melonds-git azahar-git dolphin-emu-git cem
 sudo pacman -Sy
 yay -Sy peazip nordvpn-bin nordvpn-gui chatterino2-nightly-bin binmerge sideloader-bin idevicerestore xpadneo-dkms ventoy-bin visual-studio-code-bin dotnet-sdk-bin microsoft-edge-stable-bin obs-studio-tytan652 obs-backgroundremoval davinci-resolve zenergy-dkms-git
 
+#Set up NordVPN
+sudo systemctl enable --now nordvpnd
+sudo gpasswd -a ericparsley nordvpn
+
 #Install regularly used apps
 sudo pacman -Sy base-devel linux-headers mkinitcpio-firmware filezilla handbrake jq partitionmanager ktimer qbittorrent ntfs-3g flatpak bash-language-server usbmuxd mame-tools wine-staging lib32-mangohud mangohud mangojuice lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader lib32-vulkan-mesa-layers vulkan-mesa-layers wine-staging winetricks protontricks bleachbit gamemode lib32-gamemode steam vesktop android-tools libreoffice-fresh
 
