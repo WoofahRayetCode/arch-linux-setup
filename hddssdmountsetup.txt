@@ -1,22 +1,21 @@
 #Get disk names
 ls -l /dev/disk/by-uuid/
 
-#Make dirs to mount drives to
-mkdir Int1TBSSD
-mkdir Ext4TBHDD
+mkdir Int512GBSSD2
+mkdir Int4TBHDD
 mkdir Ext14TBHDD
 
 #Open fstab file
 sudo nano /etc/fstab
 
-#Laptop Internal 1TB SSD
-UUID=e2db911c-d36a-4857-8e92-7d982a1beb92 /home/ericparsley/Int1TBSSD btrfs defaults 0 0 
+#Desktop Internal 512GB SSD 2
+UUID=7964a762-2319-4867-8a5d-f933cb4b1ee4 /home/ericparsley/Int512GBSSD2 btrfs defaults 0 0 
 
-#External 4TB HDD
-UUID=6747b9a2-d768-499d-8d0d-6706d20b335d /home/ericparsley/Ext4TBHDD btrfs defaults 0 0
+#Internal 4TB HDD
+UUID=34023867-7796-46fb-842f-f2fbb4b907d1 /home/ericparsley/Int4TBHDD btrfs defaults 0 0
 
 #External 14TB HDD
-UUID=12dc4714-14eb-45e1-a4df-0523ead4a087 /home/ericparsley/Ext14TBHDD btrfs defaults 0 0
+UUID=e4fcb65a-7057-4f43-a513-b8f6b0b1433f /home/ericparsley/Ext14TBHDD btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
@@ -24,11 +23,11 @@ sudo systemctl daemon-reload
 #Refresh stuff so I don't have to restart anymore :D
 sudo mount -a
 
-#Gain ownership of Internal 1TB SSD
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Int1TBSSD
+#Gain ownership of Internal 512GB SSD 2
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Int512GBSSD2
 
 #Gain ownership of External 4TB HDD
-sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Ext4TBHDD
+sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Int4TBHDD
 
 #Gain ownership of External 14TB HDD
 sudo chown -R -v ericparsley:ericparsley /home/ericparsley/Ext14TBHDD
