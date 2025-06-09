@@ -9,13 +9,13 @@ mkdir Ext14TBHDD
 sudo nano /etc/fstab
 
 #Desktop Internal 512GB SSD 2
-UUID=7964a762-2319-4867-8a5d-f933cb4b1ee4 /home/ericparsley/Int512GBSSD2 btrfs defaults 0 0 
+UUID=39904b76-d072-44ae-9242-d22f07a7e4bc /home/ericparsley/Int512GBSSD2 btrfs defaults 0 0 
 
 #Internal 4TB HDD
-UUID=34023867-7796-46fb-842f-f2fbb4b907d1 /home/ericparsley/Int4TBHDD btrfs defaults 0 0
+UUID=658df156-4e2f-4e80-9760-b283f2713e38 /home/ericparsley/Int4TBHDD btrfs defaults 0 0
 
 #External 14TB HDD
-UUID=e4fcb65a-7057-4f43-a513-b8f6b0b1433f /home/ericparsley/Ext14TBHDD btrfs defaults 0 0
+UUID=8e083ec2-5fe9-410c-ad59-7ca5b5196fa0 /home/ericparsley/Ext14TBHDD btrfs defaults 0 0
 
 #Reload to use next command
 sudo systemctl daemon-reload
