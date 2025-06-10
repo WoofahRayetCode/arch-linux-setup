@@ -17,7 +17,6 @@ sudo rm -f electron33.desktop
 sudo rm -f io.mgba.mGBA.desktop
 sudo rm -f fluid.desktop
 sudo rm -f yad-icon-browser.desktop
-sudo rm -f qvidcap.desktop
 sudo rm -f yad-settings.desktop
 sudo rm -f org.kde.kmenuedit.desktop
 sudo rm -f uxterm.desktop
