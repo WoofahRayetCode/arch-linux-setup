@@ -4,12 +4,9 @@ set -e
 #Add stuff to environment variables
 sudo chown -R -v ericparsley:ericparsley /etc/environment
 sudo echo -e "MANGOHUD=1" >> /etc/environment
-sudo echo -e "DXVK_HDR=1" >> /etc/environment
-sudo echo -e "ENABLE_HDR_WSI=1" >> /etc/environment
-sudo echo -e "KWIN_DRM_ALLOW_NVIDIA_COLORSPACE=1" >> /etc/environment
-sudo echo -e "VKD3D_CONFIG=dxr11,dxr" >> /etc/environment
-sudo echo -e "PROTON_ENABLE_NVAPI=1" >> /etc/environment
-sudo echo -e "PROTON_ENABLE_NGX_UPDATER=1" >> /etc/environment
+sudo echo -e PROTON_ENABLE_WAYLAND=1 
+sudo echo -e PROTON_ENABLE_HDR=1 
+sudo echo -e ENABLE_HDR_WSI=1
 
 #set git config
 git config --global user.name "Eric Parsley"
